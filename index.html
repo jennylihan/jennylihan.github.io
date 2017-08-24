@@ -184,7 +184,7 @@
         .each(function() {
           var opt = $(this).data().uiSlider.options;
           var vals = opt.max - opt.min;
-          for (var i = 0; i <= vals; i++) {
+          for (var i = 0; i <= vals; i+= 0.5) {
             var el = $('<label>'+(i+0.5)+'</label>').css('left',(i/vals*100)+'%');
             $( "#slider2" ).append(el);
           }
