@@ -132,7 +132,7 @@
    <p> 1. On a scale from 1 (not confident) to 10 (very confident), how confident are you in the quality of your own work? </p>
     <div class="col-md-10 col-sm-12 col-xs-12">
         <div id="slider1">
-         <input type="hidden" name="confidence" id="confidence"><br>
+         <input type="hidden" name="confidence" id="confidence">
        </div>
        <script>
          $( "#slider1" ).slider({
@@ -160,19 +160,6 @@
       <textarea class="form-control" rows="5" name="quality" id="quality"></textarea>
       <p id="demo1"></p>
    </div>
-   <script>
-    function validate() {
-        var x, text;
-
-        // Get the value of the input field with id="numb"
-        x = document.getElementById("quality").value;
-        // If x is Not a Number or less than one or greater than 10
-        if (x.length < 100) {
-            text = "Input not valid";
-        }    
-        document.getElementById("demo1").innerHTML = text;
-    }
-   </script>
   </div>
 </div>
 
@@ -211,18 +198,6 @@
       <textarea class="form-control" rows="5" name="requesters" id="requesters"></textarea>
       <p id="demo2"></p>      
    </div>
-   <script>
-    function validate() {
-        var x, text;
-        // Get the value of the input field with id="numb"
-        x = document.getElementById("requesters").value;
-        // If x is Not a Number or less than one or greater than 10
-        if (x.length < 100) {
-            text = "Input not valid";
-        }    
-        document.getElementById("demo2").innerHTML = text;
-    }
-   </script>
   </div>
   </div>
 </div>
