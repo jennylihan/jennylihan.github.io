@@ -17,7 +17,19 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-
+<style>
+   #slider label {
+/*        position: absolute;
+*/        width: 20px;
+        margin-left: -10px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #slider {
+        width: 50%;
+        margin: 2em auto;
+    }
+</style>
 
 
     <title>Install Vitae</title>
@@ -125,8 +137,10 @@
     <p>
       To help you get started, we want to put you in your first community based on your answers to these questions:
     </p>
-   <label for="confidence"> 1. On a scale from 1 (not confident) to 10 (very confident), how confident are you in the quality of your own work? </label>
-   <input name="confidence" id="confidence"><br>
+   <p> 1. On a scale from 1 (not confident) to 10 (very confident), how confident are you in the quality of your own work? </p>
+   <div id="confidence-slider">
+       <input type="hidden" name="confidence" id="confidence"><br>
+   </div>
    <p>
      2. Explain in 100 characters or more why the quality of your own work is important to you.
    </p>
@@ -136,54 +150,9 @@
    <p>
      3. What is the lowest amount in dollars that you would work per hour? 
    </p>
-   <div id="slider">
+   <div id="price-min-slider">
       <input type="hidden" name="price-min" id="price-min">
    </div>
-   <style>
-   #slider label {
-/*        position: absolute;
-*/        width: 20px;
-        margin-left: -10px;
-        text-align: center;
-        margin-top: 20px;
-    }
-    #slider {
-        width: 50%;
-        margin: 2em auto;
-    }
-   </style>
-   <script>
-   $( "#slider" ).slider({
-    value: 1,
-    min: 1,
-    max: 20,
-    step: 1
-    })
-    .each(function() {
-
-      //
-      // Add labels to slider whose values 
-      // are specified by min, max and whose
-      // step is set to 1
-      //
-
-      // Get the options for this slider
-      var opt = $(this).data().uiSlider.options;
-      
-      // Get the number of possible values
-      var vals = opt.max - opt.min;
-      
-      // Space out values
-      for (var i = 0; i <= vals; i++) {
-        
-        var el = $('<label>'+(i+1)+'</label>').css('left',(i/vals*100)+'%');
-      
-        $( "#slider" ).append(el);
-        
-      }
-      
-    });
-  </script>
    <p>
      4. Is it important that requesters send high-quality or high-complexity tasks? Explain in 100 characters or more how you decide which tasks to do.
    </p>
@@ -221,6 +190,44 @@
   ga('send', 'pageview');
 
 </script>
+<script>
+   $('#price-min-slider').slider({
+    value: 1,
+    min: 1,
+    max: 20,
+    step: 1
+   })
+   $( "#slider" ).confidence({
+    value: 1,
+    min: 1,
+    max: 10,
+    step: 1
+    })
+    .each(function() {
+
+      //
+      // Add labels to slider whose values 
+      // are specified by min, max and whose
+      // step is set to 1
+      //
+
+      // Get the options for this slider
+      var opt = $(this).data().uiSlider.options;
+      
+      // Get the number of possible values
+      var vals = opt.max - opt.min;
+      
+      // Space out values
+      for (var i = 0; i <= vals; i++) {
+        
+        var el = $('<label>'+(i+1)+'</label>').css('left',(i/vals*100)+'%');
+      
+        $( "#slider" ).append(el);
+        
+      }
+      
+    });
+  </script>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
