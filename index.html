@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/tasks/validate.min.js"></script>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
@@ -131,7 +130,9 @@
    <p>
      2. Explain in 100 characters or more why the quality of your own work is important to you.
    </p>
-   <textarea rows="5" name="quality"></textarea>
+    <div class="col-md-10 col-sm-12 col-xs-12">
+      <textarea class="form-control" rows="5" name="quality" id="quality"></textarea>
+    </div>   
    <p>
      3. What is the lowest amount in dollars that you would work per hour? 
    </p>
@@ -140,8 +141,8 @@
    </div>
    <style>
    #slider label {
-        position: absolute;
-        width: 20px;
+/*        position: absolute;
+*/        width: 20px;
         margin-left: -10px;
         text-align: center;
         margin-top: 20px;
@@ -183,22 +184,12 @@
       
     });
   </script>
-  <!--  <div data-role="rangeslider">
-        <label for="price-min">0</label>
-        <input type="range" name="price-min" id="price-min" value="20" min="0" max="20" step=1 list=tickmarks>
-          <datalist id=tickmarks>
-          <option>0</option>
-          <option>5</option>
-          <option>10</option>
-          <option>15</option>
-          <option>20</option>
-          </datalist>
-        <label for="price-max">20</label>
-  </div> -->
    <p>
      4. Is it important that requesters send high-quality or high-complexity tasks? Explain in 100 characters or more how you decide which tasks to do.
    </p>
-      <textarea rows="5" name="requesters"></textarea>
+     <div class="col-md-10 col-sm-12 col-xs-12">
+      <textarea class="form-control" rows="5" name="requesters" id="requesters"></textarea>
+    </div>   
     <div class="col-md-10 col-sm-12 col-xs-12">
     </div>
   </div>
@@ -219,55 +210,6 @@
         </div>
     </div>
 
-<script>
-var validator = new FormValidator('installVitae', [{
-    name: 'installation_feedback',
-    rules: 'required'
-}, {
-    name: 'confidence',
-    display: 'Question #1',
-    rules: 'Range1_10'
-},  {
-    name: 'quality',
-    display: 'Question #2',
-    rules: 'min_length[100]'
-}, {
-    name: 'quality',
-    display: 'Question #2',
-    rules: 'min_length[100]'  
-}, {
-    name: 'requesters',
-    display: 'Question #4',
-    rules: 'min_length[100]'
-}
-], function(errors, event) {
-    if (errors.length > 0) {
-        // Show the errors
-    }
-});
-
-validator.registerCallback('Range1_10', function(value) {
-    if (value <= 10 && value >= 0) {
-        return true;
-    }
-
-    return false;
-});
-</script>    
-</body>
-<script>
-  // window.onload=function(){
-$(document).ready(_=>{
-    try {
-  var assignmentId=location.search.match(/assignmentId=(\w+)/)[1];
-  $("#assignmentId").value=assignmentId;
-} catch(e){
-  if (e.name=="TypeError"){
-    console.log('preview detected')
-  }
-}
-})
-</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
