@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.11.1/validate.min.js"></script>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 <style>
-   .ui label { position: absolute; width: 20px; margin-left: -10px; text-align: center; margin-top: 20px;}
-   .ui {width: 50%; margin: 2em auto;}
+   #slider1 label { position: absolute; width: 20px; margin-left: -10px; text-align: center; margin-top: 20px;}
+   #slider1 {width: 50%; margin: 2em auto;}
    #slider2 label { position: absolute; width: 20px; margin-left: -10px; text-align: center; margin-top: 20px;}
    #slider2 {width: 50%; margin: 2em auto;}
 </style>
@@ -32,7 +33,7 @@
     <div class="container-fluid body-content">
         <div class="col-md-10 col-sm-12 col-xs-12">
             <!-- <form action="//www.mturk.com/mturk/externalSubmit" method="post"> -->
-            <form action="//workersandbox.mturk.com/mturk/externalSubmit" method="post" name="installVitae">
+            <form action="//workersandbox.mturk.com/mturk/externalSubmit" onsubmit="return validate();" method="post" name="installVitae">
 
             <input type="hidden" name="assignmentId" id="assignmentId" value="test" />
 
@@ -127,7 +128,7 @@
 <div class="form-group">
   <div class='row'>
     <p>
-      To help you get started, we want to put you in your first community based on your answers to these questions:
+      We want to put you in your first community based on your answers to these questions:
    </p>
    <p> 1. On a scale from 1 (not confident) to 10 (very confident), how confident are you in the quality of your own work? </p>
     <div class="col-md-10 col-sm-12 col-xs-12">
@@ -136,7 +137,9 @@
        </div>
        <script>
          $( "#slider1" ).slider({
-          value: 1, min: 1, max: 10, step: 1
+          value: 1, min: 1, max: 10, step: 1, change: function(event, ui) {
+            $(".form input[name='confidence']").val( ui.value );
+            }
           })
           .each(function() {
             var opt = $(this).data().uiSlider.options;
@@ -174,7 +177,9 @@
       </div>
       <script>
        $( "#slider2" ).slider({
-        value: 1, min: 1, max: 20, step: 1
+        value: 1, min: 1, max: 20, step: 1, change: function(event, ui) {
+          $(".form input[name='price-min']").val( ui.value );
+         }
         })
         .each(function() {
           var opt = $(this).data().uiSlider.options;
@@ -215,7 +220,32 @@
 </form>
         </div>
     </div>
+<script>
+function trimfield(str) 
+{ 
+    return str.replace(/^\s+|\s+$/g,''); 
+}
 
+function validate()
+{
+     var obj1 = document.getElementById('quality');
+     var obj2 = document.getElementById('requesters');
+         if(trimfield(obj1.value).length < 100 ) 
+         {      
+              alert("Please Provide 100 characters!");
+              obj1.focus();
+              return false;       
+         }
+         else if(trimfield(obj2.value) == '')
+         {      
+               alert("Please Provide More Details!");
+               obj2.focus();
+               return false;       
+        }
+         else
+           return true;
+}
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
