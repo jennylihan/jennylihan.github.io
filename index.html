@@ -177,7 +177,7 @@
       </div>
       <script>
        $( "#slider2" ).slider({
-        value: 1, min: 1, max: 20, step: 1, change: function(event, ui) {
+        value: 1, min: 1, max: 15, step: 0.5, change: function(event, ui) {
           $(".form input[name='price-min']").val( ui.value );
          }
         })
@@ -185,7 +185,7 @@
           var opt = $(this).data().uiSlider.options;
           var vals = opt.max - opt.min;
           for (var i = 0; i <= vals; i++) {
-            var el = $('<label>'+(i+1)+'</label>').css('left',(i/vals*100)+'%');
+            var el = $('<label>'+(i+0.5)+'</label>').css('left',(i/vals*100)+'%');
             $( "#slider2" ).append(el);
           }
         });
@@ -232,13 +232,13 @@ function validate()
      var obj2 = document.getElementById('requesters');
          if(trimfield(obj1.value).length < 100 ) 
          {      
-              alert("Please Provide 100 characters!");
+              alert("Please provide 100 characters for #2!");
               obj1.focus();
               return false;       
          }
-         else if(trimfield(obj2.value) == '')
+         else if(trimfield(obj2.value).length < 100)
          {      
-               alert("Please Provide More Details!");
+               alert("Please provide 100 characters for #4!");
                obj2.focus();
                return false;       
         }
