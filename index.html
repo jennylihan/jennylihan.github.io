@@ -18,17 +18,10 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 <style>
-   #slider label {
-        position: absolute;
-        width: 20px;
-        margin-left: -10px;
-        text-align: center;
-        margin-top: 20px;
-    }
-    #slider {
-        width: 50%;
-        margin: 2em auto;
-    }
+   #slider label { position: absolute; width: 20px; margin-left: -10px; text-align: center; margin-top: 20px;}
+   #slider {width: 50%; margin: 2em auto;}
+   #slider2 label { position: absolute; width: 20px; margin-left: -10px; text-align: center; margin-top: 20px;}
+   #slider2 {width: 50%; margin: 2em auto;}
 </style>
     <title>Install Vitae</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -138,9 +131,22 @@
    </p>
    <p> 1. On a scale from 1 (not confident) to 10 (very confident), how confident are you in the quality of your own work? </p>
     <div class="col-md-10 col-sm-12 col-xs-12">
-        <div id="confidence-slider">
+        <div id="slider1">
          <input type="hidden" name="confidence" id="confidence"><br>
        </div>
+       <script>
+         $( "#slider1" ).slider({
+          value: 1, min: 1, max: 10, step: 1
+          })
+          .each(function() {
+            var opt = $(this).data().uiSlider.options;
+            var vals = opt.max - opt.min;
+            for (var i = 0; i <= vals; i++) {
+              var el = $('<label>'+(i+1)+'</label>').css('left',(i/vals*100)+'%');
+              $( "#slider1" ).append(el);
+            }
+          });
+      </script>
     </div>
   </div>
 </div>
@@ -162,9 +168,22 @@
      3. What is the lowest amount in dollars that you would work per hour? 
    </p>
     <div class="col-md-10 col-sm-12 col-xs-12">
-      <div id="slider">
+      <div id="slider2">
         <input type="hidden" name="price-min" id="price-min">
       </div>
+      <script>
+       $( "#slider2" ).slider({
+        value: 1, min: 1, max: 20, step: 0.5
+        })
+        .each(function() {
+          var opt = $(this).data().uiSlider.options;
+          var vals = opt.max - opt.min;
+          for (var i = 0; i <= vals; i++) {
+            var el = $('<label>'+(i+1)+'</label>').css('left',(i/vals*100)+'%');
+            $( "#slider2" ).append(el);
+          }
+        });
+      </script>
    </div>
   </div>
 </div>
@@ -203,36 +222,7 @@
   ga('create', 'UA-62789523-2', 'auto');
   ga('send', 'pageview');
 </script>
-<script>
-   $( "#slider" ).slider({
-    value: 1,
-    min: 1,
-    max: 10,
-    step: 1
-    })
-    .each(function() {
-      //
-      // Add labels to slider whose values 
-      // are specified by min, max and whose
-      // step is set to 1
-      //
-      // Get the options for this slider
-      var opt = $(this).data().uiSlider.options;
-      
-      // Get the number of possible values
-      var vals = opt.max - opt.min;
-      
-      // Space out values
-      for (var i = 0; i <= vals; i++) {
-        
-        var el = $('<label>'+(i+1)+'</label>').css('left',(i/vals*100)+'%');
-      
-        $( "#slider" ).append(el);
-        
-      }
-      
-    });
-  </script>
+
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
