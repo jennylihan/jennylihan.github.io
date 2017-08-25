@@ -183,7 +183,7 @@
                       .each(function() {
                         var opt = $(this).data().uiSlider.options;
                         var vals = opt.max - opt.min;
-                        for (var i = 1; i <= vals; i+= 0.5) {
+                        for (var i = 0.5; i <= vals; i+= 0.5) {
                           var el = $('<label>'+(i+0.5)+'</label>').css('left',(i/vals*100)+'%');
                           $( "#slider2" ).append(el);
                         }
@@ -207,7 +207,7 @@
               
               <div class='row'>
                 <div class="btn-toolbar">
-                  <p>That's it, thanks! 3:15</p>
+                  <p>That's it, thanks! 3:16</p>
                   <button type='submit' class="btn-primary-spacing btn btn-success btn-lg">submit</button>
                 </div>
               </div>
