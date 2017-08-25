@@ -33,7 +33,7 @@
 <body>
     <div class="container-fluid body-content">
         <div class="col-md-10 col-sm-12 col-xs-12">
-            <form action="//workersandbox.mturk.com/mturk/externalSubmit" onsubmit="return validate();" method="post" name="installVitae">
+            <form action="//workersandbox.mturk.com/mturk/externalSubmit" onsubmit="return validate()" method="post" name="installVitae">
               <input type="hidden" name="assignmentId" id="assignmentId" value="test" />
 
               <h2>Install Vitae</h2>
@@ -205,13 +205,15 @@
                 </div>
               </div>
               
-              <div class="btn-toolbar">
-                <p>That's it, thanks!"</p>
-                <button type='submit' class="btn-primary-spacing btn btn-success btn-lg">submit</button>
+              <div class='row'>
+                <div class="btn-toolbar">
+                  <p>That's it, thanks!</p>
+                  <!-- <button type='submit' class="btn-primary-spacing btn btn-success btn-lg">submit</button> -->
+                  <input type="submit" value="Submit">
+                </div>
               </div>
-              
-
-              </form>
+            
+            </form>
         </div>
     </div>
 </body>
@@ -225,6 +227,7 @@ function validate()
 {
      var obj1 = document.getElementById('quality');
      var obj2 = document.getElementById('requesters');
+     var obj3 = document.getElementById('confidence');
          if(trimfield(obj1.value).length < 100 ) 
          {      
               alert("Please provide 100 characters for #2!");
@@ -238,7 +241,7 @@ function validate()
                return false;       
         }
          else
-          alert(confidence.value)
+          alert(obj3.value)
            return true;
 }
 </script>
