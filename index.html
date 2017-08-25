@@ -32,7 +32,6 @@
 <body>
     <div class="container-fluid body-content">
         <div class="col-md-10 col-sm-12 col-xs-12">
-            <!-- <form action="//www.mturk.com/mturk/externalSubmit" method="post"> -->
             <form action="//workersandbox.mturk.com/mturk/externalSubmit" onsubmit="return validate();" method="post" name="installVitae">
 
             <input type="hidden" name="assignmentId" id="assignmentId" value="test" />
@@ -62,7 +61,9 @@
   <!-- Tasks using Vitae won't be doable for Turkers that don't have the Chrome extension installed -->
   <!-- (even if they're in the relevant community). -->
 </p>
-
+<p style="color:red;"> 
+  Important: the chrome extension will use your worker ID, your total number of approved HITs, and your total number of rejected HITs from the Dashboard. If you are not okay with this, do not accept this HIT.
+</p>
 
 <div class="row">
     <div class="col-md-10 col-sm-12 col-xs-12">
@@ -81,7 +82,7 @@
 <div class="form-group">
   <div class='row'>
     <p>
-      Do you have any feedback on the installation process?
+     What feedback do you have on the installation process?
       (Did anything go wrong? Was anything unclear?)
     </p>
     <div class="col-md-10 col-sm-12 col-xs-12">
