@@ -137,8 +137,6 @@
                        $( "#slider1" ).slider({
                         value: 1, min: 1, max: 10, step: 1, change: function(event, ui) {
                           $(".form input[name='confidence']").val( ui.value );
-                          var slider1val = $('#slider1').slider("option", "value");
-                            console.log(slider1val)
                           }
                         })
                         .each(function() {
@@ -208,7 +206,7 @@
               
               <div class='row'>
                 <div class="btn-toolbar">
-                  <p>That's it, thanks! 1</p>
+                  <p>That's it, thanks! 2</p>
                   <button type='submit' class="btn-primary-spacing btn btn-success btn-lg">submit</button>
                 </div>
               </div>
