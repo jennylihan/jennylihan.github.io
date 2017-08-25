@@ -137,6 +137,8 @@
                        $( "#slider1" ).slider({
                         value: 1, min: 1, max: 10, step: 1, change: function(event, ui) {
                           $(".form input[name='confidence']").val( ui.value );
+                          var slider1val = $('#slider1').slider("option", "value");
+                            console.log(slider1val)
                           }
                         })
                         .each(function() {
@@ -226,25 +228,21 @@ function validate()
      var obj1 = document.getElementById('quality');
      var obj2 = document.getElementById('requesters');
      var obj3 = document.getElementById('confidence');
+     var slider1val = $('#slider1').slider("option", "value");
+     
          if(trimfield(obj1.value).length < 100 ) 
          {      
               alert("Please provide 100 characters for #2!");
-               var slider1val = $('#slider1').slider("option", "value");
-           console.log(slider1val)
               obj1.focus();
               return false;       
          }
          else if(trimfield(obj2.value).length < 100)
          {      
                alert("Please provide 100 characters for #4!");
-                var slider1val = $('#slider1').slider("option", "value");
-           console.log(slider1val)
                obj2.focus();
                return false;       
         }
          else {
-           var slider1val = $('#slider1').slider("option", "value");
-           console.log(slider1val)
            alert("confidence value: " + slider1val + "requesters: " + obj2.value)
            return true;
          }
