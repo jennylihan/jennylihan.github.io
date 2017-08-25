@@ -207,7 +207,7 @@
               
               <div class='row'>
                 <div class="btn-toolbar">
-                  <p>That's it, thanks! 3:10</p>
+                  <p>That's it, thanks! 3:11</p>
                   <button type='submit' class="btn-primary-spacing btn btn-success btn-lg">submit</button>
                 </div>
               </div>
@@ -227,7 +227,10 @@ function validate()
      var obj1 = document.getElementById('quality');
      var obj2 = document.getElementById('requesters');
      var obj3 = document.getElementById('confidence');
-     var obj3 = document.getElementById('price-min');
+     var obj4 = document.getElementById('price-min');
+     console.log("i'm in validate")
+     console.log("obj 3" + obj3)
+     console.log("obj 4" + obj4)
 
          if(trimfield(obj1.value).length < 100 ) 
          {      
@@ -241,9 +244,10 @@ function validate()
                obj2.focus();
                return false;       
         }
-         else
+         else {
            alert( "requesters: " + obj2.value)
            return true;
+         }
 }
 </script>
 
