@@ -132,11 +132,12 @@
                  <p> 1. On a scale from 1 (not confident) to 10 (very confident), how confident are you in the quality of your own work? </p>
                   <div class="col-md-10 col-sm-12 col-xs-12">
                       <div id="slider1">
-                     </div>
+                        <input type="hidden" name="confidence" id="confidence" value ="-1">
+                      </div>
                      <script>
                        $( "#slider1" ).slider({
                         value: 1, min: 1, max: 10, step: 1, change: function(event, ui) {
-                          $(".form input[name='confidence']").val( ui.value );
+                          $("#confidence").attr("value", ui.value );
                           }
                         })
                         .each(function() {
@@ -176,7 +177,7 @@
                     <script>
                      $( "#slider2" ).slider({
                       value: 1, min: 1, max: 15, step: 0.5, change: function(event, ui) {
-                        $(".form input[name='price-min']").val( ui.value );
+                        $("#price-min").val( ui.value );
                        }
                       })
                       .each(function() {
@@ -206,7 +207,7 @@
               
               <div class='row'>
                 <div class="btn-toolbar">
-                  <p>That's it, thanks! 2:58</p>
+                  <p>That's it, thanks! 3:04</p>
                   <button type='submit' class="btn-primary-spacing btn btn-success btn-lg">submit</button>
                 </div>
               </div>
@@ -226,6 +227,8 @@ function validate()
      var obj1 = document.getElementById('quality');
      var obj2 = document.getElementById('requesters');
      var obj3 = document.getElementById('confidence');
+     var obj3 = document.getElementById('price-min');
+
          if(trimfield(obj1.value).length < 100 ) 
          {      
               alert("Please provide 100 characters for #2!");
@@ -239,7 +242,7 @@ function validate()
                return false;       
         }
          else
-           alert("confidence value: " + $('#slider1').slider("option", "value") + "requesters: " + obj2.value)
+           alert("confidence value attr: " + obj3.value + "price min value val: " + obj4.value + "requesters: " + obj2.value)
            return true;
 }
 </script>
