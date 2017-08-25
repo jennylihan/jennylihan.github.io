@@ -132,7 +132,6 @@
                  <p> 1. On a scale from 1 (not confident) to 10 (very confident), how confident are you in the quality of your own work? </p>
                   <div class="col-md-10 col-sm-12 col-xs-12">
                       <div id="slider1">
-                       <input type="hidden" name="confidence" id="confidence">
                      </div>
                      <script>
                        $( "#slider1" ).slider({
@@ -240,9 +239,12 @@ function validate()
                obj2.focus();
                return false;       
         }
-         else
-          alert("confidence: " + obj3.value + "requesters: " + obj2.value)
+         else{
+           var slider1val = $('#slider1').slider("option", "value");
+           alert("confidence value: " + slider1val + "requesters: " + obj2.value)
            return true;
+
+         }
 }
 </script>
 
