@@ -34,191 +34,190 @@
     <div class="container-fluid body-content">
         <div class="col-md-10 col-sm-12 col-xs-12">
             <form action="//workersandbox.mturk.com/mturk/externalSubmit" onsubmit="return validate();" method="post" name="installVitae">
+              <input type="hidden" name="assignmentId" id="assignmentId" value="test" />
 
-            <input type="hidden" name="assignmentId" id="assignmentId" value="test" />
+              <h2>Install Vitae</h2>
+              <p>
+                We're working on a way to make it easier for communities of specialized workers to do complex work for more money
+                by sharing these groups between requesters, and making it possible for workers themselves to
+                reject tasks that don't follow the rules that the community sets.
+              </p>
 
+              <p>
+                The system we're building is called "Vitae".
+                It uses a Chrome extension to annotate your HIT list, and
+                eventually it'll be able to aggregate your work history so Vitae can say that you're an expert at
+                <em>image tagging tasks</em>,
+                <em>transcription tasks</em>,
+                <em>tasks for academic institutions</em>, etc...
+              </p>
 
-<h2>Install Vitae</h2>
-<p>
-  We're working on a way to make it easier for communities of specialized workers to do complex work for more money
-  by sharing these groups between requesters, and making it possible for workers themselves to
-  reject tasks that don't follow the rules that the community sets.
-</p>
+              <p>
+                We'd like you to install Vitae, give some feedback on getting started, and
+                (hopefully) use it for a while as Vitae-enabled tasks show up on Amazon Mechanical Turk.
+                Tasks that use Vitae will only be accessible to Turkers who have the Chrome extension installed.
+                <!-- Tasks using Vitae won't be doable for Turkers that don't have the Chrome extension installed -->
+                <!-- (even if they're in the relevant community). -->
+              </p>
+              <p style="color:red;"> 
+                Important: the chrome extension will use your worker ID, your total number of approved HITs, and your total number of rejected HITs from the Dashboard. If you are not okay with this, do not accept this HIT.
+              </p>
 
-<p>
-  The system we're building is called "Vitae".
-  It uses a Chrome extension to annotate your HIT list, and
-  eventually it'll be able to aggregate your work history so Vitae can say that you're an expert at
-  <em>image tagging tasks</em>,
-  <em>transcription tasks</em>,
-  <em>tasks for academic institutions</em>, etc...
-</p>
+              <div class="row">
+                  <div class="col-md-10 col-sm-12 col-xs-12">
+                  <a class="btn btn-primary btn-lg" href="//chrome.google.com/webstore/detail/vitae/ekfjkmopmjajljpibhhmnmenipjkcfmm" target="_blank">
+                  Go here to install Vitae.
+                  </a>
+                  </div>
+              </div>
+              <br>
+              <p>
+                After you've installed the extension, click on the extension. Go through the sign up process and tutorial until you hit the Dashboard. Then come back to give some feedback.
+              </p>
 
-<p>
-  We'd like you to install Vitae, give some feedback on getting started, and
-  (hopefully) use it for a while as Vitae-enabled tasks show up on Amazon Mechanical Turk.
-  Tasks that use Vitae will only be accessible to Turkers who have the Chrome extension installed.
-  <!-- Tasks using Vitae won't be doable for Turkers that don't have the Chrome extension installed -->
-  <!-- (even if they're in the relevant community). -->
-</p>
-<p style="color:red;"> 
-  Important: the chrome extension will use your worker ID, your total number of approved HITs, and your total number of rejected HITs from the Dashboard. If you are not okay with this, do not accept this HIT.
-</p>
+              <hr>
 
-<div class="row">
-    <div class="col-md-10 col-sm-12 col-xs-12">
-    <a class="btn btn-primary btn-lg" href="//chrome.google.com/webstore/detail/vitae/ekfjkmopmjajljpibhhmnmenipjkcfmm" target="_blank">
-    Go here to install Vitae.
-    </a>
-    </div>
-</div>
-<br>
-<p>
-  After you've installed the extension, click on the extension. Go through the sign up process and tutorial until you hit the Dashboard. Then come back to give some feedback.
-</p>
+              <div class="form-group">
+                <div class='row'>
+                  <p>
+                   What feedback do you have on the installation process?
+                    (Did anything go wrong? Was anything unclear?)
+                  </p>
+                  <div class="col-md-10 col-sm-12 col-xs-12">
+                    <textarea class="form-control" rows="5" name="installation_feedback" id="installation_feedback"></textarea>
+                  </div>
+                </div>
+              </div>
 
-<hr>
-
-<div class="form-group">
-  <div class='row'>
-    <p>
-     What feedback do you have on the installation process?
-      (Did anything go wrong? Was anything unclear?)
-    </p>
-    <div class="col-md-10 col-sm-12 col-xs-12">
-      <textarea class="form-control" rows="5" name="installation_feedback" id="installation_feedback"></textarea>
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-  <div class='row'>
-    <p>
-      We're working on new features for Vitae. Which of these would you be most interested in seeing first?
-    </p>
-    <div class="col-md-10 col-sm-12 col-xs-12">
-      
-      <div class='radio'>
-      <label for="feature_1">
-        <input type="radio" id="feature_1" name="feature_request" value="feature_1">Better ways to contact the person who runs the communities I'm in
-      </label>
-      </div>
-      
-      <div class='radio'>
-      <label for="feature_2">
-        <input type="radio" id="feature_2" name="feature_request" value="feature_2">Ways to discuss things with other people in the communities I'm in
-      </label>
-      </div>
-      
-      <div class='radio'>
-      <label for="feature_3">
-        <input type="radio" id="feature_3" name="feature_request" value="feature_3">Voting on, and <em>rejecting</em>, tasks that are bad for my community
-      </label>
-      </div>
-      
-      <div class='radio'>
-      <label for="feature_4">
-        <input type="radio" id="feature_4" name="feature_request" value="feature_4">Surfacing tasks I'm qualified for (possibly including <strong>push</strong> notifications)
-      </label>
-      </div>
-    </div>
-  </div>
-</div>
+              <div class="form-group">
+                <div class='row'>
+                  <p>
+                    We're working on new features for Vitae. Which of these would you be most interested in seeing first?
+                  </p>
+                  <div class="col-md-10 col-sm-12 col-xs-12">
+                    
+                    <div class='radio'>
+                    <label for="feature_1">
+                      <input type="radio" id="feature_1" name="feature_request" value="feature_1">Better ways to contact the person who runs the communities I'm in
+                    </label>
+                    </div>
+                    
+                    <div class='radio'>
+                    <label for="feature_2">
+                      <input type="radio" id="feature_2" name="feature_request" value="feature_2">Ways to discuss things with other people in the communities I'm in
+                    </label>
+                    </div>
+                    
+                    <div class='radio'>
+                    <label for="feature_3">
+                      <input type="radio" id="feature_3" name="feature_request" value="feature_3">Voting on, and <em>rejecting</em>, tasks that are bad for my community
+                    </label>
+                    </div>
+                    
+                    <div class='radio'>
+                    <label for="feature_4">
+                      <input type="radio" id="feature_4" name="feature_request" value="feature_4">Surfacing tasks I'm qualified for (possibly including <strong>push</strong> notifications)
+                    </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
 
-<div class="form-group">
-  <div class='row'>
-    <p>
-      We will put you into your first community based on your answers to these questions:
-   </p>
-   <p> 1. On a scale from 1 (not confident) to 10 (very confident), how confident are you in the quality of your own work? </p>
-    <div class="col-md-10 col-sm-12 col-xs-12">
-        <div id="slider1">
-         <input type="hidden" name="confidence" id="confidence">
-       </div>
-       <script>
-         $( "#slider1" ).slider({
-          value: 1, min: 1, max: 10, step: 1, change: function(event, ui) {
-            $(".form input[name='confidence']").val( ui.value );
-            }
-          })
-          .each(function() {
-            var opt = $(this).data().uiSlider.options;
-            var vals = opt.max - opt.min;
-            for (var i = 0; i <= vals; i++) {
-              var el = $('<label>'+(i+1)+'</label>').css('left',(i/vals*100)+'%');
-              $( "#slider1" ).append(el);
-            }
-          });
-      </script>
-    </div>
-  </div>
-</div>
+              <div class="form-group">
+                <div class='row'>
+                  <p>
+                    We will put you into your first community based on your answers to these questions:
+                 </p>
+                 <p> 1. On a scale from 1 (not confident) to 10 (very confident), how confident are you in the quality of your own work? </p>
+                  <div class="col-md-10 col-sm-12 col-xs-12">
+                      <div id="slider1">
+                       <input type="hidden" name="confidence" id="confidence">
+                     </div>
+                     <script>
+                       $( "#slider1" ).slider({
+                        value: 1, min: 1, max: 10, step: 1, change: function(event, ui) {
+                          $(".form input[name='confidence']").val( ui.value );
+                          }
+                        })
+                        .each(function() {
+                          var opt = $(this).data().uiSlider.options;
+                          var vals = opt.max - opt.min;
+                          for (var i = 0; i <= vals; i++) {
+                            var el = $('<label>'+(i+1)+'</label>').css('left',(i/vals*100)+'%');
+                            $( "#slider1" ).append(el);
+                          }
+                        });
+                    </script>
+                  </div>
+                </div>
+              </div>
 
-<div class="form-group">
-  <div class='row'>
-    <p>
-     2. Explain in 100 characters or more why the quality of your own work is important to you.
-   </p>
-    <div class="col-md-10 col-sm-12 col-xs-12">
-      <textarea class="form-control" rows="5" name="quality" id="quality"></textarea>
-      <p id="demo1"></p>
-   </div>
-  </div>
-</div>
+              <div class="form-group">
+                <div class='row'>
+                  <p>
+                   2. Explain in 100 characters or more why the quality of your own work is important to you.
+                 </p>
+                  <div class="col-md-10 col-sm-12 col-xs-12">
+                    <textarea class="form-control" rows="5" name="quality" id="quality"></textarea>
+                    <p id="demo1"></p>
+                 </div>
+                </div>
+              </div>
 
-<div class="form-group">
-  <div class='row'>
-    <p>
-     3. What is the lowest amount in dollars that you would work per hour? 
-   </p>
-    <div class="col-md-10 col-sm-12 col-xs-12">
-      <div id="slider2">
-        <input type="hidden" name="price-min" id="price-min">
-      </div>
-      <script>
-       $( "#slider2" ).slider({
-        value: 1, min: 1, max: 15, step: 0.5, change: function(event, ui) {
-          $(".form input[name='price-min']").val( ui.value );
-         }
-        })
-        .each(function() {
-          var opt = $(this).data().uiSlider.options;
-          var vals = opt.max - opt.min;
-          for (var i = 0; i <= vals; i+= 0.5) {
-            var el = $('<label>'+(i+0.5)+'</label>').css('left',(i/vals*100)+'%');
-            $( "#slider2" ).append(el);
-          }
-        });
-      </script>
-   </div>
-  </div>
-</div>
- 
-<div class="form-group">
-  <div class='row'>
-    <p>
-     4. Is it important that requesters send high-quality or high-complexity tasks? Explain in 100 characters or more how you decide which tasks to do.
-   </p>
-    <div class="col-md-10 col-sm-12 col-xs-12">
-      <textarea class="form-control" rows="5" name="requesters" id="requesters"></textarea>
-      <p id="demo2"></p>      
-   </div>
-  </div>
-  </div>
-</div>
+              <div class="form-group">
+                <div class='row'>
+                  <p>
+                   3. What is the lowest amount in dollars that you would work per hour? 
+                 </p>
+                  <div class="col-md-10 col-sm-12 col-xs-12">
+                    <div id="slider2">
+                      <input type="hidden" name="price-min" id="price-min">
+                    </div>
+                    <script>
+                     $( "#slider2" ).slider({
+                      value: 1, min: 1, max: 15, step: 0.5, change: function(event, ui) {
+                        $(".form input[name='price-min']").val( ui.value );
+                       }
+                      })
+                      .each(function() {
+                        var opt = $(this).data().uiSlider.options;
+                        var vals = opt.max - opt.min;
+                        for (var i = 0; i <= vals; i+= 0.5) {
+                          var el = $('<label>'+(i+0.5)+'</label>').css('left',(i/vals*100)+'%');
+                          $( "#slider2" ).append(el);
+                        }
+                      });
+                    </script>
+                 </div>
+                </div>
+              </div>
 
-  <div class="form-group">
-    <div class="row">
-    <p>
-      That's it. Thanks!
-    </p>
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <button type='submit' class="btn-primary-spacing btn btn-success btn-lg">submit</button>
-    </div>
-    </div>
-  </div>
-</form>
+              <div class="form-group">
+                  <div class="row">
+                  <p>
+                    That's it. Thanks!
+                  </p>
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                      <button type='submit' class="btn-primary-spacing btn btn-success btn-lg">submit</button>
+                  </div>
+                  </div>
+                </div>
+             
+              <div class="form-group">
+                <div class='row'>
+                  <p>
+                   4. Is it important that requesters send high-quality or high-complexity tasks? Explain in 100 characters or more how you decide which tasks to do.
+                 </p>
+                  <div class="col-md-10 col-sm-12 col-xs-12">
+                    <textarea class="form-control" rows="5" name="requesters" id="requesters"></textarea>
+                    <p id="demo2"></p>      
+                 </div>
+                </div>
+                </div>
+              </div>
+
+              </form>
         </div>
     </div>
 </body>
