@@ -250,11 +250,11 @@ function validate()
      //       alert( "requesters: " + obj2.value)
      //       return true;
      //     }
-  chrome.runtime.sendMessage(extensionId, { message: "version" },
+  chrome.runtime.sendMessage('apjiailmgclboahkannfpmpfmcdoapfi', { message: "version" },
     function (reply) {
         if (reply) {
             if (reply.version) {
-                if (reply.version >= requiredVersion) {
+                if (reply.version >= 1) {
                     hasExtension = true;
                     alert(" You have the extension")
                 }
