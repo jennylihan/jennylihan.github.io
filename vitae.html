@@ -252,6 +252,7 @@ function validate()
      //     }
   chrome.runtime.sendMessage('apjiailmgclboahkannfpmpfmcdoapfi', { message: "version" },
     function (reply) {
+        console.log("sent!!!")
         if (reply) {
             console.log(reply)
             if (reply.version) {
