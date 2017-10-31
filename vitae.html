@@ -253,8 +253,9 @@ function validate()
   chrome.runtime.sendMessage('apjiailmgclboahkannfpmpfmcdoapfi', { message: "version" },
     function (reply) {
         if (reply) {
+            console.log(reply)
             if (reply.version) {
-                if (reply.version >= 1) {
+                if (reply.version >= 0) {
                     hasExtension = true;
                     alert(" You have the extension")
                 }
