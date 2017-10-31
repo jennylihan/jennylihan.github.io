@@ -1,1 +1,272 @@
-beep
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' >
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.11.1/validate.min.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<style>
+   #slider1 label { position: absolute; width: 20px; margin-left: -10px; text-align: center; margin-top: 20px;}
+   #slider1 {width: 50%; margin: 2em auto;}
+   #slider2 label { position: absolute; width: 20px; margin-left: -10px; text-align: center; margin-top: 20px;}
+   #slider2 {width: 90%; margin: 2em auto;}
+</style>
+    <title>Install Vitae</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="./css.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid body-content">
+        <div class="col-md-10 col-sm-12 col-xs-12">
+            <form action="//workersandbox.mturk.com/mturk/externalSubmit" onsubmit="return validate();" method="post" name="installVitae">
+
+            <input type="hidden" name="assignmentId" id="assignmentId" value="test" />
+
+
+<h2>Install Vitae</h2>
+<p>
+  We're working on a way to make it easier for communities of specialized workers to do complex work for more money
+  by sharing these groups between requesters, and making it possible for workers themselves to
+  reject tasks that don't follow the rules that the community sets.
+</p>
+
+<p>
+  The system we're building is called "Vitae".
+  It uses a Chrome extension to annotate your HIT list, and
+  eventually it'll be able to aggregate your work history so Vitae can say that you're an expert at
+  <em>image tagging tasks</em>,
+  <em>transcription tasks</em>,
+  <em>tasks for academic institutions</em>, etc...
+</p>
+
+<p>
+  We'd like you to install Vitae, give some feedback on getting started, and
+  (hopefully) use it for a while as Vitae-enabled tasks show up on Amazon Mechanical Turk.
+  Tasks that use Vitae will only be accessible to Turkers who have the Chrome extension installed.
+  <!-- Tasks using Vitae won't be doable for Turkers that don't have the Chrome extension installed -->
+  <!-- (even if they're in the relevant community). -->
+</p>
+<p style="color:red;"> 
+  Important: the chrome extension will use your worker ID, your total number of approved HITs, and your total number of rejected HITs from the Dashboard. If you are not okay with this, do not accept this HIT.
+</p>
+
+<div class="row">
+    <div class="col-md-10 col-sm-12 col-xs-12">
+    <a class="btn btn-primary btn-lg" href="//chrome.google.com/webstore/detail/vitae/ekfjkmopmjajljpibhhmnmenipjkcfmm" target="_blank">
+    Go here to install Vitae.
+    </a>
+    </div>
+</div>
+<br>
+<p>
+  After you've installed the extension, click on the extension. Go through the sign up process and tutorial until you hit the Dashboard. Then come back to give some feedback.
+</p>
+
+<hr>
+
+<div class="form-group">
+  <div class='row'>
+    <p>
+     What feedback do you have on the installation process?
+      (Did anything go wrong? Was anything unclear?)
+    </p>
+    <div class="col-md-10 col-sm-12 col-xs-12">
+      <textarea class="form-control" rows="5" name="installation_feedback" id="installation_feedback"></textarea>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class='row'>
+    <p>
+      We're working on new features for Vitae. Which of these would you be most interested in seeing first?
+    </p>
+    <div class="col-md-10 col-sm-12 col-xs-12">
+      
+      <div class='radio'>
+      <label for="feature_1">
+        <input type="radio" id="feature_1" name="feature_request" value="feature_1">Better ways to contact the person who runs the communities I'm in
+      </label>
+      </div>
+      
+      <div class='radio'>
+      <label for="feature_2">
+        <input type="radio" id="feature_2" name="feature_request" value="feature_2">Ways to discuss things with other people in the communities I'm in
+      </label>
+      </div>
+      
+      <div class='radio'>
+      <label for="feature_3">
+        <input type="radio" id="feature_3" name="feature_request" value="feature_3">Voting on, and <em>rejecting</em>, tasks that are bad for my community
+      </label>
+      </div>
+      
+      <div class='radio'>
+      <label for="feature_4">
+        <input type="radio" id="feature_4" name="feature_request" value="feature_4">Surfacing tasks I'm qualified for (possibly including <strong>push</strong> notifications)
+      </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <div class='row'>
+    <p>
+      We will put you into your first community based on your answers to these questions:
+   </p>
+   <p> 1. On a scale from 1 (not confident) to 10 (very confident), how confident are you in the quality of your own work? </p>
+    <div class="col-md-10 col-sm-12 col-xs-12">
+        <div id="slider1">
+         <input type="hidden" name="confidence" id="confidence">
+       </div>
+       <script>
+         $( "#slider1" ).slider({
+          value: 1, min: 1, max: 10, step: 1, change: function(event, ui) {
+            $(".form input[name='confidence']").val( ui.value );
+            }
+          })
+          .each(function() {
+            var opt = $(this).data().uiSlider.options;
+            var vals = opt.max - opt.min;
+            for (var i = 0; i <= vals; i++) {
+              var el = $('<label>'+(i+1)+'</label>').css('left',(i/vals*100)+'%');
+              $( "#slider1" ).append(el);
+            }
+          });
+      </script>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class='row'>
+    <p>
+     2. Explain in 100 characters or more why the quality of your own work is important to you.
+   </p>
+    <div class="col-md-10 col-sm-12 col-xs-12">
+      <textarea class="form-control" rows="5" name="quality" id="quality"></textarea>
+      <p id="demo1"></p>
+   </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class='row'>
+    <p>
+     3. What is the lowest amount in dollars that you would work per hour? 
+   </p>
+    <div class="col-md-10 col-sm-12 col-xs-12">
+      <div id="slider2">
+        <input type="hidden" name="price-min" id="price-min">
+      </div>
+      <script>
+       $( "#slider2" ).slider({
+        value: 1, min: 1, max: 15, step: 0.5, change: function(event, ui) {
+          $(".form input[name='price-min']").val( ui.value );
+         }
+        })
+        .each(function() {
+          var opt = $(this).data().uiSlider.options;
+          var vals = opt.max - opt.min;
+          for (var i = 0; i <= vals; i+= 0.5) {
+            var el = $('<label>'+(i+0.5)+'</label>').css('left',(i/vals*100)+'%');
+            $( "#slider2" ).append(el);
+          }
+        });
+      </script>
+   </div>
+  </div>
+</div>
+ 
+<div class="form-group">
+  <div class='row'>
+    <p>
+     4. Is it important that requesters send high-quality or high-complexity tasks? Explain in 100 characters or more how you decide which tasks to do.
+   </p>
+    <div class="col-md-10 col-sm-12 col-xs-12">
+      <textarea class="form-control" rows="5" name="requesters" id="requesters"></textarea>
+      <p id="demo2"></p>      
+   </div>
+  </div>
+  </div>
+</div>
+
+  <div class="form-group">
+    <div class="row">
+    <p>
+      That's it. Thanks!
+    </p>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <button type='submit' class="btn-primary-spacing btn btn-success btn-lg">submit</button>
+    </div>
+    </div>
+  </div>
+</form>
+        </div>
+    </div>
+<script>
+function trimfield(str) 
+{ 
+    return str.replace(/^\s+|\s+$/g,''); 
+}
+function validate()
+{
+     var obj1 = document.getElementById('quality');
+     var obj2 = document.getElementById('requesters');
+         if(trimfield(obj1.value).length < 100 ) 
+         {      
+              alert("Please provide 100 characters for #2!");
+              obj1.focus();
+              return false;       
+         }
+         else if(trimfield(obj2.value).length < 100)
+         {      
+               alert("Please provide 100 characters for #4!");
+               obj2.focus();
+               return false;       
+        }
+         else
+          alert(confidence)
+           return true;
+}
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-62789523-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/showdown/1.6.4/showdown.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- <script src="/qualManager.js"></script> -->
+
+<!-- <script type='application/json' id='vitae_qualifications'>
+  {
+    "qualGroup": ["Stanford HCI Group"]
+  }
+</script> -->
+</html>
