@@ -2,7 +2,6 @@
 
 body {
     margin: 60px auto;
-    width: 70%;
     font-size: 1em;
     line-height: 1.4em;
     color: #333;
@@ -24,6 +23,7 @@ a {
 }
 a:hover {
     text-decoration: underline;
+    color: #EAC15B;
 }
 h1 {
     font-size: 3em;
@@ -36,6 +36,8 @@ p {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 footer {
+    width: 70%;
+    margin: 60px auto;
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
