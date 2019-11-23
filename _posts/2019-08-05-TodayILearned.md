@@ -2,8 +2,9 @@
 layout: post
 title: "Today I Learned: August Edition"
 date: 2019-08-05
+category: [learning]
+summary: "Me keeping track of my education out of college."
 ---
-*Me keeping track of my education out of college.*
 
 ### 1 August
 How to pack: [poem by Ron Koertge](https://www.youtube.com/watch?v=KI2lsdXJQ40).
