@@ -33,17 +33,17 @@ h1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #AD702A;
     font-family: 'Source Sans Pro';
 }
 h3 {
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: #EAC15B;
     font-family: 'Source Sans Pro';
 }
 p {
-    line-height: 1.4em;
+    line-height: 1.1em;
     color: #333;
     font-size: 1em;
     font-family: 'Source Sans Pro';
@@ -55,11 +55,21 @@ footer {
 
 ul.posts {
     margin: 20px auto 40px;
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-family: 'Source Sans Pro';
 }
 
 ul.posts li, ul {
     font-size: 1em;
     font-family: 'Source Sans Pro';
+}
+img {
+  border-radius: 50%;
+}
+.ps {
+  line-height: 1em;
+  color: #999;
+  font-size: .8em;
+  font-family: 'Source Sans Pro';
+  font-style: italic;
 }
