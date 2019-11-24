@@ -10,14 +10,14 @@ let imageBuffer;
 let ticker;
 let simplex;
 
-function setup() {
+function setup(mytext) {
   simplex = new SimplexNoise();
   ticker = 0;
   canvas = document.querySelector("#canvas");
   ctx = canvas.getContext("2d");
   reset();
   window.addEventListener("resize", reset);
-  text = 'JENNY H.'
+  text = mytext
   initBufferFromText();
   //document.querySelector("#text").addEventListener("input", input);
 }
@@ -39,6 +39,7 @@ function initBufferFromText() {
   ctx.font = "bold " + fontSize + "px Helvetica, sans-serif";
   ctx.textAlign = "center";
   ctx.textBaseline = "middle"
+  console.log(w/2, h/2)
   ctx.fillText(text, w/2, h/2);
   let image = ctx.getImageData(0, 0, w, h);
   imageBuffer = new Uint32Array(image.data.buffer);
@@ -75,5 +76,20 @@ function drawLines() {
   }
 }
 
-setup();
-draw();
+/* Wait 5 seconds, then change the screen? https://stackoverflow.com/questions/14226803/wait-5-seconds-before-executing-next-line/14226807 */
+
+const delay = ms => new Promise(res => setTimeout(res, ms));
+
+i_am_list = ["jenny han", "in hong kong", "a teacher ", "alive         "]
+
+const rotate_draw = async () => {
+  counter = 0
+  while (true){
+    setup(i_am_list[counter % i_am_list.length]);
+    draw();
+    await delay(3500)
+    counter++
+  }
+}
+
+rotate_draw()

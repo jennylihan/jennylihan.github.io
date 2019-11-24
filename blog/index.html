@@ -16,9 +16,9 @@ title: Jenny Han's Thoughts
         </span>
         <br>
         {% if post.summary %}
-          <span class="ps">{{ post.summary }}</span>
+          <span style="line-height: 1em;color: #999;font-size: .8em;font-family: 'Source Sans Pro';font-style: italic;">{{ post.summary }}</span>
         {% else %}
-          <span class="ps">{{ post.excerpt }}</span>
+          <span style="line-height: 1em;color: #999;font-size: .8em;font-family: 'Source Sans Pro';font-style: italic;">{{ post.excerpt }}</span>
         {% endif %}
       {% endfor %}
     </ul>
