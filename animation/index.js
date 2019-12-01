@@ -80,7 +80,7 @@ function drawLines() {
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
-i_am_list = ["jenny han", "in hong kong", "a teacher ", "alive         "]
+i_am_list = ["jenny han", "in 香港🇭🇰    ", "teaching "]
 
 const rotate_draw = async () => {
   counter = 0
