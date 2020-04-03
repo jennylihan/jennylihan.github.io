@@ -17,3 +17,4 @@ What did I learn? Here's a running list.
 * qualitative research answers questions quantitative research cannot touch.
 * validity may be unattainable
 * fitt's law and the apple dock
+* constructionism is a learning theory. we don't have much more besides theories. 

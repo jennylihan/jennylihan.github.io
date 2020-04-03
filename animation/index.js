@@ -9,6 +9,7 @@ let w, h;
 let imageBuffer;
 let ticker;
 let simplex;
+let i_am_list = ["COMING SOON"];
 
 function setup(mytext) {
   simplex = new SimplexNoise();
@@ -35,7 +36,7 @@ function reset() {
 
 function initBufferFromText() {
   clear();
-  let fontSize = w * 0.15;
+  let fontSize = w * 0.10;
   ctx.font = "bold " + fontSize + "px Helvetica, sans-serif";
   ctx.textAlign = "center";
   ctx.textBaseline = "middle"
@@ -62,7 +63,7 @@ function drawLines() {
   let yOffset = ticker % yDistance;
   for(let x = 0; x < w; x++) {
     for(let y = yOffset; y < h; y += yDistance) {
-      let noise = simplex.noise3D(x / zoom, y / zoom, ticker / 40) * 20;
+      let noise = simplex.noise3D(x / zoom, y / zoom, ticker / 40) * 15;
       let index = Math.round(y+noise) * w + x;
       let color = imageBuffer[index];
       let height = 1;
@@ -71,6 +72,7 @@ function drawLines() {
         height = 5;
         yAdjust = -2;
       }
+      // ctx.fillStyle = "#EAC15B"
       ctx.fillRect(x, y + noise + yAdjust, 1, height);
     }
   }
@@ -79,8 +81,6 @@ function drawLines() {
 /* Wait 5 seconds, then change the screen? https://stackoverflow.com/questions/14226803/wait-5-seconds-before-executing-next-line/14226807 */
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
-
-i_am_list = ["jenny han", "in 香港      ", "teaching "]
 
 const rotate_draw = async () => {
   counter = 0
