@@ -121,7 +121,7 @@ button:hover {
 /* Content */
 .content {
   background-color: white;
-  padding: 10px;
+  padding: 5px;
 }
 
 /* The "show" class is added to the filtered elements */
@@ -129,6 +129,9 @@ button:hover {
   display: block;
 }
 
+.portfolioimg {
+  width:20em;
+}
 .portfolioimg:hover {
     opacity:0.5;
 }
