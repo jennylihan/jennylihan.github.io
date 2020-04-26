@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>Jenny Han</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/index.css">
-			<script src="/animation/simplexNoise.js" defer></script>
-			<script src="/animation/index.js" defer></script>
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		</head>
-		<body>
-			<div class="container" style="width: 70%;margin: 60px auto -10px auto">
-				<nav>
-		    		<ul>
-		        		<li><a href="/" style="color:#EAC15B">Home </a></li>
-			        	<li><a href="/about">About</a></li>
-		        		<li><a href="/blog">Thoughts</a></li>
-		        		<li><a href="/postcards">Postcards</a></li>
-		    		</ul>
-				</nav>
-				<br><br><br>
-				<img src="/images/jennyhan2.png" width="100%">
-			</div>
-
-		</body>
-	</html>
+---
+layout: default
+title:
+---
+<br><br><br>
+<img src="/images/jennyhan2.png" width="100%">
+{% include image-gallery.html folder="/images/album" %}
