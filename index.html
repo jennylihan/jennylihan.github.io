@@ -2,6 +2,84 @@
 layout: default
 title:
 ---
-<br><br><br>
-<img src="/images/jennyhan2.png" width="100%">
-{% include image-gallery.html folder="/images/album" %}
+<br>
+<!-- to center style="display:block;margin-left: auto;margin-right: auto;"-->
+<img src="/images/jennyhan2.png" width="50%">
+
+<br><br>
+<div id="myBtnContainer" style="margin: 0 auto">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Education')"> Education</button>
+  <button class="btn" onclick="filterSelection('Research')"> Research</button>
+  <button class="btn" onclick="filterSelection('Design')"> Design</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column 1">
+    <div class="content">
+      <img class="portfolioimg" src="/portfolio/domino.jpg" alt="domino" style="width:100%" name="portfolio/domino.html"onHover="darken(title)"onClick="openTab(this);">
+      <h4>domino</h4>
+    </div>
+  <!-- </div>
+  <div class="column 1">
+    <div class="content">
+      <img src="/images/album/domino.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column 1">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column 2">
+    <div class="content">
+      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column 2">
+    <div class="content">
+      <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column 3">
+    <div class="content">
+      <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column 1">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column 2">
+    <div class="content">
+      <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column 3">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div> -->
+<!-- END GRID -->
+</div>
+<script type="text/javascript" src="portfolio.js"></script>

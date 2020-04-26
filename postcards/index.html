@@ -1,35 +1,8 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>Jenny Han</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/index.css">
-			<script src="/animation/simplexNoise.js" defer></script>
-			<script src="/animation/index.js" defer></script>
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		</head>
-		<body>
-			<div class="container" style="width: 70%;margin: 60px auto -10px auto">
-				<nav>
-		    		<ul>
-		        		<li><a href="/">Home</a></li>
-			        	<li><a href="/about">About</a></li>
-		        		<li><a href="/blog">Thoughts</a></li>
-								<li><a href="/postcards" style="color:#000000">Postcards</a></li>
-		    		</ul>
-				</nav>
-				<br>
-				<h1>Jenny Han collects postcards. They're also </h1>
-				<br>
-			</div>
+---
+layout: postcards
+title: Postcards
+---
+<br><br>
+<h1>{{ page.title }}</h1>
 
-			<div class="linescontainer" style="width: 100%">
-				<canvas id="canvas"></canvas>
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-							<li><a href=" https://glitch.com/~noiselines-text">noisy lines remixed from @DonKarlssonSan, click here to try it yourself</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+{% include image-gallery.html folder="/postcards" %}
