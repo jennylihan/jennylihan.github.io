@@ -1,12 +1,12 @@
 ---
 layout: portfolio
-title: Fulbright in China - ethnographic research (2020)
+title: Fulbright in China (2020?)
 ---
 <h1><a href="/">&#8592;</a>{{ page.title }}</h1>
 <br>
-<h2></h2>
+<h2>Ethnographic Research: How do students and teachers in rural Chinese elementary schools experience technology?</h2>
 
-For the 2019-2020 school year, I was awarded a Fulbright Research Scholarship to conduct ten months of original research and study in China by the U.S. Department of State.
+For the 2019-2020 school year, I was awarded a <a href="https://news.stanford.edu/thedish/2019/06/10/twenty-seven-from-stanford-win-fulbright-u-s-student-program-grants/" target="\_blank">Fulbright Research Scholarship</a> to conduct ten months of original research and study in China by the U.S. Department of State.
 
 Due to coronavirus, this research has been postponed until further notice.
 

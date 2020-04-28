@@ -1,10 +1,10 @@
 ---
 layout: portfolio
-title: CS for Kinders - hci research (2019)
+title: CS for Kinders (2019)
 ---
 <h1><a href="/">&#8592;</a>{{ page.title }}</h1>
 <br>
-<h2>How might we design tools for storytelling and computational thinking for pre-literate learners?</h2>
+<h2>HCI Research: How might we design tools for storytelling and computational thinking for pre-literate learners?</h2>
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRjzAO4b69HnK_FBEkH1jDK-i1uSfRHDV2s-aecb8IaQJttEvR9RruzRXxqPk_XGtX0rQu836F4Cx0U/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 <h3>✨✨ A presentation I created to summarize my research assistantship:</h3>

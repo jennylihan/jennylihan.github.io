@@ -1,10 +1,10 @@
 ---
 layout: portfolio
-title: Making with Code - cs ed research (2020)
+title: Making with Code (2020)
 ---
 <h1><a href="/">&#8592;</a>{{ page.title }}</h1>
 <br>
-<h2>How do we reorient c.s. education to be about making with code?</h2>
+<h2>CS Ed Research: How do we reorient c.s. education to be about making with code?</h2>
 <img src="cs9projects.jpg" width="100%">
 (We asked our students to draw something personally meaningful, using the Python turtle library.)
 

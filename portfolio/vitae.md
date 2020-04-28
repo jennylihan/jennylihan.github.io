@@ -1,10 +1,10 @@
 ---
 layout: portfolio
-title: vitae - hci research (2017)
+title: vitae (2017)
 ---
 <h1><a href="/">&#8592;</a>{{ page.title }}</h1>
 <br>
-<h2>What can we learn about the future of digital labor from hiring halls?</h2>
+<h2>HCI Research: What can we learn about the future of digital labor from hiring halls?</h2>
 
 
 <iframe src="curis.pdf" frameborder="0" width="100%" height="600px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
