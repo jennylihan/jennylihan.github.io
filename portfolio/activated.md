@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: activated (2017)
+title: activated - app design (2017)
 ---
 <h1><a href="/">&#8592;</a>{{ page.title }}</h1>
 <br>

@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: Making with Code (2020)
+title: Making with Code - cs ed research (2020)
 ---
 <h1><a href="/">&#8592;</a>{{ page.title }}</h1>
 <br>

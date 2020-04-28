@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: domino (2018)
+title: domino - learning app design (2018)
 ---
 <h1><a href="/">&#8592;</a>{{ page.title }}</h1>
 <br>

@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: Fulbright in China (2020)
+title: Fulbright in China - ethnographic research (2020)
 ---
 <h1><a href="/">&#8592;</a>{{ page.title }}</h1>
 <br>

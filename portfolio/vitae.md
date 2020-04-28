@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: vitae (2017)
+title: vitae - hci research (2017)
 ---
 <h1><a href="/">&#8592;</a>{{ page.title }}</h1>
 <br>
@@ -8,7 +8,7 @@ title: vitae (2017)
 
 
 <iframe src="curis.pdf" frameborder="0" width="100%" height="600px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-<h3>✏️✏️ This is the poster we created at the end of the summer: </h3>
+<h3>✏️✏️ This is the poster we created at the end of the summer. </h3>
 
 <h3>💭💭 About the project:</h3>
 

@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: CS for Kinders (2019)
+title: CS for Kinders - hci research (2019)
 ---
 <h1><a href="/">&#8592;</a>{{ page.title }}</h1>
 <br>
@@ -14,11 +14,11 @@ title: CS for Kinders (2019)
 
 <h3>💭💭 About the project: </h3>
 
-I joined as a research assistant for PhD candidate Griffin Dietz, and over 2 quarters, we conducted preliminary design work for a voice-user interface to assist children as
-they created and edited their own audio stories. We also conducted user testing with 6 - 8 year-old users in Palo Alto.
+I joined as a research assistant for PhD candidate Griffin Dietz, and over 2 quarters, we conducted generative research and prototyping for a voice-user interface to assist children as
+they created and edited their own audio stories. We also conducted user testing with 6 - 8-year-old users in Palo Alto.
 
 <h3>🛠️🛠️ We used tools such as:</h3>
 
-* Needfinding: qualitative interviews with K-2 students and CS educators, observations, and qualitative coding
+* Qualitative interviews with K-2 students and CS educators, observations, and qualitative coding
 * Design Thinking, Wizard of Oz prototyping
-* Google Voice User Interfaces
+* Google Voice User Interface
