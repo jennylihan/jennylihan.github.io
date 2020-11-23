@@ -45,10 +45,10 @@ mark {
 
 a:hover {
     color: #EAC15B;
-    border-bottom: 2px dotted #EAC15B !important;
+    border-bottom: 1px dotted #EAC15B !important;
     border-bottom-color: #EAC15B;
     border-bottom-style: dotted;
-    border-bottom-width: 2px;
+    border-bottom-width: 1px;
 }
 h1 {
     font-size: 3vw;
