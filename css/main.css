@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 body {
     margin: 60px auto;
@@ -6,10 +7,10 @@ body {
     font-size: 1em;
     line-height: 1.4em;
     color: #333;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Source Sans Pro','Sans-Serif';
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:'Source Sans Pro','Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -21,21 +22,31 @@ nav ul li, footer ul li {
 nav a, footer a {
     text-decoration: none;
     color: #999;
+    font-style: none;
+    border-bottom: 0px dotted rgba(127, 127, 127, 0.45) !important;
+
 }
-nav a:hover {
-    text-decoration: underline;
-    color: #000000;
-}
+
 a {
+    /* text-decoration: underline; */
+    border-bottom: 2px dotted rgba(127, 127, 127, 0.45) !important;
+    border-bottom-color: rgba(127, 127, 127, 0.45);
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    /* font-weight: bold; */
+    color: #000;
     text-decoration: none;
-    color: #999;
 }
 mark {
   background-color: #EAC15B;
 }
+
 a:hover {
-    text-decoration: underline;
     color: #EAC15B;
+    border-bottom: 1px dotted #EAC15B !important;
+    border-bottom-color: #EAC15B;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
 }
 h1 {
     font-size: 3vw;
@@ -45,8 +56,8 @@ p {
     font-size: 1em;
     line-height: 1.4em;
     color: #333;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+
 footer {
     margin: 60px auto;
     border-top: 1px solid #d5d5d5;

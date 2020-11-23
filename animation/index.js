@@ -9,7 +9,7 @@ let w, h;
 let imageBuffer;
 let ticker;
 let simplex;
-let i_am_list = ["COMING SOON"];
+let i_am_list = ["FAQ"];
 
 function setup(mytext) {
   simplex = new SimplexNoise();
