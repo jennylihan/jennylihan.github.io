@@ -29,10 +29,10 @@ nav a, footer a {
 
 a {
     /* text-decoration: underline; */
-    border-bottom: 2px dotted rgba(127, 127, 127, 0.45) !important;
+    border-bottom: 1px dotted rgba(127, 127, 127, 0.45) !important;
     border-bottom-color: rgba(127, 127, 127, 0.45);
     border-bottom-style: dotted;
-    border-bottom-width: 2px;
+    border-bottom-width: 1px;
     /* font-weight: bold; */
     color: #000;
     text-decoration: none;
