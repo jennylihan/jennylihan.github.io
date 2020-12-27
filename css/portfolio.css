@@ -1,17 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
-
 body {
     margin: 60px auto;
     width: 70%;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.4em;
     color: #333;
-    font-family:'Source Sans Pro', 'Sans-Serif';
+    font-family:'Source Sans Pro','Sans-Serif';
 }
 nav ul, footer ul {
-    font-family:'Source Sans Pro', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -21,6 +19,7 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 nav a, footer a {
+    font-size: 1.2em;
     text-decoration: none;
     color: #999;
     font-style: none;
@@ -31,7 +30,7 @@ nav a, footer a {
 
 a {
     /* text-decoration: underline; */
-    border-bottom: 1px dotted rgba(127, 127, 127, 0.45) !important;
+    border-bottom: 1px solid rgba(127, 127, 127, 0.45) !important;
     border-bottom-color: rgba(127, 127, 127, 0.45);
     border-bottom-style: dotted;
     border-bottom-width: 1px;
@@ -51,14 +50,22 @@ a:hover {
     border-bottom-width: 1px;
 }
 h1 {
-    font-size: 3vw;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+    line-height: 1.2em;
+}
+h3 {
+    font-size: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 5px;
 }
 p {
-    font-size: 1em;
-    line-height: 1.4em;
+
     color: #333;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 footer {
     margin: 60px auto;
@@ -68,14 +75,11 @@ footer {
 
 ul.posts {
     margin: 20px auto 40px;
-    font-size: 1.5em;
-    font-family: 'Open Sans',serif;
 }
 
 ul.posts li {
     list-style: none;
-    font-size: 1.5em;
-    font-family: 'Open Sans',serif;
+
 }
 
 button {

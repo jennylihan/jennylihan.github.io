@@ -1,3 +1,18 @@
+function displayPostcard(){
+  if(localStorage.getItem("displayed") == null) {
+    swal({
+      title: "You\'ve got mail.",
+      text: "Hover over the postcard to read.",
+      icon: "warning",
+      button: "hm ok",
+    });
+    // Store
+    localStorage.setItem("displayed", "true");
+  }
+}
+
+displayPostcard()
+
 filterSelection("all") // Execute the function and show all columns
 
 function filterSelection(c) {

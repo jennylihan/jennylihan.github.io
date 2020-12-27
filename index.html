@@ -2,11 +2,19 @@
 layout: default
 title:
 ---
-<br><br>
+<br>
 <!-- to center style="display:block;margin-left: auto;margin-right: auto;"-->
 <!-- <img src="/images/jennyhan2.png" width="50%" style="display:block;margin-left: auto;margin-right: auto;"> -->
-<img src="../images/jennyhan.png" width="80%">
-<br><br>
+<!-- Visit https://nicolaskadis.info/posts/pure-css-flip-cards-using-bootstrap-4-and-css-grid-no-js for an explanation -->
+
+<img src="../images/PostcardFront.png" style="width:85%"
+  onmouseover="this.src='../images/PostcardBack.png';"
+  onmouseout="this.src='../images/PostCardFront.png';"
+  alt="Vintage postcard with the text 'Greetings from Jenny Han!' The back of the postcard says 'Welcome to my website! I teach CS, design learning experiences, conduct HCI research, and collect postcards. Scroll below for my favorite projects. Click About and Resume for more information.'"
+/>
+
+<!--.boxesContainer-->
+<br><br><br>
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
   <!-- <button class="btn" onclick="filterSelection('education')"> Curriculum</button> -->
@@ -23,10 +31,10 @@ title:
       <h4>Snap Engineering Academy</h4>
     </div>
   </div> -->
-  <div class="column design">
+  <div class="column research">
     <div class="content">
-      <img class="portfolioimg" src="/portfolio/domino.png" alt="domino" name="portfolio/domino.html"onHover="darken(title)"onClick="openTab(this);">
-      <h4>domino: a mobile app replacement for arduinos</h4>
+      <img class="portfolioimg" src="/portfolio/k2csed.jpg" alt="k2csed" name="portfolio/k2csed.html"onHover="darken(title)"onClick="openTab(this);">
+      <h4>StoryCoder: a research interface to teach CS through storytelling</h4>
     </div>
   </div>
   <div class="column research">
@@ -35,51 +43,31 @@ title:
       <h4>Making with Code: a constructionist CS curriculum </h4>
     </div>
   </div>
-  <div class="column research">
-    <div class="content">
-      <img class="portfolioimg" src="/portfolio/k2csed.jpg" alt="k2csed" name="portfolio/k2csed.html"onHover="darken(title)"onClick="openTab(this);">
-      <h4>StoryCoder: a research publication </h4>
-    </div>
-  </div>
   <div class="column design">
     <div class="content">
-      <img class="portfolioimg" src="/portfolio/activated.png" alt="activated" name="portfolio/activated.html"onHover="darken(title)"onClick="openTab(this);">
-      <h4>activated: a mobile app for accessible college prep</h4>
+      <img class="portfolioimg" src="/portfolio/domino.png" alt="domino" name="portfolio/domino.html"onHover="darken(title)"onClick="openTab(this);">
+      <h4>domino: a mobile app to replace arduinos </h4>
     </div>
   </div>
   <div class="column research">
     <div class="content">
       <img class="portfolioimg" src="/portfolio/vitae.jpg" alt="vitae" name="portfolio/vitae.html"onHover="darken(title)"onClick="openTab(this);">
-      <h4>vitae: an online labor HCI research project</h4>
+      <h4>vitae: a research project about online gig labor and skill signalling</h4>
     </div>
   </div>
   <div class="column research">
     <div class="content">
       <img class="portfolioimg" src="/portfolio/fulbright.jpg" alt="fulbright" name="portfolio/fulbright.html"onHover="darken(title)"onClick="openTab(this);">
-      <h4>Fulbright in China: an ethnographic research proposal</h4>
+      <h4>Fulbright: a research proposal about rural schools & tech in China</h4>
     </div>
   </div>
   <div class="column design">
     <div class="content">
-      <img class="portfolioimg" src="/portfolio/comingsoon.jpg" alt="comingsoon" name="portfolio/domino.html"onHover="darken(title)">
-      <h4>More projects soon.</h4>
+      <img class="portfolioimg" src="/portfolio/activated.png" alt="activated" name="portfolio/activated.html"onHover="darken(title)"onClick="openTab(this);">
+      <h4>activated: a mobile app to make college prep accessible</h4>
     </div>
   </div>
-  <!--
-
-  <div class="column education">
-    <div class="content">
-      <img class="portfolioimg" src="/portfolio/domino.png" alt="Nature">
-      <h4>College Access</h4>
-    </div>
-  </div>
-  <div class="column education">
-    <div class="content">
-      <img class="portfolioimg" src="/portfolio/domino.png" alt="Nature">
-      <h4>Snap Engineering Academy</h4>
-    </div>
-  </div> -->
-  </div>
-<!-- END GRID -->
 </div>
+<!-- END GRID -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script type="text/javascript" src="portfolio.js"></script>

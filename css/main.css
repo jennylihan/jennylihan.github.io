@@ -4,7 +4,7 @@
 body {
     margin: 60px auto;
     width: 70%;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.4em;
     color: #333;
     font-family:'Source Sans Pro','Sans-Serif';
@@ -20,6 +20,7 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 nav a, footer a {
+    font-size: 1.2em;
     text-decoration: none;
     color: #999;
     font-style: none;
@@ -29,7 +30,7 @@ nav a, footer a {
 
 a {
     /* text-decoration: underline; */
-    border-bottom: 1px dotted rgba(127, 127, 127, 0.45) !important;
+    border-bottom: 1px solid rgba(127, 127, 127, 0.45) !important;
     border-bottom-color: rgba(127, 127, 127, 0.45);
     border-bottom-style: dotted;
     border-bottom-width: 1px;
@@ -49,12 +50,15 @@ a:hover {
     border-bottom-width: 1px;
 }
 h1 {
-    font-size: 3vw;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 3em;
+    font-family:'Source Sans Pro','Sans-Serif';
+}
+h3 {
+    font-size: 1.5em;
+    font-family:'Source Sans Pro','Sans-Serif';
 }
 p {
-    font-size: 1em;
-    line-height: 1.4em;
+    line-height: 1.6em;
     color: #333;
 }
 

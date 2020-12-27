@@ -3,18 +3,21 @@ layout: portfolio
 title: Making with Code (2020)
 ---
 <h1><a href="/">&#8592;</a>{{ page.title }}</h1>
-<br>
 <h2>CS Ed Research: How do we reorient c.s. education to be about making with code?</h2>
 <img src="cs9projects.jpg" width="100%">
-(We asked our students to draw something personally meaningful, using the Python turtle library.)
+(We asked our students to draw something personally meaningful, using  `python turtle`.)
 
-<h3>✨✨ You can find our interactive course overview <a href="https://cs.fablearn.org/misc/grade-9-cs-options-brochure.html" target="\_blank">here.</a></h3>
-<h3>✏️✏️ Our publication reflecting on theory/praxis is forthcoming in the Constructionism 2020 proceedings.</h3>
-<h3>🛠️🛠️ We're working on making this curriculum open-source for other teachers to adopt and adapt. Stay tuned!</h3>
+<h3>✨ Setting and Collaborators</h3>
+I joined as research assistant for the project spearheaded by Chris Proctor as part of the <a href="https://fablearn.org/research/" target="\_blank">Transformative Learning Technologies Lab</a>. This project was piloted at the Independent Schools Foundation Academy in Hong Kong from 2019 - 2021, where I worked alongside Jonathan Pang, Jacob Wolf, Krates Ng, Emma Brown.
 
-<h3>💭💭 About the project:</h3>
-I joined Jacob Wolf, Krates Ng, and Jonathan Pang as a research assistant for the project spearheaded by Chris Proctor as part of the <a href="https://fablearn.org/research/" target="\_blank">Transformative Learning Technologies Lab</a>.
 
+<h3>✏️ Documentation</h3>
+We're working on making this curriculum open-source for other teachers to adopt and adapt, at <a href="https://cs.fablearn.org/" target="\_blank"> cs . fablearn . org.</a>
+
+You can find our course overview <a href="https://cs.fablearn.org/misc/grade-9-cs-options-brochure.html" target="\_blank">here.</a>
+
+
+<h3>💭 Design Rationale</h3>
 Our project was to develop and teach an introductory computer science class at the Independent Schools Foundation Academy in Hong Kong. Our class looked very different from a normal high school class.
 
 Why was it so different? Because it was rooted in *constructionism*, a learning theory that stresses learning through making. We hoped students would adopt code as a tool with which to think and create, instead of as a subject that needed to be memorized and regurgitated. So:
