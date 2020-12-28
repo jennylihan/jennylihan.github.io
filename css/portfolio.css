@@ -3,6 +3,7 @@
 .cardBox {
   float: left;
   font-size: 1.2vw;
+  line-height: 1.4em;
   margin: 1% 0 0 1%;
   perspective: 800px;
   transition: all 0.3s ease 0s;
@@ -22,7 +23,7 @@
   height: 500px;
   transform-style: preserve-3d;
   transition: transform 0.4s ease 0s;
-  width: 70%;
+  width: 85%;
   -webkit-animation: giro 1s 1;
   animation: giro 1s 1;
   box-shadow: 0px 20px 50px #555;
@@ -161,12 +162,11 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 nav a, footer a {
+    font-size: 1.2em;
     text-decoration: none;
     color: #999;
     font-style: none;
     border-bottom: 0px dotted rgba(127, 127, 127, 0.45) !important;
-    border-bottom-width: 0px;
-
 }
 
 a {
@@ -193,6 +193,17 @@ a:hover {
 h1 {
     font-size: 3vw;
     font-family:'Source Sans Pro','Sans-Serif';
+    line-height: 1em;
+}
+h2 {
+    font-size: 2vw;
+    font-family:'Source Sans Pro','Sans-Serif';
+    line-height: 1em;
+}
+h3 {
+    font-size: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 5px;
 }
 h4 {
     line-height: 2em;

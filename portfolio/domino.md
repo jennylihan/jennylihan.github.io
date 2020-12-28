@@ -10,11 +10,9 @@ title: domino (2018)
 <h3>✨ Setting and Collaborators</h3>
 This was a project for EDUC236: Beyond Bits and Atoms in the Winter of 2018 taught by Prof. Paulo Blikstein, Prof. Chris Proctor, Dr. Richard Davis, and Veronica Lin. I worked with Aashna Shroff (who further developed this idea into her <a href="https://ed.stanford.edu/ldt/students/ma-projects/domino" target="_blank"> master's project</a>) and Kylie Jue. This class changed my life, and I was honored to have the opportunity to TA it the following year.
 
-<h3>✏️ Publication</h3>
-*<a href="https://dl.acm.org/doi/10.1145/3202185.3213524" target="\_blank"> domino: mobile phones as accessible microcontrollers* </a>*
-
+<h3>✏️ Publication*</h3>
+*<a href="https://dl.acm.org/doi/10.1145/3202185.3213524" target="\_blank"> domino: mobile phones as accessible microcontrollers </a>*
 *IDC '18: Proceedings of the 17th ACM Conference on Interaction Design and Children.*
-
 *Paulo Blikstein, Jenny Han, Kylie Jue, Aashna Shroff.*
 
 <br>
