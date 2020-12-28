@@ -1,15 +1,157 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+.cardBox {
+  float: left;
+  font-size: 1.2vw;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+  height:auto;
+  display: contents;
+  box-shadow: 0px 20px 100px #555;
+}
+
+.cardBox:hover .card {
+  transform: rotateY( 180deg);
+}
+
+.card {
+  border-radius: 15px;
+  cursor: default;
+  height: 500px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 70%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+  box-shadow: 0px 20px 50px #555;
+}
+
+.card p {
+  margin-bottom: 1.8em;
+  font-style: italic;
+}
+
+.front {
+  border-radius: 15px;
+  background-image: url("../images/PostcardFront.png");
+  background-size: cover;
+}
+
+.back {
+  border-radius: 15px;
+  background-image: url("../images/PostcardBack.png");
+  background-size: cover;
+
+}
+
+.card .front,
+.card .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: black;
+  line-height:1.5em;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card .front strong {
+  background: #fff;
+  border-radius: 100%;
+  color: #222;
+  font-size: 1.5em;
+  line-height: 30px;
+  padding: 0 7px 4px 6px;
+}
+
+.card .back {
+  transform: rotateY( 180deg);
+}
+
+.card .back a {
+  padding: 0.3em 0.5em;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1px;
+  font-size: 0.9em;
+  transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+  background: #fff;
+  color: #333;
+  text-shadow: 0 0 1px #333;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .card {
+    height: 285px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .card {
+    height: 260px;
+  }
+}
+
+.vl {
+  border-left: 1px dotted black;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+/*   margin-top: 10px; */
+}
 
 body {
     margin: 60px auto;
     width: 70%;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.4em;
     color: #333;
-    font-family:'Source Sans Pro','Sans-Serif';
+    font-family:'Source Sans Pro', 'Sans-Serif';
 }
 nav ul, footer ul {
+    font-family:'Source Sans Pro', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -19,7 +161,6 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 nav a, footer a {
-    font-size: 1.2em;
     text-decoration: none;
     color: #999;
     font-style: none;
@@ -30,7 +171,7 @@ nav a, footer a {
 
 a {
     /* text-decoration: underline; */
-    border-bottom: 1px solid rgba(127, 127, 127, 0.45) !important;
+    border-bottom: 1px dotted rgba(127, 127, 127, 0.45) !important;
     border-bottom-color: rgba(127, 127, 127, 0.45);
     border-bottom-style: dotted;
     border-bottom-width: 1px;
@@ -50,23 +191,18 @@ a:hover {
     border-bottom-width: 1px;
 }
 h1 {
-    font-size: 3em;
-    line-height: 1em;
+    font-size: 3vw;
+    font-family:'Source Sans Pro','Sans-Serif';
 }
-h2 {
-    font-size: 2em;
-    line-height: 1.2em;
-}
-h3 {
-    font-size: 1.5em;
-    margin-top: 40px;
-    margin-bottom: 5px;
-}
+h4 {
+    line-height: 2em;
+	  font-family: 'Helvetica', 'Sans-Serif';
+  }
 p {
-
+    font-size: 1em;
+    line-height: 1.4em;
     color: #333;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    font-family:'Source Sans Pro','Sans-Serif';
 }
 footer {
     margin: 60px auto;
@@ -76,11 +212,14 @@ footer {
 
 ul.posts {
     margin: 20px auto 40px;
+    font-size: 1.5em;
+    font-family: 'Open Sans',serif;
 }
 
 ul.posts li {
     list-style: none;
-
+    font-size: 1.5em;
+    font-family: 'Open Sans',serif;
 }
 
 button {
@@ -124,11 +263,6 @@ button:hover {
   display: none;
 }
 
-/* Content */
-.content {
-  background-color: white;
-}
-
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
@@ -162,4 +296,13 @@ button:hover {
 .btn.active {
   background-color: #666;
    color: white;
+}
+
+#caption {
+  font-size:.4em;
+  font-family:'Source Code Pro', monospace;
+}
+
+.type {
+  font-family:'Source Code Pro', monospace;
 }
