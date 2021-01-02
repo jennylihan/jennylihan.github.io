@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-
 .cardBox {
   float: left;
   font-size: 1.2vw;
-  line-height: 1.4em;
   margin: 1% 0 0 1%;
   perspective: 800px;
-  transition: all 0.3s ease 0s;
-  width: 100%;
+  transition: all 0.4s ease 0.1s;
+  width: 85%;
   height:auto;
   display: contents;
 }
@@ -17,50 +15,33 @@
 }
 
 .card {
-  border-radius: 20px;
   cursor: default;
   height: 500px;
   transform-style: preserve-3d;
-  transition: transform 0.4s ease 0s;
+  transition: transform .4s ease 0.1s;
   width: 85%;
   -webkit-animation: giro 1s 1;
   animation: giro 1s 1;
+  border-radius: 15px;
+  box-shadow: 0px 20px 100px #555;
 }
 
 .card p {
   margin-bottom: 1.8em;
-  font-style: italic;
-}
-
-.front {
-  border-radius: 15px;
-  background-image: url("../images/PostcardFront.jpg");
-  background-size: cover;
-  filter: drop-shadow(0px 5px 15px #555);
-}
-
-.back {
-  border-radius: 15px;
-  background-image: url("../images/PostcardBack.png");
-  background-size: cover;
-  filter: drop-shadow(0px 5px 15px #555);
 }
 
 .card .front,
 .card .back {
   backface-visibility: hidden;
   box-sizing: border-box;
-  color: black;
-  line-height:1.5em;
+  color: white;
+  display: block;
   font-size: 1.2em;
   height: 100%;
   padding: 0.8em;
   position: absolute;
   text-align: center;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 }
 
@@ -73,8 +54,20 @@
   padding: 0 7px 4px 6px;
 }
 
+.card .front {
+  border-radius: 15px;
+  background-image: url("https://cdn.glitch.com/7937fc08-f9ef-49f2-9b56-03ad58212318%2FTextured.png?v=1609142625005");
+  background-size: cover;
+}
+
 .card .back {
+  border-radius: 15px;
+  background-image: url("https://cdn.glitch.com/7937fc08-f9ef-49f2-9b56-03ad58212318%2FTexturedBack.png?v=1609144391735");
+  background-size: cover;
   transform: rotateY( 180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card .back a {
@@ -87,11 +80,41 @@
   transition: all 0.2s ease 0s;
 }
 
-.card .back a:hover {
-  background: #fff;
-  color: #333;
-  text-shadow: 0 0 1px #333;
+.back-grid {
+  display: grid;
+  grid-template-columns: 60% 40%;
 }
+
+.back-grid-left {
+  text-align: left;
+  border-right: 1px solid black;
+}
+
+.back-text-left {
+  margin-right: 1vw;
+  margin-left: 1vw;
+}
+
+.back-text-right {
+  text-align: left;
+  margin-left: 3%;
+}
+
+.stamp {
+  text-align:right;
+}
+
+.caption {
+  font-size: .7vw;
+  font-family: "Source Code Pro", monospace;
+}
+
+.type {
+  font-family: "Source Code Pro", monospace;
+  color: black;
+  line-height: 2vw;
+}
+
 
 @-webkit-keyframes giro {
   from {
@@ -111,36 +134,6 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .cardBox {
-    margin-left: 2.8%;
-    margin-top: 3%;
-    width: 46%;
-  }
-  .card {
-    height: 285px;
-  }
-  .cardBox:last-child {
-    margin-bottom: 3%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .cardBox {
-    width: 94.5%;
-  }
-  .card {
-    height: 260px;
-  }
-}
-
-.vl {
-  border-left: 1px dotted black;
-  height: 100%;
-  position: absolute;
-  left: 50%;
-/*   margin-top: 10px; */
-}
 
 body {
     margin: 60px auto;
@@ -204,6 +197,7 @@ h3 {
     margin-top: 40px;
     margin-bottom: 5px;
 }
+
 p {
     font-size: 1em;
     line-height: 1.4em;
@@ -305,13 +299,4 @@ button:hover {
 .btn.active {
   background-color: #666;
    color: white;
-}
-
-#caption {
-  font-size:.4em;
-  font-family:'Source Code Pro', monospace;
-}
-
-.type {
-  font-family:'Source Code Pro', monospace;
 }
