@@ -56,13 +56,13 @@
 
 .card .front {
   border-radius: 15px;
-  background-image: url("https://cdn.glitch.com/7937fc08-f9ef-49f2-9b56-03ad58212318%2FTextured.png?v=1609142625005");
+  background-image: url("images/PostcardFront.jpg");
   background-size: cover;
 }
 
 .card .back {
   border-radius: 15px;
-  background-image: url("https://cdn.glitch.com/7937fc08-f9ef-49f2-9b56-03ad58212318%2FTexturedBack.png?v=1609144391735");
+  background-image: url("images/PostcardBack.jpg");
   background-size: cover;
   transform: rotateY( 180deg);
   display: flex;
