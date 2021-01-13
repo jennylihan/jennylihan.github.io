@@ -56,13 +56,13 @@
 
 .card .front {
   border-radius: 15px;
-  background-image: url("images/PostcardFront.jpg");
+  background-image: url("../images/PostcardFront.jpg");
   background-size: cover;
 }
 
 .card .back {
   border-radius: 15px;
-  background-image: url("images/PostcardBack.jpg");
+  background-image: url("../images/PostcardBack.jpg");
   background-size: cover;
   transform: rotateY( 180deg);
   display: flex;
