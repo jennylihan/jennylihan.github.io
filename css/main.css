@@ -1,16 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
+@font-face {
+  font-family: iAWriter;
+  src: url('./fonts/iAWriterQuattroS-Regular.ttf');
+}
+@font-face {
+  font-family: iAWriterBold;
+  src: url('./fonts/iAWriterQuattroS-Bold.ttf');
+}
 body {
     margin: 60px auto;
     width: 70%;
     font-size: 1em;
     line-height: 1.4em;
     color: #333;
-    font-family:'Source Sans Pro', 'Sans-Serif';
+    /* font-family:'Source Sans Pro', 'Sans-Serif'; */
+    font-family: iAWriter;
 }
+
 nav ul, footer ul {
-    font-family:'Source Sans Pro','Sans-Serif';
+    font-family: iAWriter;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -39,23 +49,25 @@ a {
     text-decoration: none;
 }
 mark {
-  background-color: #EAC15B;
+  background-color: #DAAA35;
 }
 
 a:hover {
-    color: #EAC15B;
-    border-bottom: 1px dotted #EAC15B !important;
-    border-bottom-color: #EAC15B;
+    color: #DAAA35;
+    border-bottom: 1px dotted #DAAA35 !important;
+    border-bottom-color: #DAAA35;
     border-bottom-style: dotted;
     border-bottom-width: 1px;
 }
 h1 {
     font-size: 3em;
-    font-family:'Source Sans Pro','Sans-Serif';
+    font-family: iAWriterBold;
+    /* font-family:'Source Sans Pro','Sans-Serif'; */
 }
 h3 {
     font-size: 1.5em;
-    font-family:'Source Sans Pro','Sans-Serif';
+    font-family: iAWriter;
+    /* font-family:'Source Sans Pro','Sans-Serif'; */
 }
 p {
     line-height: 1.6em;
@@ -72,13 +84,14 @@ footer {
 ul.posts {
     margin: 20px auto 40px;
     font-size: 1.5em;
-    font-family: 'Open Sans',serif;
+    font-family: iAWriter;
+    /* font-family: 'Open Sans',serif; */
 }
 
 ul.posts li {
     list-style: none;
     font-size: 1.5em;
-    font-family: 'Open Sans',serif;
+    /* font-family: 'Open Sans',serif; */
 }
 
 button {
@@ -94,7 +107,7 @@ button {
 }
 
 button:hover {
-  background-color: #EAC15B;
+  background-color: #DAAA35;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -158,6 +171,7 @@ button:hover {
   padding: 12px 16px;
   background-color: white;
   cursor: pointer;
+  font-family: iAWriterQuattroS;
 }
 
 /* Add a grey background color on mouse-over */

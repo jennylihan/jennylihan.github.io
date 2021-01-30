@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@font-face {
+  font-family: iAWriter;
+  src: url('./fonts/iAWriterQuattroS-Regular.ttf');
+}
+@font-face {
+  font-family: iAWriterBold;
+  src: url('./fonts/iAWriterQuattroS-Bold.ttf');
+}
+@font-face {
+  font-family: iAWriterMono;
+  src: url('./fonts/iAWriterMonoS-Regular.woff');
+}
+
+
 .cardBox {
   float: left;
   font-size: 1.2vw;
@@ -24,10 +38,12 @@
   animation: giro 1s 1;
   border-radius: 15px;
   box-shadow: 0px 20px 100px #555;
+  font-family: iAWriterMono;
 }
 
 .card p {
   margin-bottom: 1.8em;
+  font-family: iAWriterMono;
 }
 
 .card .front,
@@ -93,6 +109,7 @@
 .back-text-left {
   margin-right: 1vw;
   margin-left: 1vw;
+  font-family: iAWriterMono;
 }
 
 .back-text-right {
@@ -106,11 +123,11 @@
 
 .caption {
   font-size: .7vw;
-  font-family: "Source Code Pro", monospace;
+  font-family: iAWriterMono;
 }
 
 .type {
-  font-family: "Source Code Pro", monospace;
+  font-family: iAWriterMono;
   color: black;
   line-height: 2vw;
 }
@@ -141,10 +158,10 @@ body {
     font-size: 1em;
     line-height: 1.4em;
     color: #333;
-    font-family:'Source Sans Pro', 'Sans-Serif';
+    font-family: iAWriter;
 }
 nav ul, footer ul {
-    font-family:'Source Sans Pro', 'Arial', 'Sans-Serif';
+    font-family: iAWriter;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -172,24 +189,23 @@ a {
     text-decoration: none;
 }
 mark {
-  background-color: #EAC15B;
+  background-color: #DAAA35;
 }
 
 a:hover {
-    color: #EAC15B;
-    border-bottom: 1px dotted #EAC15B !important;
-    border-bottom-color: #EAC15B;
+    color: #DAAA35;
+    border-bottom: 1px dotted #DAAA35 !important;
+    border-bottom-color: #DAAA35;
     border-bottom-style: dotted;
     border-bottom-width: 1px;
 }
 h1 {
     font-size: 3vw;
-    font-family:'Source Sans Pro','Sans-Serif';
     line-height: 1em;
+    font-family: iAWriterBold;
 }
 h2 {
     font-size: 2vw;
-    font-family:'Source Sans Pro','Sans-Serif';
     line-height: 1em;
 }
 h3 {
@@ -202,7 +218,6 @@ p {
     font-size: 1em;
     line-height: 1.4em;
     color: #333;
-    font-family:'Source Sans Pro','Sans-Serif';
 }
 footer {
     margin: 60px auto;
@@ -213,13 +228,11 @@ footer {
 ul.posts {
     margin: 20px auto 40px;
     font-size: 1.5em;
-    font-family: 'Open Sans',serif;
 }
 
 ul.posts li {
     list-style: none;
     font-size: 1.5em;
-    font-family: 'Open Sans',serif;
 }
 
 button {
@@ -235,7 +248,7 @@ button {
 }
 
 button:hover {
-  background-color: #EAC15B;
+  background-color: #DAAA35;
   border: none;
   color: white;
   padding: 10px 20px;
