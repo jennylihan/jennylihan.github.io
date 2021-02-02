@@ -2,7 +2,6 @@
 layout: portfolio
 title: activated (2017)
 ---
-<h1><a href="/">&#8592;</a>{{ page.title }}</h1>
 <h2>App Design: How might we provide guidance to high school students without a counselor during the college app process?</h2>
 <iframe src="activated.pdf" frameborder="0" width="100%" height="600px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 

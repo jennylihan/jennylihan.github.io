@@ -2,7 +2,6 @@
 layout: portfolio
 title: domino (2018)
 ---
-<h1><a href="/">&#8592;</a>{{ page.title }}</h1>
 <h2> Learning App Design: How might we design for tinkering and computational thinking with only mobile phones?</h2>
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQlBDrkUKOhJDZ7AICsePvXrDaghBOs5kVQMwAicLwZw80s6_Iw3DbLXjXtzXP97QYdI_PpFAL40gU7/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="600px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 

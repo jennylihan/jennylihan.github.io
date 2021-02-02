@@ -4,6 +4,7 @@ title: "Today I Learned: August Edition"
 date: 2019-08-05
 category: [learning]
 summary: "Me keeping track of my education out of college."
+status: draft
 ---
 
 ### 1 August

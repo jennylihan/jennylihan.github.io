@@ -1,56 +1,31 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>Jenny Han</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/index.css">
-			<script src="/animation/simplexNoise.js" defer></script>
-			<script src="/animation/index.js" defer></script>
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		</head>
-		<body>
-			<div class="container" style="width: 70%;margin: 60px auto -10px auto">
-				<nav>
-		    		<ul>
-		        		<li><a href="/">Home</a></li>
-			        	<li><a href="/about">About</a></li>
-		        		<li><a href="/blog" style="color:#000000">Thoughts</a></li>
-                <!-- <li><a href="/postcards">Postcards</a></li> -->
-		    		</ul>
-				</nav>
-        <br>
-				<h1>Jenny Han has thoughts. They're </h1>
-        <br>
-			</div>
+---
+layout: blog
+title: postcards
+---
+<h1>{{ page.title }}</h1>
+<h2>nobody likes blogs, everybody loves postcards</h2>
 
-			<div class="linescontainer" style="width: 100%">
-				<canvas id="canvas"></canvas>
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-							<li><a href=" https://glitch.com/~noiselines-text">noisy lines remixed from @DonKarlssonSan, click here to try it yourself</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+<br>
+			<ul class="posts">
+			  {% for category in site.categories %}
+			    <h3>{{ category[0] }}</h3>
+			    <ul>
+			      {% for post in category[1] %}
+							{% if post.status != "draft" %}
+							<li>
+				        <span>
+				          <!-- <img src="{{ post.thumbnail }}" style="height:150px" align="middle"/> -->
+				          <a href="{{ post.url }}" style="color:#333"> {{ post.date | date_to_string }} » {{ post.title }}</a>
+				        </span>
+				        <br>
+				        {% if post.summary %}
+				          <span class = "blog-caption">{{ post.summary }}</span>
+				        {% else %}
+				          <span class = "blog-caption">{{ post.excerpt }}</span>
+				        {% endif %}
+							</li>
+						  {% endif %}
+			      {% endfor %}
+					</ul>
 
-<!-- <ul class="posts">
-
-  {% for category in site.categories %}
-    <h3>{{ category[0] }}</h3>
-    <ul>
-      {% for post in category[1] %}
-        <span>
-          <img src="{{ post.thumbnail }}" style="height:150px" align="middle"/>
-          {{ post.date | date_to_string }} »
-          <a href="{{ post.url }}" style="color:#333">{{ post.title }}</a>
-        </span>
-        <br>
-        {% if post.summary %}
-          <span style="line-height: 1em;color: #999;font-size: .8em;font-family: 'Source Sans Pro';font-style: italic;">{{ post.summary }}</span>
-        {% else %}
-          <span style="line-height: 1em;color: #999;font-size: .8em;font-family: 'Source Sans Pro';font-style: italic;">{{ post.excerpt }}</span>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  {% endfor %} -->
+			  {% endfor %}

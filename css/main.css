@@ -81,19 +81,6 @@ footer {
     font-size: .8em;
 }
 
-ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
-    font-family: iAWriter;
-    /* font-family: 'Open Sans',serif; */
-}
-
-ul.posts li {
-    list-style: none;
-    font-size: 1.5em;
-    /* font-family: 'Open Sans',serif; */
-}
-
 button {
   background-color: white;
   border-color: black;
@@ -120,6 +107,14 @@ button:hover {
 
 * {
   box-sizing: border-box;
+}
+
+.blog-caption {
+  line-height: 2em;
+  color: #999;
+  font-family: 'Source Sans Pro';
+  font-size: 1em;
+  font-style: italic;
 }
 
 .row {

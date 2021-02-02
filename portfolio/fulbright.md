@@ -2,7 +2,6 @@
 layout: portfolio
 title: Fulbright in China (2020?)
 ---
-<h1><a href="/">&#8592;</a>{{ page.title }}</h1>
 <h2>Ethnographic Research: How do students and teachers in rural Chinese elementary schools experience technology?</h2>
 
 <h3>✨ Setting and Collaborators</h3>

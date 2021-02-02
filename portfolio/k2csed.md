@@ -2,7 +2,6 @@
 layout: portfolio
 title: StoryCoder (2019, 2020)
 ---
-<h1><a href="/">&#8592;</a>{{ page.title }}</h1>
 <h2>HCI Research: How might we design tools for storytelling and computational thinking for pre-literate learners?</h2>
 
 <h3>✨ Setting and Collaborators</h3>

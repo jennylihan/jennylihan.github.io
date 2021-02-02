@@ -2,7 +2,6 @@
 layout: portfolio
 title: vitae (2017)
 ---
-<h1><a href="/">&#8592;</a>{{ page.title }}</h1>
 <h2>HCI Research: What can we learn about the future of digital labor from hiring halls?</h2>
 
 <h3>✨ Setting and Collaborators</h3>
