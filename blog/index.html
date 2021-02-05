@@ -12,18 +12,18 @@ title: postcards
 			    <ul>
 			      {% for post in category[1] %}
 							{% if post.status != "draft" %}
-							<li>
-				        <span>
-				          <!-- <img src="{{ post.thumbnail }}" style="height:150px" align="middle"/> -->
-				          <a href="{{ post.url }}" style="color:#333"> {{ post.date | date_to_string }} » {{ post.title }}</a>
-				        </span>
-				        <br>
-				        {% if post.summary %}
-				          <span class = "blog-caption">{{ post.summary }}</span>
-				        {% else %}
-				          <span class = "blog-caption">{{ post.excerpt }}</span>
-				        {% endif %}
-							</li>
+								<li>
+					        <span>
+					          <!-- <img src="{{ post.thumbnail }}" style="height:150px" align="middle"/> -->
+					          <a href="{{ post.url }}" style="color:#333"> {{ post.date | date_to_string }} » {{ post.title }}</a>
+					        </span>
+					        <br>
+					        {% if post.summary %}
+					          <span class = "blog-caption">{{ post.summary }}</span>
+					        {% else %}
+					          <span class = "blog-caption">{{ post.excerpt }}</span>
+					        {% endif %}
+								</li>
 						  {% endif %}
 			      {% endfor %}
 					</ul>

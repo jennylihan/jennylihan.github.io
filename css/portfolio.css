@@ -20,7 +20,7 @@
   perspective: 800px;
   transition: all 0.4s ease 0.1s;
   width: 85%;
-  height:auto;
+  height:550px;
   display: contents;
 }
 
@@ -30,7 +30,7 @@
 
 .card {
   cursor: default;
-  height: 500px;
+  height: 40vw;
   transform-style: preserve-3d;
   transition: transform .4s ease 0.1s;
   width: 85%;
@@ -98,12 +98,12 @@
 
 .back-grid {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 50% 40%;
+  column-gap: 5%;
 }
 
 .back-grid-left {
   text-align: left;
-  border-right: 1px solid black;
 }
 
 .back-text-left {
@@ -114,7 +114,8 @@
 
 .back-text-right {
   text-align: left;
-  margin-left: 3%;
+  padding-left: 5%;
+  border-left: 2px dotted #3030A3;
 }
 
 .stamp {
@@ -130,8 +131,20 @@
   font-family: iAWriterMono;
   color: black;
   line-height: 2vw;
+  font-size: 1.2vw;
 }
 
+.smalltype {
+  font-family: iAWriterMono;
+  font-size: 1.2vw;
+  line-height: 1.5vw;
+}
+
+.display {
+  font-family: iAWriterBold;
+  font-size: 8vw;
+  line-height: 10vw;
+}
 
 @-webkit-keyframes giro {
   from {
