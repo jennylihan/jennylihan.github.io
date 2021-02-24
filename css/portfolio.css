@@ -214,7 +214,7 @@ mark {
 
 a:hover {
     color: #DAAA35;
-    border-bottom: 2px dotted #DAAA35 !important;
+    border-bottom: 2px solid #DAAA35 !important;
     border-bottom-color: #DAAA35;
     border-bottom-style: dotted;
     border-bottom-width: 2px;

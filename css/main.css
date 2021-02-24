@@ -38,28 +38,26 @@ nav a, footer a {
     border-bottom: 0px dotted rgba(127, 127, 127, 0.45) !important;
 
 }
-
 a {
     /* text-decoration: underline; */
-    border-bottom: 1px solid rgba(127, 127, 127, 0.45) !important;
+    border-bottom: 2px dotted rgba(127, 127, 127, 0.45) !important;
     border-bottom-color: rgba(127, 127, 127, 0.45);
     border-bottom-style: dotted;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     /* font-weight: bold; */
     color: #000;
     text-decoration: none;
 }
-
 mark {
   background-color: #DAAA35;
 }
 
 a:hover {
     color: #DAAA35;
-    border-bottom: 1px dotted #DAAA35 !important;
+    border-bottom: 2px solid #DAAA35 !important;
     border-bottom-color: #DAAA35;
     border-bottom-style: dotted;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
 }
 h1 {
     font-size: 3em;
