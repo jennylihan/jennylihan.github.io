@@ -115,7 +115,7 @@
 .back-text-right {
   text-align: left;
   padding-left: 5%;
-  border-left: 1px dotted #DAAA35;
+  border-left: 2px dotted #DAAA35;
 }
 
 .stamp {
@@ -200,10 +200,10 @@ nav a, footer a {
 
 a {
     /* text-decoration: underline; */
-    border-bottom: 1px dotted rgba(127, 127, 127, 0.45) !important;
+    border-bottom: 2px dotted rgba(127, 127, 127, 0.45) !important;
     border-bottom-color: rgba(127, 127, 127, 0.45);
     border-bottom-style: dotted;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     /* font-weight: bold; */
     color: #000;
     text-decoration: none;
@@ -214,10 +214,10 @@ mark {
 
 a:hover {
     color: #DAAA35;
-    border-bottom: 1px dotted #DAAA35 !important;
+    border-bottom: 2px dotted #DAAA35 !important;
     border-bottom-color: #DAAA35;
     border-bottom-style: dotted;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
 }
 h1 {
     font-size: 3vw;
