@@ -124,11 +124,13 @@
 
 .caption {
   font-size: .7vw;
+  /* font-weight: bold; */
   font-family: 'Courier New', monospace;
 }
 
 .signature {
   font-family: Script;
+  color: #787878;
   line-height: 2.2vw;
   font-size: 3.5vw;
 }
