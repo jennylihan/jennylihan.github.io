@@ -11,7 +11,10 @@
   font-family: iAWriterMono;
   src: url('./fonts/iAWriterMonoS-Regular.woff');
 }
-
+@font-face {
+  font-family: Script;
+  src: url('./fonts/unrulyness.ttf');
+}
 
 .cardBox {
   float: left;
@@ -38,12 +41,7 @@
   animation: giro 1s 1;
   border-radius: 15px;
   box-shadow: 0px 20px 100px #555;
-  font-family: iAWriterMono;
-}
-
-.card p {
-  margin-bottom: 1.8em;
-  font-family: iAWriterMono;
+  font-family: 'Courier New', monospace;
 }
 
 .card .front,
@@ -64,7 +62,7 @@
 .card .front strong {
   background: #fff;
   border-radius: 100%;
-  color: #222;
+  color: #55555E;
   font-size: 1.5em;
   line-height: 30px;
   padding: 0 7px 4px 6px;
@@ -84,15 +82,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #333;
 }
 
 .card .back a {
-  padding: 0.3em 0.5em;
-  background: #333;
-  color: #fff;
+  /* padding: 0.3em 0.5em; */
+  /* background: #333;
+  color: #fff; */
   text-decoration: none;
-  border-radius: 1px;
-  font-size: 0.9em;
+  /* border-radius: 1px; */
+  /* font-size: 0.9em; */
   transition: all 0.2s ease 0s;
 }
 
@@ -107,15 +106,16 @@
 }
 
 .back-text-left {
+  font-family: Script;
+  font-size: 1.5em;
   margin-right: 1vw;
   margin-left: 1vw;
-  font-family: iAWriterMono;
 }
 
 .back-text-right {
   text-align: left;
   padding-left: 5%;
-  border-left: 2px dotted #3030A3;
+  border-left: 1px dotted #DAAA35;
 }
 
 .stamp {
@@ -124,24 +124,30 @@
 
 .caption {
   font-size: .7vw;
-  font-family: iAWriterMono;
+  font-family: 'Courier New', monospace;
+}
+
+.signature {
+  font-family: Script;
+  line-height: 2.2vw;
+  font-size: 3.5vw;
 }
 
 .type {
-  font-family: iAWriterMono;
-  color: black;
+  font-family: 'Courier New', monospace;
   line-height: 2vw;
   font-size: 1.2vw;
+  /* font-weight: bold; */
 }
 
 .smalltype {
-  font-family: iAWriterMono;
-  font-size: 1.2vw;
+  font-size: 1vw;
   line-height: 1.5vw;
+  font-family: 'Courier New', monospace;
 }
 
 .display {
-  font-family: iAWriterBold;
+  font-family: iAWriterMono;
   font-size: 8vw;
   line-height: 10vw;
 }
@@ -163,7 +169,6 @@
     transform: rotateY( 0deg);
   }
 }
-
 
 body {
     margin: 60px auto;

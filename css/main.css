@@ -9,6 +9,7 @@
   font-family: iAWriterBold;
   src: url('./fonts/iAWriterQuattroS-Bold.ttf');
 }
+
 body {
     margin: 60px auto;
     width: 70%;
@@ -48,6 +49,7 @@ a {
     color: #000;
     text-decoration: none;
 }
+
 mark {
   background-color: #DAAA35;
 }
