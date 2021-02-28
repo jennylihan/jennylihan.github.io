@@ -2,116 +2,119 @@
 layout: default
 title:
 ---
-<br>
+<br><br>
 <!-- to center style="display:block;margin-left: auto;margin-right: auto;"-->
 <!-- alt="Vintage postcard with the text 'Greetings from Jenny Han!' The back of the postcard says 'Welcome to my website! I teach CS, design learning experiences, conduct HCI research, and collect postcards. Scroll below for my favorite projects. Click About and Resume for more information.'" -->
 <!-- start postcard code -->
-<div class="cardBox">
-  <div class="card">
-    <div class="front">
-      <div style="display:block">
-        <div style="margin-top: 13%;">
-          <img
-            src="images/JennyHanGreetings.png"
-            width="60%"
-          />
-          <br><br><br>
-          <h4 class="smalltype" > >> hover to flip << </h4>
-        </div>
-        <div style="margin-top: 50px;"></div>
-      </div>
-    </div>
-    <div class="back">
-      <div class="back-grid">
-        <div class="back-grid-left">
-          <div class="back-text-left">
-            <p class="caption">
-              POSTCARD LOCATION: Shoreline Park, CA. Updated every month.
-            </p>
-            <br><br>
-            <p class="type">
-              Welcome!
-            </p>
-            <p class="type">This month I've been making <a href="https://twitter.com/stanfordsymsys1" target="_blank">twitter bots</a> to teach my students about syntax and obsessing over <a href="https://www.youtube.com/watch?v=09sYnsT2ENU&t=56s" target="_blank">Wong Kar-Wai</a> with my friend Jam. </p>
+<section id="section01">
+  <div class="cardBox">
+    <div class="card">
+      <div class="front">
+        <div style="display:block">
+          <div style="margin-top: 17%;">
+            <img
+              src="images/JennyHanGreetings.png"
+              width="60%"
+            />
+            <p style="color:white">>>hover me<<</p>
             <br>
-            <p class="signature"> Jenny </p>
           </div>
+          <div style="margin-top: 50px;"></div>
         </div>
-        <div class="back-text-right">
-          <div class="stamp">
-            <img src= "images/bluestamp.png" width="90%">
+      </div>
+      <div class="back">
+        <div class="back-grid">
+          <div class="back-grid-left">
+            <div class="back-text-left">
+              <br><br><br>
+              <p class="signature">
+                Welcome,
+              </p>
+              <!-- <p class="signature">This month I've been making <a href="https://twitter.com/stanfordsymsys1" target="_blank">twitter bots</a> to teach my students about syntax and obsessing over <a href="https://www.youtube.com/watch?v=09sYnsT2ENU&t=56s" target="_blank">Wong Kar-Wai</a> with my friend Jam. </p> -->
+              <p class="signature">Recently I've been jamming to <a href="https://open.spotify.com/artist/0NB5HROxc8dDBXpkIi1v3d?si=BML7sv0_Rp6CD4jPNmYGbg" target="_blank">Remi Wolf</a> and cooking up curriculum at <a href="http://www.nextshiftlearning.com" target="_blank">Next Shift Learning</a>.</p>
+              <p class="signature"> Jenny Han </p>
+              <p class="caption">
+                LOCATION: Shoreline Park, CA.
+              </p>
+            </div>
           </div>
-          <div style="margin-top:5vw;margin-left:1vw;">
-            <p class="type"> Click above for more info about me.</p>
-            <p class = "type"> Scroll below to see some of my projects.</p>
+          <div class="back-text-right">
+            <div class="stamp">
+              <!-- <img src= "images/bluestamp.png" width="90%"> -->
+            </div>
+            <div style="margin-top:17vw;margin-left:1vw;">
+              <p class="signature">I teach computer science, design learning experiences, conduct HCI research, and collect postcards.</p>
+            </div>
           </div>
-          <br /><br />
         </div>
       </div>
     </div>
   </div>
-</div>
+  <a class="scroll" href="#portfolio"><span></span></a>
+</section>
 <!-- end postcard code -->
 
 
 <!--start filter container-->
-<br><br><br>
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> show all</button>
-  <!-- <button class="btn" onclick="filterSelection('education')"> Curriculum</button> -->
-  <button class="btn" onclick="filterSelection('research')"> research</button>
-  <button class="btn" onclick="filterSelection('design')"> design</button>
-</div>
-<br>
-<!--end filter container-->
+<br><br><br><br><br><br>
+<section id="portfolio">
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> show all</button>
+    <!-- <button class="btn" onclick="filterSelection('education')"> Curriculum</button> -->
+    <button class="btn" onclick="filterSelection('research')"> research</button>
+    <button class="btn" onclick="filterSelection('design')"> design</button>
+  </div>
+  <br>
+  <!--end filter container-->
 
 
-<!-- start portfolio gallery grid -->
-<div class="row">
-  <!-- <div class="column design">
-    <div class="content">
-      <img class="portfolioimg" src="/portfolio/sea.jpg" alt="SEA" name="portfolio/sea.html"onHover="darken(title)"onClick="openTab(this);">
-      <h4>Snap Engineering Academy</h4>
+    <!-- start portfolio gallery grid -->
+    <div class="row">
+      <!-- <div class="column design">
+        <div class="content">
+          <img class="portfolioimg" src="/portfolio/sea.jpg" alt="SEA" name="portfolio/sea.html"onHover="darken(title)"onClick="openTab(this);">
+          <h4>Snap Engineering Academy</h4>
+        </div>
+      </div> -->
+      <div class="column research">
+        <div class="content">
+          <img class="portfolioimg" src="/portfolio/k2csed.png" alt="k2csed" name="portfolio/k2csed.html"onHover="darken(title)"onClick="openTab(this);">
+          <h4>StoryCoder: interfaces to teach CS through storytelling</h4>
+        </div>
+      </div>
+      <div class="column research">
+        <div class="content">
+          <img class="portfolioimg" src="/portfolio/makingwithcode.png" alt="makingwithcode" name="portfolio/makingwithcode.html"onHover="darken(title)"onClick="openTab(this);">
+          <h4>Making with Code: a constructionist CS curriculum </h4>
+        </div>
+      </div>
+      <div class="column design">
+        <div class="content">
+          <img class="portfolioimg" src="/portfolio/domino.png" alt="domino" name="portfolio/domino.html"onHover="darken(title)"onClick="openTab(this);">
+          <h4>domino: a mobile app to replace arduinos </h4>
+        </div>
+      </div>
+      <div class="column research">
+        <div class="content">
+          <img class="portfolioimg" src="/portfolio/vitae.png" alt="vitae" name="portfolio/vitae.html"onHover="darken(title)"onClick="openTab(this);">
+          <h4>vitae: a research project about online gig labor and skill signalling</h4>
+        </div>
+      </div>
+      <div class="column research">
+        <div class="content">
+          <img class="portfolioimg" src="/portfolio/fulbright.png" alt="fulbright" name="portfolio/fulbright.html"onHover="darken(title)"onClick="openTab(this);">
+          <h4>Fulbright: a research proposal about rural schools & tech in China</h4>
+        </div>
+      </div>
+      <div class="column design">
+        <div class="content">
+          <img class="portfolioimg" src="/portfolio/activated.png" alt="activated" name="portfolio/activated.html"onHover="darken(title)"onClick="openTab(this);">
+          <h4>activated: a mobile app to make college prep accessible</h4>
+        </div>
+      </div>
     </div>
-  </div> -->
-  <div class="column research">
-    <div class="content">
-      <img class="portfolioimg" src="/portfolio/k2csed.png" alt="k2csed" name="portfolio/k2csed.html"onHover="darken(title)"onClick="openTab(this);">
-      <h4>StoryCoder: a research interface to teach CS through storytelling</h4>
-    </div>
-  </div>
-  <div class="column research">
-    <div class="content">
-      <img class="portfolioimg" src="/portfolio/makingwithcode.png" alt="makingwithcode" name="portfolio/makingwithcode.html"onHover="darken(title)"onClick="openTab(this);">
-      <h4>Making with Code: a constructionist CS curriculum </h4>
-    </div>
-  </div>
-  <div class="column design">
-    <div class="content">
-      <img class="portfolioimg" src="/portfolio/domino.png" alt="domino" name="portfolio/domino.html"onHover="darken(title)"onClick="openTab(this);">
-      <h4>domino: a mobile app to replace arduinos </h4>
-    </div>
-  </div>
-  <div class="column research">
-    <div class="content">
-      <img class="portfolioimg" src="/portfolio/vitae.png" alt="vitae" name="portfolio/vitae.html"onHover="darken(title)"onClick="openTab(this);">
-      <h4>vitae: a research project about online gig labor and skill signalling</h4>
-    </div>
-  </div>
-  <div class="column research">
-    <div class="content">
-      <img class="portfolioimg" src="/portfolio/fulbright.png" alt="fulbright" name="portfolio/fulbright.html"onHover="darken(title)"onClick="openTab(this);">
-      <h4>Fulbright: a research proposal about rural schools & tech in China</h4>
-    </div>
-  </div>
-  <div class="column design">
-    <div class="content">
-      <img class="portfolioimg" src="/portfolio/activated.png" alt="activated" name="portfolio/activated.html"onHover="darken(title)"onClick="openTab(this);">
-      <h4>activated: a mobile app to make college prep accessible</h4>
-    </div>
-  </div>
-</div>
+</section>
 <!-- END GRID -->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script type="text/javascript" src="portfolio.js"></script>

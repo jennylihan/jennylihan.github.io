@@ -33,7 +33,7 @@
 
 .card {
   cursor: default;
-  height: 40vw;
+  height: 37vw;
   transform-style: preserve-3d;
   transition: transform .4s ease 0.1s;
   width: 85%;
@@ -76,7 +76,7 @@
 
 .card .back {
   border-radius: 15px;
-  background-image: url("../images/PostcardBack.jpg");
+  background-image: url("../images/postcard2.jpg");
   background-size: cover;
   transform: rotateY( 180deg);
   display: flex;
@@ -115,7 +115,7 @@
 .back-text-right {
   text-align: left;
   padding-left: 5%;
-  border-left: 2px dotted #DAAA35;
+  /* border-left: 1px dotted #DAAA35; */
 }
 
 .stamp {
@@ -123,15 +123,13 @@
 }
 
 .caption {
-  font-size: .7vw;
-  /* font-weight: bold; */
+  font-size: 1vw;
   font-family: 'Courier New', monospace;
 }
 
 .signature {
   font-family: Script;
-  color: #787878;
-  line-height: 2.2vw;
+  line-height: 2.8vw;
   font-size: 3.5vw;
 }
 
@@ -312,6 +310,8 @@ button:hover {
 
 .portfolioimg:hover {
     opacity:0.5;
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
 }
 
 /* Style the buttons */
@@ -332,4 +332,53 @@ button:hover {
 .btn.active {
   background-color: #666;
    color: white;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+.scroll {
+  position: absolute;
+  bottom: 20px;
+  left: 45%;
+  z-index: 2;
+  display: inline-block;
+  border-bottom: 0px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.scroll:hover {
+  opacity: .5;
+}
+
+#section01 a span {
+  position: absolute;
+  bottom: 20px;
+  left: 45%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
