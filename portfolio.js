@@ -2,7 +2,7 @@ function displayPostcard(){
   if(localStorage.getItem("displayed") == null) {
     swal({
       title: "You\'ve got mail.",
-      text: "Hover over the postcard to read.",
+      text: "Hover over the postcard to read. Ideally not on mobile...",
       icon: "warning",
       button: "hm ok",
     });
