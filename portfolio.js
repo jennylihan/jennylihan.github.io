@@ -1,10 +1,20 @@
+var toggle = true;
+var card = document.querySelector('.card');
+card.addEventListener( 'click', function() {
+  card.classList.toggle('is-flipped');
+  var flipsound = toggle ? "flip1": "flip2";
+  toggle = !toggle;
+  var x = document.getElementById(flipsound); 
+  x.play();
+});
+
 function displayPostcard(){
   if(localStorage.getItem("displayed") == null) {
     swal({
       title: "You\'ve got mail.",
-      text: "Hover over the postcard to read. Ideally not on mobile...",
+      text: "Click on the postcard to read. Ideally not on mobile or Safari...",
       icon: "warning",
-      button: "hm ok",
+      button: "Hm ok",
     });
     // Store
     localStorage.setItem("displayed", "true");

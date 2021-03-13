@@ -13,7 +13,11 @@ I joined as research assistant for the project spearheaded by Chris Proctor as p
 <h3>✏️ Documentation</h3>
 We're working on making this curriculum open-source for other teachers to adopt and adapt, at <a href="https://cs.fablearn.org/" target="\_blank"> cs . fablearn . org.</a>
 
-You can find our course overview <a href="https://cs.fablearn.org/misc/grade-9-cs-options-brochure.html" target="\_blank">here.</a>
+<h3>🎉 Publication</h3>
+*<a href="http://www.tara.tcd.ie/bitstream/handle/2262/92768/C2020-Proceedings.pdf?sequence=1&isAllowed=y#page=473" target="\_blank"> Recovering Constructionism in Computer Science: Design of a Ninth-grade Introductory Computer Science Course </a>*
+*Proceedings of Constructionism '20.*
+*C Proctor, J Wolf, K Ng, P Blikstein*
+
 
 
 <h3>💭 Design Rationale</h3>
