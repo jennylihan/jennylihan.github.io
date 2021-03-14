@@ -341,22 +341,22 @@ button:hover {
 
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  10% { transform: translate(-1px, -2px) rotate(-.5deg); }
+  20% { transform: translate(-3px, 0px) rotate(.5deg); }
   30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  40% { transform: translate(1px, -1px) rotate(.5deg); }
+  50% { transform: translate(-1px, 2px) rotate(-.5deg); }
   60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  70% { transform: translate(3px, 1px) rotate(-.5deg); }
+  80% { transform: translate(-1px, -1px) rotate(.5deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  100% { transform: translate(1px, -2px) rotate(-.5deg); }
 }
 
 
 .scroll {
   position: absolute;
-  bottom: 3%;
+  bottom: 10px;
   left: 45%;
   z-index: 2;
   display: inline-block;
@@ -386,6 +386,18 @@ button:hover {
 }
 #section01{
   height: 100vh;
+}
+
+@media screen and (max-height: 700px) {
+  .scroll {
+    display:none;
+  }
+}
+
+@media screen and (max-height: 540px) {
+  #section01 {
+    height:105%;
+  }
 }
 
 html {
