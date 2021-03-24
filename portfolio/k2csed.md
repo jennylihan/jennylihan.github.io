@@ -10,7 +10,7 @@ I worked as a research assistant for Griffin Dietz (CS PhD candidate) who was ad
 <h3>✏️ Publication</h3>
 "Design Guidelines for Early Childhood Computer Science Education Tools" is a book chapter for  Hasso Plattner with Griffin Dietz, Prof. Hyo Gweon, Prof. James Landay, forthcoming!
 
-A paper summarizing our research was accepted to **CHI '21**! Stay tuned for pdf.
+A paper summarizing our research was accepted to **CHI '21, and it received an Honorable Mention**! You can read it [here](https://hci.stanford.edu/research/storycoder/pdfs/storycoder_chi.pdf).
 
 <h3>💭 Design Rationale </h3>
 
