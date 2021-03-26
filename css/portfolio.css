@@ -80,7 +80,7 @@
 
 .card .back {
   border-radius: 15px;
-  background-image: url("../images/postcardBack.jpg");
+  background-image: url("../images/PostcardBack.jpg");
   background-size: cover;
   transform: rotateY( 180deg);
   display: flex;
