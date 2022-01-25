@@ -1,10 +1,5 @@
 /* CSS Custom Properties Definitions */
 
-@font-face {
-  font-family: iAWriter;
-  src: url("./fonts/iAWriterQuattroS-Regular.ttf");
-}
-
 :root {
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
@@ -38,7 +33,7 @@
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
   --font-body: var(--fontFamily-serif);
-  --font-heading: iAWriter;
+  --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
   --fontWeight-medium: 500;
   --fontWeight-semibold: 600;
@@ -83,7 +78,7 @@ html {
 }
 
 body {
-  font-family: iAWriter;
+  font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
 }
@@ -106,7 +101,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: iAWriter;
+  font-family: var(--font-heading);
   margin-top: var(--spacing-12);
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
@@ -170,7 +165,6 @@ p {
   --x-height-multiplier: 0.35;
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
   padding: var(--spacing-0);
-  font-family: iAWriter;
 }
 
 ul,
@@ -287,8 +281,9 @@ a:focus {
 
 .header-link-home {
   font-weight: var(--fontWeight-bold);
+  font-family: var(--font-heading);
   text-decoration: none;
-  font-size: var(--fontSize-4);
+  font-size: var(--fontSize-2);
 }
 
 .bio {
@@ -313,7 +308,7 @@ a:focus {
 
 .blog-post header p {
   font-size: var(--fontSize-2);
-  font-family: iAWriter;
+  font-family: var(--font-heading);
 }
 
 .blog-post-nav ul {

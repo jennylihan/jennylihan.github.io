@@ -1,21 +1,20 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import logo from "../images/logo.jpg" // Tell webpack this JS file uses this image
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
 
-  // if (isRootPath) {
-  //   header = <p>Jenny Han</p>
-  // } else {
-  header = (
-    <Link className="header-link-home" to="/">
-      <img src={logo} alt="Logo" style={{ width: "10vw" }} />
-    </Link>
-  )
-  // }
+  if (isRootPath) {
+    header = <p>hi</p>
+  } else {
+    header = (
+      <Link className="header-link-home" to="/">
+        {title}
+      </Link>
+    )
+  }
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>

@@ -6,14 +6,28 @@
  */
 
 import * as React from "react"
-const styles = require("../postcard.css")
-
+import {
+  cardBox,
+  card,
+  frontDesign,
+  front,
+  greetings,
+} from "./postcard.module.css"
+import greetingsImage from "../images/greetings.png" // Tell webpack this JS file uses this image
 const Postcard = () => {
   return (
     <div>
-      <div className="cardBox">
-        <div className="card">
-
+      <div className={cardBox}>
+        <div className={frontDesign}>
+          <div className={card}>
+            <div className={front}>
+              <div style={{ display: "block" }}>
+                <div style={{ marginTop: "18%" }}></div>
+                <img src={greetingsImage} className={greetings} alt="test" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
