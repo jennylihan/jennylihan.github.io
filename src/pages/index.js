@@ -45,15 +45,19 @@ const BlogIndex = ({ data, location }) => {
         </p>
         <p>
           Previously, I've been a product engineering intern at{" "}
-          <a href="replit.com" rel="noreferrer" target="_blank">
+          <a href="https://replit.com" rel="noreferrer" target="_blank">
             replit
           </a>
           , a lead instructional designer at{" "}
-          <a href="nextshiftlearning.com" rel="noreferrer" target="_blank">
+          <a
+            href="https://nextshiftlearning.com"
+            rel="noreferrer"
+            target="_blank"
+          >
             Next Shift Learning
           </a>
           , and a head TA of the{" "}
-          <a href="symsys.stanford.edu" rel="noreferrer">
+          <a href="https://symsys.stanford.edu" rel="noreferrer">
             SYMSYS1 teaching team
           </a>
           . I was the recipient of a{" "}
@@ -283,7 +287,7 @@ const BlogIndex = ({ data, location }) => {
           </li>
           <li>
             [2021] Product engineering intern at{" "}
-            <a href="replit.com" rel="noreferrer" target="_blank">
+            <a href="https://replit.com" rel="noreferrer" target="_blank">
               replit
             </a>
             . Shipped features for onboarding, accessibility-friendly
@@ -292,7 +296,11 @@ const BlogIndex = ({ data, location }) => {
           </li>
           <li>
             [2020] A smol exploration of{" "}
-            <a href="drawingwindows.glitch.me" rel="noreferrer" target="_blank">
+            <a
+              href="http://drawingwindows.glitch.me"
+              rel="noreferrer"
+              target="_blank"
+            >
               chinese lattice geometry
             </a>{" "}
             for Camille Utterback's Drawing with Code studio course. Built with
