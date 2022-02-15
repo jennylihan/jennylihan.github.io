@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-test-js-3f31d78a0fdffd629339.js","mappings":"mLAEe,SAASA,IACtB,MAAO","sources":["webpack://gatsby-starter-blog/./src/pages/test.js"],"sourcesContent":["import * as React from \"react\"\n\nexport default function Component() {\n  return \"Hello world\"\n}\n"],"names":["Component"],"sourceRoot":""}
