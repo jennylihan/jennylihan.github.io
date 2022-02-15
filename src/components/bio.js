@@ -7,12 +7,13 @@
 
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Bio = () => {
   return (
     <div className="bio">
       <div className="header-bar">
-        <a className="header-link-bar" rel="noreferrer" href="#about">
+        <button className="header-link-bar" onClick={() => scrollTo("#about")}>
           <StaticImage
             className="stamp"
             layout="fixed"
@@ -23,7 +24,7 @@ const Bio = () => {
             alt="about"
           />
           about
-        </a>
+        </button>
         <a className="header-link-bar" rel="noreferrer" href="/JennyHan.pdf">
           <StaticImage
             className="stamp"
@@ -36,7 +37,10 @@ const Bio = () => {
           />
           cv
         </a>
-        <a className="header-link-bar" rel="noreferrer" href="#research">
+        <button
+          className="header-link-bar"
+          onClick={() => scrollTo("#research")}
+        >
           <StaticImage
             className="stamp"
             layout="fixed"
@@ -47,8 +51,11 @@ const Bio = () => {
             alt="Profile picture"
           />
           research
-        </a>
-        <a className="header-link-bar" rel="noreferrer" href="#teaching">
+        </button>
+        <button
+          className="header-link-bar"
+          onClick={() => scrollTo("#teaching")}
+        >
           <StaticImage
             className="stamp"
             layout="fixed"
@@ -59,8 +66,8 @@ const Bio = () => {
             alt="Profile picture"
           />
           teaching
-        </a>
-        <a className="header-link-bar" rel="noreferrer" href="#design">
+        </button>
+        <button className="header-link-bar" onClick={() => scrollTo("#design")}>
           <StaticImage
             className="stamp"
             layout="fixed"
@@ -71,7 +78,7 @@ const Bio = () => {
             alt="design"
           />
           design
-        </a>
+        </button>
       </div>
     </div>
   )

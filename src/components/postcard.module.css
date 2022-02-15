@@ -75,12 +75,14 @@
   transition: transform 0.4s ease 0.1s;
   -webkit-animation: giro 1s 1;
   animation: giro 1s 1;
-  margin-top: 10%;
+  margin-top: 7%;
   margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
 }
 
 .greetings {
-  width: 100%;
+  width: 90%;
   fill: var(--color-primary);
 }
 
