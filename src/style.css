@@ -298,7 +298,7 @@ a:focus {
   font-weight: var(--fontWeight-bold);
   text-decoration: none;
   font-size: var(--fontSize-3);
-  margin: var(--spacing-6);
+  margin: var(--spacing-2);
   color: var(--color-primary);
   text-align: center;
 }
@@ -306,12 +306,12 @@ a:focus {
 .header-bar {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  width: 100%;
+  width: 90%;
 }
 
 .bio {
   display: flex;
+  justify-content: center;
   margin-bottom: var(--spacing-16);
 }
 

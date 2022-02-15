@@ -77,10 +77,12 @@
   animation: giro 1s 1;
   margin-top: 10%;
   margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
 }
 
 .greetings {
-  width: 100%;
+  width: 80%;
   fill: var(--color-primary);
 }
 

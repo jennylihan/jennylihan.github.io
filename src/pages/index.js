@@ -84,11 +84,11 @@ const BlogIndex = ({ data, location }) => {
 
       <section id="research">
         <h2>research publications</h2>
-        <p>
+        <b>
           I research tools for teaching and learning computer science. I'm also
           interested in online learning communities and child-computer
           interaction.
-        </p>
+        </b>
         <ul>
           <li>
             Dietz, G., Le, J. K., Tamer, N., <b>Han, J.</b>, Gweon, H., Murnane,
@@ -145,12 +145,12 @@ const BlogIndex = ({ data, location }) => {
 
       <section id="teaching">
         <h2>teaching </h2>
-        <p>
+        <b>
           I've taught and designed curriculum for high school, community
           college, undergraduate, and graduate students. In the classroom, I
           strive for student-directed learning, personally meaningful projects,
           and equity at all times. Some teaching experiences that I'm proud of:
-        </p>
+        </b>
         <ul>
           <li>
             [2020,2021] Head TA-ed / was four-time TA for <b>SYMSYS1</b>, the

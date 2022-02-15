@@ -11,6 +11,7 @@ module.exports = {
       twitter: `jennyhansolo`,
     },
   },
+  pathPrefix: "/",
   plugins: [
     `gatsby-plugin-image`,
     {
