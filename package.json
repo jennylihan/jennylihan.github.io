@@ -3,11 +3,12 @@
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "jh.jennylihan@gmail.com",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "classnames": "^2.3.1",
     "gatsby": "^4.1.3",
     "gatsby-plugin-feed": "^4.1.1",
     "gatsby-plugin-gatsby-cloud": "^4.1.1",

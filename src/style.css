@@ -1,9 +1,6 @@
 /* CSS Custom Properties Definitions */
 
-@font-face {
-  font-family: iAWriter;
-  src: url("./fonts/iAWriterQuattroS-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@200;400&display=swap");
 
 :root {
   --maxWidth-none: "none";
@@ -59,7 +56,7 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
+  --color-primary: #d23e44;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
@@ -80,12 +77,13 @@ html {
   font-size: var(--fontSize-root);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Newsreader", serif;
 }
 
 body {
-  font-family: iAWriter;
   font-size: var(--fontSize-1);
   color: var(--color-text);
+  background-color: #f3e5c0;
 }
 
 footer {
@@ -106,7 +104,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: iAWriter;
   margin-top: var(--spacing-12);
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
@@ -170,7 +167,7 @@ p {
   --x-height-multiplier: 0.35;
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
   padding: var(--spacing-0);
-  font-family: iAWriter;
+  text-align: justify;
 }
 
 ul,
@@ -252,6 +249,12 @@ a:focus {
   padding: var(--spacing-10) var(--spacing-5);
 }
 
+.global-wrapper[data-is-root-path="true"] {
+  max-width: var(--maxWidth-full);
+  margin: var(--spacing-0) auto;
+  padding: var(--spacing-2) var(--spacing-5);
+}
+
 .global-wrapper[data-is-root-path="true"] .bio {
   margin-bottom: var(--spacing-20);
 }
@@ -291,6 +294,22 @@ a:focus {
   font-size: var(--fontSize-4);
 }
 
+.header-link-bar {
+  font-weight: var(--fontWeight-bold);
+  text-decoration: none;
+  font-size: var(--fontSize-3);
+  margin: var(--spacing-6);
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.header-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
 .bio {
   display: flex;
   margin-bottom: var(--spacing-16);
@@ -300,11 +319,10 @@ a:focus {
   margin-bottom: var(--spacing-0);
 }
 
-.bio-avatar {
-  margin-right: var(--spacing-4);
-  margin-bottom: var(--spacing-0);
+.stamp {
+  margin: var(--spacing-0) var(--spacing-4);
+  filter: drop-shadow(0px 1px 1px var(--color-primary));
   min-width: 50px;
-  border-radius: 100%;
 }
 
 .blog-post header h1 {
@@ -313,7 +331,6 @@ a:focus {
 
 .blog-post header p {
   font-size: var(--fontSize-2);
-  font-family: iAWriter;
 }
 
 .blog-post-nav ul {
@@ -322,6 +339,53 @@ a:focus {
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
+}
+
+.stamp:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+section {
+  margin: var(--spacing-0) auto;
+  max-width: var(--maxWidth-wrapper);
+  padding: var(--spacing-5) var(--spacing-5);
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-0.5deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(0.5deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(0.5deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-0.5deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-0.5deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(0.5deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-0.5deg);
+  }
 }
 
 /* Media queries */

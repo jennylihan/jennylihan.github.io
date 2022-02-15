@@ -6,51 +6,73 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Bio = () => {
-  const data = useStaticQuery(graphql`
-    query BioQuery {
-      site {
-        siteMetadata {
-          author {
-            name
-            summary
-          }
-          social {
-            twitter
-          }
-        }
-      }
-    }
-  `)
-
-  // Set these values by editing "siteMetadata" in gatsby-config.js
-  const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
-
   return (
     <div className="bio">
-      <StaticImage
-        className="bio-avatar"
-        layout="fixed"
-        formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
-        width={50}
-        height={50}
-        quality={95}
-        alt="Profile picture"
-      />
-      {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
-        </p>
-      )}
+      <div className="header-bar">
+        <a className="header-link-bar" rel="noreferrer" href="#about">
+          <StaticImage
+            className="stamp"
+            layout="fixed"
+            formats={["auto", "webp", "png", "avif"]}
+            src="../images/stamp2.png"
+            width={120}
+            quality={95}
+            alt="about"
+          />
+          about
+        </a>
+        <a className="header-link-bar" rel="noreferrer" href="/JennyHan.pdf">
+          <StaticImage
+            className="stamp"
+            layout="fixed"
+            formats={["auto", "webp", "avif"]}
+            src="../images/stamp1.png"
+            width={120}
+            quality={95}
+            alt="resume"
+          />
+          cv
+        </a>
+        <a className="header-link-bar" rel="noreferrer" href="#research">
+          <StaticImage
+            className="stamp"
+            layout="fixed"
+            formats={["auto", "webp", "avif"]}
+            src="../images/me.png"
+            width={120}
+            quality={95}
+            alt="Profile picture"
+          />
+          research
+        </a>
+        <a className="header-link-bar" rel="noreferrer" href="#teaching">
+          <StaticImage
+            className="stamp"
+            layout="fixed"
+            formats={["auto", "webp", "avif"]}
+            src="../images/stamp4.png"
+            width={120}
+            quality={95}
+            alt="Profile picture"
+          />
+          teaching
+        </a>
+        <a className="header-link-bar" rel="noreferrer" href="#design">
+          <StaticImage
+            className="stamp"
+            layout="fixed"
+            formats={["auto", "webp", "avif"]}
+            src="../images/stamp3.png"
+            width={120}
+            quality={95}
+            alt="design"
+          />
+          design
+        </a>
+      </div>
     </div>
   )
 }

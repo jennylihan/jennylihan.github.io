@@ -1,4 +1,5 @@
 /* CSS Custom Properties Definitions */
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@400&display=swap");
 
 :root {
   --maxWidth-none: "none";
@@ -54,137 +55,38 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
+  --color-primary: #d23e44;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
   --color-heading-black: black;
-  --color-accent: #d1dce5;
+  --color-accent: #f79599;
 }
 
 /* HTML elements */
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Staatliches&family=Yellowtail&display=swap");
 
 .cardBox {
-  float: left;
   font-size: 1.2vw;
-  margin: 5% 0 5% 5%;
   perspective: 800px;
   transition: all 0.4s ease 0.1s;
   width: 100%;
-  height: 40vw;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0.1s;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .greetings {
-  width: 80%;
+  width: 100%;
+  fill: var(--color-primary);
 }
 
-.frontDesign:hover {
+.cardBox:hover {
   animation: shake 0.5s;
   animation-iteration-count: 1;
-}
-
-.card {
-  cursor: default;
-  height: 37vw;
-  transform-style: preserve-3d;
-  transition: transform 0.4s ease 0.1s;
-  width: 100%;
-  -webkit-animation: giro 1s 1;
-  animation: giro 1s 1;
-  border-radius: 15px;
-  box-shadow: 0px 20px 100px #555;
-  margin: 0 auto;
-}
-
-.card {
-  border-radius: 15px;
-  background-image: url("https://raw.githubusercontent.com/jennylihan/jennylihan.github.io/master/images/PostcardFront.jpg");
-  background-size: cover;
-}
-
-.card .front {
-  border-radius: 15px;
-  background-image: url("https://raw.githubusercontent.com/jennylihan/jennylihan.github.io/master/images/PostcardFront.jpg");
-  background-size: cover;
-}
-
-.card p {
-  margin-bottom: 1.8em;
-}
-
-.card .front,
-.card .back {
-  backface-visibility: hidden;
-  box-sizing: border-box;
-  color: white;
-  display: block;
-  font-size: 1.2em;
-  height: 100%;
-  padding: 0.8em;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  overflow: hidden;
-}
-
-.card .front strong {
-  background: #fff;
-  border-radius: 100%;
-  color: #222;
-  font-size: 1.5em;
-  line-height: 30px;
-  padding: 0 7px 4px 6px;
-}
-
-.card .back {
-  border-radius: 15px;
-  background-image: url("../images/PostcardBack.jpg");
-  background-size: cover;
-  transform: rotateY(180deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #333;
-}
-
-.card .back a {
-  padding: 0.3em 0.5em;
-  background: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 1px;
-  font-size: 0.9em;
-  transition: all 0.2s ease 0s;
-}
-
-.front-text {
-  margin-top: 175px;
-}
-
-.backGrid {
-  display: grid;
-  grid-template-columns: 60% 40%;
-}
-
-.backGridLeft {
-  text-align: left;
-  border-right: 1px solid black;
-}
-
-.backTextLeft {
-  margin-right: 1vw;
-  margin-left: 1vw;
-}
-
-.backTextRight {
-  text-align: left;
-  margin-left: 3%;
-}
-
-.stamp {
-  text-align: right;
 }
 
 @keyframes shake {
@@ -229,7 +131,7 @@ body {
   font-size: 1em;
   line-height: 1.4em;
   color: #333;
-  font-family: "Source Sans Pro", "Sans-Serif";
+  font-family: "Newsreader", serif;
 }
 
 h1 {
@@ -241,7 +143,6 @@ h1 {
 h2 {
   font-size: 2vw;
   line-height: 2vw;
-  font-family: "Comic Neue", cursive;
   color: black;
   text-align: center;
 }
@@ -256,16 +157,6 @@ p {
   font-size: 1em;
   line-height: 1.4em;
   color: #333;
-  font-family: "Source Sans Pro", "Sans-Serif";
-}
-
-.caption {
-  font-size: 0.7vw;
-  font-family: "Source Code Pro", monospace;
-}
-
-.type {
-  font-family: "Source Code Pro", monospace;
 }
 
 .signature {
