@@ -153,11 +153,30 @@ const BlogIndex = ({ data, location }) => {
           I've taught and designed curriculum for high school, community
           college, undergraduate, and graduate students. In the classroom, I
           strive for student-directed learning, personally meaningful projects,
-          and equity at all times. Some teaching experiences that I'm proud of:
+          and equity at all times.
         </p>
+        <h6>University teaching at a glance:</h6>
         <ul>
           <li>
-            [2020,2021] Head TA-ed / was four-time TA for <b>SYMSYS1</b>, the
+            <b>Instructor</b>, CS106B: Programming Abstractions (Summer 2022)
+          </li>
+          <li>
+            <b>Head TA</b>, SYMSYS1: Minds and Machines (Fall 2021, Winter 2022)
+          </li>
+          <li>
+            <b>TA</b>, SYMSYS1: Minds and Machines (Fall 2020, Winter 2021)
+          </li>
+          <li>
+            <b>TA</b>, CS377U: Understanding Users (Spring 2020)
+          </li>
+          <li>
+            <b>TA</b>, EDUC211: Beyond Bits and Atoms (Winter 2019)
+          </li>
+        </ul>
+        <h6>Some teaching experiences that I'm proud of:</h6>
+        <ul>
+          <li>
+            [2020, 2021] Head TA-ed / was four-time TA for <b>SYMSYS1</b>, the
             undergraduate introduction to cognitive science at Stanford.
             Authored two of the four projects, including this one in which
             students coded their own{" "}
@@ -275,7 +294,7 @@ const BlogIndex = ({ data, location }) => {
             across U.S. cities. Built with d3.js and vegalite.{" "}
           </li>
           <li>
-            [2021] Data visualization of{" "}
+            [2021] <b>Data visualization</b> of{" "}
             <a
               href="https://observablehq.com/@jennylihan/mass-mobilization-over-the-years"
               rel="noreferrer"
@@ -303,8 +322,8 @@ const BlogIndex = ({ data, location }) => {
             >
               chinese lattice geometry
             </a>{" "}
-            for Camille Utterback's Drawing with Code studio course. Built with
-            p5.js.{" "}
+            for Camille Utterback's Drawing with Code <b>art studio</b> course.
+            Built with p5.js.{" "}
           </li>
         </ul>
       </section>

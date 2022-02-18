@@ -127,42 +127,16 @@
   }
 }
 
-body {
-  margin: 60px auto;
-  width: 70%;
-  font-size: 1em;
-  line-height: 1.4em;
-  color: #333;
-  font-family: "Newsreader", serif;
-}
-
-h1 {
-  font-size: 8vw;
-  font-family: "Staatliches", cursive;
-  color: white;
-}
-
-h2 {
-  font-size: 2vw;
-  line-height: 2vw;
-  color: black;
-  text-align: center;
-}
-h3 {
-  font-size: 2vw;
-  font-family: "Yellowtail", cursive;
-  line-height: 1vw;
-  color: white;
-}
-
-p {
-  font-size: 1em;
-  line-height: 1.4em;
-  color: #333;
-}
-
 .signature {
   font-family: Script;
   line-height: 1.4vw;
   font-size: 1vw;
+}
+
+@media (max-width: 42rem) {
+  .greetings {
+    width: 100%;
+    fill: var(--color-primary);
+    margin-bottom: var(--spacing-4);
+  }
 }
