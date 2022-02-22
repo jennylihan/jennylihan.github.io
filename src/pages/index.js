@@ -258,7 +258,8 @@ const BlogIndex = ({ data, location }) => {
               rel="noreferrer"
               target="_blank"
             >
-              college access workshops
+              college access and CS education workshops (funded via Google
+              igniteCS)
             </a>{" "}
             in San Jose and [2016] student-taught ninth graders at Breakthrough
             Silicon Valley.
@@ -355,7 +356,7 @@ const BlogIndex = ({ data, location }) => {
           <li>
             I could talk your head off about the following podcasts: Reply All,
             Throughline, The Experiment, California Love, Floodlines, Radiolab
-            (ft. Dolly Parton's America, Mixtap), Trojan Horse Affair.{" "}
+            (ft. Dolly Parton's America, Mixtape), Trojan Horse Affair.{" "}
           </li>
           <li>I collect postcards ~ </li>
         </ul>

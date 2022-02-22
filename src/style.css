@@ -53,10 +53,10 @@
   --fontSize-2: 1.2rem;
   --fontSize-3: 1.44rem;
   --fontSize-4: 1.728rem;
-  --fontSize-5: 2.074rem;
+  --fontSize-5: 2rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #d23e44;
+  --color-primary: #e2614e;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
@@ -87,8 +87,10 @@ body {
   line-height: 1.4em;
   font-size: var(--fontSize-1);
   color: var(--color-text);
-  background-color: #f3e5c0;
+  background-color: #fef7ef;
   font-family: "Newsreader", serif;
+  background-image: url("./images/noise.png");
+  background-size: contain cover;
 }
 
 footer {
@@ -411,9 +413,6 @@ section {
   body {
     font-size: var(--fontSize-1);
     color: var(--color-text);
-  }
-  :root {
-    --fontSize-5: 6.074rem;
   }
 }
 
