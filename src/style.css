@@ -89,7 +89,6 @@ body {
   color: var(--color-text);
   background-color: #fef7ef;
   font-family: "Newsreader", serif;
-  background-image: url("./images/noise.png");
   background-size: contain cover;
 }
 
