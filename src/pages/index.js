@@ -59,12 +59,16 @@ const BlogIndex = ({ data, location }) => {
               Next Shift Learning
             </a>
             , and a head TA of the{" "}
-            <a href="https://symsys.stanford.edu" rel="noreferrer">
+            <a
+              href="https://symsys.stanford.edu"
+              target="_blank"
+              rel="noreferrer"
+            >
               SYMSYS1 teaching team
             </a>
             . I was the recipient of a{" "}
             <a
-              href="https://news.stanford.edu/thedish/2019/06/10/twenty-seven-from-stanford-win-fulbright-u-s-student-program-grants/"
+              href="http://web.stanford.edu/dept/vpsa/bechtel/fulbright19-20.pdf"
               target="_blank"
               rel="noreferrer"
             >
@@ -171,7 +175,7 @@ const BlogIndex = ({ data, location }) => {
               <b>TA</b>, SYMSYS1: Minds and Machines (Fall 2020, Winter 2021)
             </li>
             <li>
-              <b>TA</b>, CS377U: Understanding Users (Spring 2020)
+              <b>TA</b>, CS377U: Understanding Users (Spring 2020, Spring 2022)
             </li>
             <li>
               <b>TA</b>, EDUC211: Beyond Bits and Atoms (Winter 2019)
@@ -191,8 +195,8 @@ const BlogIndex = ({ data, location }) => {
               >
                 grammars
               </a>
-              . Definitely one of the most formative experiences of my grad
-              school experience.
+              . Very nifty. Definitely one of the most formative experiences of
+              my grad school experience.
             </li>
             <li>
               [2019] Co-designed and co-taught{" "}
@@ -236,8 +240,8 @@ const BlogIndex = ({ data, location }) => {
               >
                 Alternative Spring Break
               </a>{" "}
-              , one of the largest public service and peer-learning programs at
-              Stanford.
+              , one of the largest <b>public service</b> and peer-learning
+              programs at Stanford.
             </li>
             <li>
               [2018] Practiced English with janitors on the night shift at
