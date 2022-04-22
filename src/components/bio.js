@@ -22,6 +22,7 @@ const Bio = () => {
             width={120}
             quality={95}
             alt="about"
+            // style={{ transform: "rotate(7deg)" }}
           />
           about
         </button>
@@ -31,6 +32,7 @@ const Bio = () => {
             layout="fixed"
             formats={["auto", "webp", "avif"]}
             src="../images/stamp1.png"
+            placeholder="blurred"
             width={120}
             quality={95}
             alt="resume"
@@ -46,6 +48,7 @@ const Bio = () => {
             layout="fixed"
             formats={["auto", "webp", "avif"]}
             src="../images/me.png"
+            placeholder="blurred"
             width={120}
             quality={95}
             alt="Profile picture"
@@ -61,6 +64,7 @@ const Bio = () => {
             layout="fixed"
             formats={["auto", "webp", "avif"]}
             src="../images/stamp4.png"
+            placeholder="blurred"
             width={120}
             quality={95}
             alt="Profile picture"
@@ -72,6 +76,7 @@ const Bio = () => {
             className="stamp"
             layout="fixed"
             formats={["auto", "webp", "avif"]}
+            placeholder="blurred"
             src="../images/stamp3.png"
             width={120}
             quality={95}
