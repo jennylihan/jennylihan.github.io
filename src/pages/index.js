@@ -298,7 +298,7 @@ const BlogIndex = ({ data, location }) => {
               >
                 Snap Academies
               </a>{" "}
-              and
+              and{" "}
               <a
                 href="https://snaparchallenge.com/"
                 rel="noreferrer"
