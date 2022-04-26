@@ -292,6 +292,14 @@ const BlogIndex = ({ data, location }) => {
             <li>
               [2022] <b>Digital brand identity and website design</b> for the{" "}
               <a
+                href="https://snapacademies.com/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Snap Academies
+              </a>{" "}
+              and
+              <a
                 href="https://snaparchallenge.com/"
                 rel="noreferrer"
                 target="_blank"
