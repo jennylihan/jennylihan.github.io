@@ -4,12 +4,28 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Postcard from "../components/Postcard"
 import Layout from "../components/layout"
+import Gallery from "../components/gallery"
 import Seo from "../components/seo"
 import postcards from "../images/cards.jpg" // Tell webpack this JS file uses this image
+// import { annotate } from "./rough-notation"
+// import { RoughNotation, RoughNotationGroup } from "react-rough-notation"
 
 const BlogIndex = ({ data, location }) => {
+  // React.useEffect(() => {
+  //   const a1 = annotate(sectionRef.current, {
+  //     type: "circle",
+  //     color: "#e2614e",
+  //   })
+  //   const a2 = annotate(sectionRef.current, {
+  //     type: "circle",
+  //     color: "#e2614e",
+  //   })
+  //   a1.show()
+  //   a2.show()
+  // }, [])
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
+  // const sectionRef = React.useRef(null)
 
   if (posts.length === 0) {
     return (
@@ -23,27 +39,40 @@ const BlogIndex = ({ data, location }) => {
       </Layout>
     )
   }
-
   return (
     <div className="container">
       <Layout location={location} title={siteTitle}>
         <Seo title="" />
         <div style={{ minHeight: "40px" }}></div>
+        {/* <div ref={sectionRef}> */}
+
         <Postcard />
+        {/* </div> */}
 
         <Bio />
 
         <br />
 
         <section id="about">
-          <h2>about</h2>
+          <h2>
+            {/* <RoughNotation
+              type="underline"
+              strokeWidth="2px"
+              show={true}
+              color="var(--color-primary)"
+              animationDelay="3000"
+            > */}
+            about
+            {/* </RoughNotation> */}
+          </h2>
           <p>
-            I'm equal parts ed + tech. Currently, I'm a Master's student at
-            Stanford studying Human-Computer Interaction with a focus on
-            learning technologies. I'm working on ways to make computer science
-            education more equitable and personally meaningful for all. My
-            experiences center around instructional design, web/app dev, and UX
-            research.
+            I'm equal parts ed + tech. Currently, I'm a summer lecturer for the{" "}
+            <a href="cs106b.stanford.edu">Stanford CS department</a>. I recently
+            graduated from Stanford with a Master's in Human-Computer
+            Interaction with a focus on learning technologies. I'm working on
+            ways to make computer science education more equitable and
+            personally meaningful for all. My experiences center around
+            instructional design, web/app dev, and UX research.
           </p>
           <p>
             Previously, I've been a product engineering intern at{" "}
@@ -90,10 +119,11 @@ const BlogIndex = ({ data, location }) => {
             science. I chased the questions: How do we learn? and How can we
             design more transformative tools and experiences for learning?
           </p>
+          <p>I'm looking for new roles and would love to chat.</p>
         </section>
 
         <section id="research">
-          <h2>research publications</h2>
+          <h2>research publications </h2>
           <p>
             I research tools for teaching and learning computer science. I'm
             also interested in online learning communities and child-computer
@@ -155,7 +185,7 @@ const BlogIndex = ({ data, location }) => {
         </section>
 
         <section id="teaching">
-          <h2>teaching </h2>
+          <h2>teaching</h2>
           <p>
             I've taught and designed curriculum for high school, community
             college, undergraduate, and graduate students. In the classroom, I
@@ -286,74 +316,8 @@ const BlogIndex = ({ data, location }) => {
         </section>
 
         <section id="design">
-          <h2>design </h2>
-
-          <ul>
-            <li>
-              [2022] <b>Digital brand identity and website design</b> for the{" "}
-              <a
-                href="https://snapacademies.com/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Snap Academies
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://snaparchallenge.com/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Snap AR Challenge
-              </a>
-              . Built with Webflow. Client: Snap Philanthropy and Next Shift
-              Learning.
-            </li>
-            <li>
-              [2021] <b>Data visualization</b> of{" "}
-              <a
-                href="https://observablehq.com/@4bd20473306f283e/cs448bfinalproject"
-                rel="noreferrer"
-                target="_blank"
-              >
-                the monopoly of Lyft bikeshare
-              </a>{" "}
-              across U.S. cities. Built with d3.js and vegalite.{" "}
-            </li>
-            <li>
-              [2021] <b>Data visualization</b> of{" "}
-              <a
-                href="https://observablehq.com/@jennylihan/mass-mobilization-over-the-years"
-                rel="noreferrer"
-                target="_blank"
-              >
-                the most common demands from protestors worldwide from 1990 -
-                2020
-              </a>
-              . Built with vegalite.{" "}
-            </li>
-            <li>
-              [2021] Product engineering intern at{" "}
-              <a href="https://replit.com" rel="noreferrer" target="_blank">
-                replit
-              </a>
-              . Shipped features for onboarding, accessibility-friendly
-              autocomplete, and community moderation tools. Presented designs
-              and vision for future of <b>interactive code tutorials</b>.{" "}
-            </li>
-            <li>
-              [2020] A smol exploration of{" "}
-              <a
-                href="http://drawingwindows.glitch.me"
-                rel="noreferrer"
-                target="_blank"
-              >
-                chinese lattice geometry
-              </a>{" "}
-              for Camille Utterback's Drawing with Code <b>art studio</b>{" "}
-              course. Built with p5.js.{" "}
-            </li>
-          </ul>
+          <h2>design and development</h2>
+          <Gallery></Gallery>
         </section>
 
         <section id="other">

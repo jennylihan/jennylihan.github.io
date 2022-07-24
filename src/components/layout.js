@@ -11,7 +11,7 @@ const Layout = ({ location, title, children }) => {
   if (!isRootPath) {
     header = (
       <Link className="header-link-home" to="/">
-        <img src={logo} alt="Logo" style={{ width: "10vw" }} />
+        <img src={logo} alt="Logo" style={{ width: "10vw", fill: "green" }} />
       </Link>
     )
     footer = (

@@ -10,10 +10,65 @@ module.exports = {
     social: {
       twitter: `jennyhansolo`,
     },
+    projectList: [
+      {
+        title: `Snap Academies`,
+        year: `2022 | Website Design (Webflow)`,
+        description: `Digital brand identity and website design for Snap Inc. Philanthropy.`,
+        siteUrl: `https://www.snapacademies.com`,
+        imageUrl: `snapacademies`,
+      },
+      {
+        title: `Grammars for All`,
+        year: `2021 | Web App (JS) + Curriculum`,
+        description: `Built a playground for context-free grammars.`,
+        siteUrl: `https://github.com/jennylihan/symsys-cfg`,
+        imageUrl: `grammars`,
+      },
+      {
+        title: `Replit`,
+        year: `2021 | Product Engineering`,
+        description: `Designed future of interactive code tutorials.`,
+        siteUrl: `https://replit.com`,
+        imageUrl: `replit`,
+      },
+      {
+        title: `E-bikes Deep Dive`,
+        year: `2021 | Data Viz (d3.js, vegalite)`,
+        description: `Visualizing the distribution and use of bikeshare across U.S. cities.`,
+        siteUrl: `https://observablehq.com/@4bd20473306f283e/cs448bfinalproject`,
+        imageUrl: `bikes`,
+      },
+      {
+        title: `Protests on the rise?`,
+        year: `2021 | Data Visualization (vegalite)`,
+        description: `Visualizing mass mobilizations around the world in 2019.`,
+        siteUrl: `https://observablehq.com/@jennylihan/mass-mobilization-over-the-years`,
+        imageUrl: `protests`,
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // Needed for dynamic images
     `gatsby-plugin-smoothscroll`,
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+        threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
+        once: true, // Defines if animation needs to be launched once
+        disable: true, // Flag for disabling animations
+
+        // Advanced Options
+        selector: "[data-sal]", // Selector of the elements to be animated
+        animateClassName: "sal-animate", // Class name which triggers animation
+        disabledClassName: "sal-disabled", // Class name which defines the disabled state
+        rootMargin: "0% 50%", // Corresponds to root's bounding box margin
+        enterEventName: "sal:in", // Enter event name
+        exitEventName: "sal:out", // Exit event name
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
