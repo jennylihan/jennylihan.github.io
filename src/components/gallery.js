@@ -11,6 +11,7 @@ import cards from "../images/gallery/cards.jpg"
 import snapacademies from "../images/gallery/snapacademies.png"
 import protests from "../images/gallery/protests.png"
 import bikes from "../images/gallery/bikes.png"
+import collisions from "../images/gallery/collisions.jpg"
 
 const Gallery = () => {
   const data = useStaticQuery(graphql`
@@ -42,6 +43,8 @@ const Gallery = () => {
         return "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/1200px-Repl.it_logo.svg.png"
       case "grammars":
         return "https://user-images.githubusercontent.com/26272095/137962447-b0131652-7d50-489a-b4a6-5661e362fec1.png"
+      case "collisions":
+        return collisions
     }
   }
   return (
@@ -57,7 +60,7 @@ const Gallery = () => {
               src={getImage(node.imageUrl)}
               alt={node.imageUrl}
               style={{
-                objectFit: "contain",
+                objectFit: "cover",
                 width: "100%",
                 maxHeight: "150px",
               }}

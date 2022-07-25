@@ -19,6 +19,13 @@ module.exports = {
         imageUrl: `snapacademies`,
       },
       {
+        title: `Traffic Collisions`,
+        year: `2022 | Web Article Design (Vev)`,
+        description: `A scrollytelling piece detailing recent fatal traffic collisions in the Bay Area.`,
+        siteUrl: `https://peninsulapress.com/2022/06/10/fatal-collisions-involving-juvenile-cyclists-highlight-road-safety-issues-in-the-bay-area/`,
+        imageUrl: `collisions`,
+      },
+      {
         title: `Grammars for All`,
         year: `2021 | Web App (JS) + Curriculum`,
         description: `Built a playground for context-free grammars.`,
