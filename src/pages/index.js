@@ -67,12 +67,14 @@ const BlogIndex = ({ data, location }) => {
           </h2>
           <p>
             I'm equal parts ed + tech. Currently, I'm a summer lecturer for the{" "}
-            <a href="https://cs106b.stanford.edu">Stanford CS department</a>. I
-            recently graduated from Stanford with a Master's in Human-Computer
-            Interaction with a focus on learning technologies. I'm working on
-            ways to make computer science education more equitable and
-            personally meaningful for all. My experiences center around
-            instructional design, web/app dev, and UX research.
+            <a href="https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1228/">
+              Stanford CS department
+            </a>
+            . I recently graduated from Stanford with a Master's in
+            Human-Computer Interaction with a focus on learning technologies.
+            I'm working on ways to make computer science education more
+            equitable and personally meaningful for all. My experiences center
+            around instructional design, web/app dev, and UX research.
           </p>
           <p>
             Previously, I've been a product engineering intern at{" "}
