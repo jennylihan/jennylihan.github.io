@@ -28,7 +28,7 @@ module.exports = {
       {
         title: `Grammars for All`,
         year: `2021 | Web App (JS) + Curriculum`,
-        description: `Built a playground for context-free grammars.`,
+        description: `Built a playground and a bunch of twitter bots to teach context-free grammars.`,
         siteUrl: `https://github.com/jennylihan/symsys-cfg`,
         imageUrl: `grammars`,
       },
