@@ -66,9 +66,9 @@ const BlogIndex = ({ data, location }) => {
             {/* </RoughNotation> */}
           </h2>
           <p>
-            I'm equal parts ed + tech. Currently, I'm a summer lecturer for the{" "}
-            <a href="https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1228/">
-              Stanford CS department
+            I'm equal parts ed + tech. Currently, I'm a web developer building tools for teachers at the{" "}
+            <a href="https://sites.uci.edu/daplab/">
+              UCI Design and Partnership Lab
             </a>
             . I recently graduated from Stanford with a Master's in
             Human-Computer Interaction with a focus on learning technologies.
@@ -121,7 +121,6 @@ const BlogIndex = ({ data, location }) => {
             science. I chased the questions: How do we learn? and How can we
             design more transformative tools and experiences for learning?
           </p>
-          <p>I'm looking for new roles and would love to chat.</p>
         </section>
 
         <section id="research">
@@ -216,6 +215,9 @@ const BlogIndex = ({ data, location }) => {
           <h6>Some teaching experiences that I'm proud of:</h6>
           <ul>
             <li>
+              [2022] Co-lectured CS106B in the summer with one of my best friends, and we had a great time experimenting with <a href="https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1228/">mastery-based and project-based approaches to learning</a>.
+            </li>
+            <li>
               [2020, 2021] Head TA-ed / was four-time TA for <b>SYMSYS1</b>, the
               undergraduate introduction to cognitive science at Stanford.
               Authored two of the four projects, including this one in which
@@ -227,8 +229,7 @@ const BlogIndex = ({ data, location }) => {
               >
                 grammars
               </a>
-              . Very nifty. Definitely one of the most formative experiences of
-              my grad school experience.
+              . Very nifty. Definitely a formative experience in grad school for me.
             </li>
             <li>
               [2019] Co-designed and co-taught{" "}
