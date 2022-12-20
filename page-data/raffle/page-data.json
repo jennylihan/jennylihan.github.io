@@ -1,5 +1,5 @@
 {
-    "componentChunkName": "component---src-templates-blog-post-js",
+    "componentChunkName": "component---src-pages-raffle-js",
     "path": "/raffle/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"jenny han"}},"markdownRemark":{"id":"ccbbe7a4-b4a1-5585-9926-1ec4cd7907d9","excerpt":"","html":"","frontmatter":{"title":"Lucky Draw","date":null,"description":null}},"previous":{"fields":{"slug":"/new-beginnings/"},"frontmatter":{"title":"New Beginnings"}},"next":null},"pageContext":{"id":"ccbbe7a4-b4a1-5585-9926-1ec4cd7907d9","previousPostId":"3bdc513c-e71a-508a-810f-ded570343250","nextPostId":null}},
-    "staticQueryHashes": ["2841359383"]}
+    "result": {"pageContext":{}},
+    "staticQueryHashes": []}
