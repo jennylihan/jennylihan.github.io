@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_blog=self.webpackChunkgatsby_starter_blog||[]).push([[598],{9953:function(){window.location.replace("https://luckydraw.wolfie.dev/")}}]);
+//# sourceMappingURL=component---src-pages-2023-js-d2e4b27c4c2d297e3898.js.map
