@@ -77,6 +77,7 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-plugin-redirect-to`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
