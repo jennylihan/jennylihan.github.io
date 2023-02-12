@@ -410,9 +410,7 @@ const BlogIndex = ({ data, location }) => {
                   }}
                 ></img>
                 <div className="table-text">
-                  <h3>
-                    What Alison Gopnik's Theory Theory Tells Us About School
-                  </h3>
+                  <h3>Play and Learning</h3>
                   <p>2020</p>
                   <p className="table-text">
                     A very high-level exploration of play- and discovery-based
