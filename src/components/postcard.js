@@ -8,8 +8,9 @@ import {
   gridContainer,
   left,
   right,
-  stamp,
+  row,
   fineprint,
+  middle,
 } from "./postcard.module.css"
 import WelcomeSign from "./welcomesign"
 import { StaticImage } from "gatsby-plugin-image"
@@ -38,7 +39,7 @@ export default function Postcard() {
               <h1>Hello from Baltimore!</h1>
               <br />
               <p>
-                This year, I've been building data visualization tools for math
+                Hey! I've been building data visualization tools for math
                 teachers as part of the{" "}
                 <a href="https://sites.uci.edu/daplab" target="_blank">
                   Design & Partnership Lab
@@ -67,24 +68,45 @@ export default function Postcard() {
               <p className={fineprint}>Winter 2023</p>
             </div>
             <div className={right}>
-              <StaticImage
-                className="stamp"
-                layout="fixed"
-                formats={["auto", "webp", "png", "avif"]}
-                src="../images/jenny.png"
-                width={120}
-                quality={95}
-                alt="about"
-                // style={{ transform: "rotate(7deg)" }}
-              />
-              <p>Jenny Han</p>
-              <a href="linkedin.com/in/jennylihan" target="_blank">
-                LinkedIn
-              </a>
-              <a href="twitter.com/jennyhansolo" target="_blank">
-                Twitter
-              </a>
-              <p onClick={handleClick}>Go back</p>
+              <div className={row}>
+                <StaticImage
+                  className="stamp"
+                  layout="fixed"
+                  formats={["auto", "webp", "png", "avif"]}
+                  src="../images/jenny.png"
+                  width={120}
+                  quality={95}
+                  alt="about"
+                  // style={{ transform: "rotate(7deg)" }}
+                />
+              </div>
+              <div className={middle}>
+                <a href="https://linkedin.com/in/jennylihan" target="_blank">
+                  LinkedIn
+                </a>
+                <a href="https://twitter.com/jennyhansolo" target="_blank">
+                  Twitter
+                </a>
+                <a href="https://github.com/jennylihan" target="_blank">
+                  Github
+                </a>
+              </div>
+              <svg
+                onClick={handleClick}
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-arrow-back"
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#2c3e50"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1" />
+              </svg>
             </div>
           </div>
         </div>

@@ -47,7 +47,7 @@ const BlogIndex = ({ data, location }) => {
     <div className="container">
       <Layout location={location} title={siteTitle}>
         <Seo title="" />
-        <div style={{ minHeight: "0px" }}></div>
+        <div style={{ minHeight: "20px" }}></div>
         {/* <div ref={sectionRef}> */}
 
         <Postcard />
