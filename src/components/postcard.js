@@ -44,7 +44,7 @@ export default function Postcard() {
                 <a href="https://sites.uci.edu/daplab" target="_blank">
                   Design & Partnership Lab
                 </a>{" "}
-                at UC Irvine.
+                at UC Irvine (remotely).
               </p>
               <p>
                 I'm having a blast exploring the corners of Charm City by bike
