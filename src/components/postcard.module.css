@@ -8,20 +8,107 @@
   perspective: 800px;
   transition: all 0.4s ease 0.1s;
   width: 100%;
-  height: 100%;
+  padding-bottom: 60%;
   transform-style: preserve-3d;
   transition: transform 0.4s ease 0.1s;
   -webkit-animation: giro 1s 1;
   animation: giro 1s 1;
-  margin-top: 7%;
   margin-bottom: 5%;
   display: flex;
   justify-content: center;
+  cursor: pointer;
+}
+.cardFront {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
 }
 
+.image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  border-radius: 30px;
+  opacity: 70%;
+  filter: brightness(80%);
+  background-image: url("../images/postcards/baltimore.jpg");
+  background-size: cover;
+}
+
+.cardBack {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  column-gap: 10px;
+  row-gap: 50px;
+  width: 100%;
+  height: 80%;
+  border-radius: 30px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 40px;
+  align-items: start;
+  border-right: 1px dotted black;
+  overflow-y: scroll;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.stamp {
+  float: right;
+  position: relative;
+  top: 0;
+  right: 0;
+}
 .greetings {
-  width: 85%;
-  fill: var(--color-primary);
+  width: 75%;
+  opacity: 1;
+  fill: "white";
+  /* fill: var(--color-primary); */
+  z-index: 30;
+}
+
+.fineprint {
+  font-size: 0.7vw;
 }
 
 .cardBox:hover {
@@ -76,5 +163,14 @@
     width: 100%;
     fill: var(--color-primary);
     margin-bottom: var(--spacing-4);
+  }
+  .left {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  .greetings {
+    width: 50%;
   }
 }

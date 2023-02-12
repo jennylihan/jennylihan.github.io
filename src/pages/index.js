@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
-import Postcard from "../components/Postcard"
+import Postcard from "../components/postcard"
 import Layout from "../components/layout"
 import Gallery from "../components/gallery"
 import Seo from "../components/seo"
@@ -47,7 +47,7 @@ const BlogIndex = ({ data, location }) => {
     <div className="container">
       <Layout location={location} title={siteTitle}>
         <Seo title="" />
-        <div style={{ minHeight: "40px" }}></div>
+        <div style={{ minHeight: "0px" }}></div>
         {/* <div ref={sectionRef}> */}
 
         <Postcard />

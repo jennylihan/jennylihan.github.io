@@ -74,6 +74,13 @@ module.exports = {
         siteUrl: `http://cs.fablearn.org/`,
         imageUrl: `cs9`,
       },
+      {
+        title: `Lucky Draw`,
+        year: `2023 | Next.JS`,
+        description: `Just for fun; created a random digital gift generator for my close friends with one of my best friends Jacob`,
+        siteUrl: `https://luckydraw.wolfie.dev`,
+        imageUrl: `luckydraw`,
+      },
     ],
   },
   plugins: [

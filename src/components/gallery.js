@@ -15,6 +15,7 @@ import collisions from "../images/gallery/collisions.jpg"
 import chapsnat from "../images/gallery/chapsnat.png"
 import cs9 from "../images/gallery/cs9.png"
 import yearinreview from "../images/gallery/yearinreview.png"
+import luckydraw from "../images/gallery/luckydraw.png"
 
 const Gallery = () => {
   const data = useStaticQuery(graphql`
@@ -52,6 +53,8 @@ const Gallery = () => {
         return chapsnat
       case "yearinreview":
         return yearinreview
+      case "luckydraw":
+        return luckydraw
       case "cs9":
         return cs9
     }
