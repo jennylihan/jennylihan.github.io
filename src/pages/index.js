@@ -9,6 +9,7 @@ import Seo from "../components/seo"
 import postcards from "../images/cards.jpg" // Tell webpack this JS file uses this image
 import scifi from "../images/gallery/scifi.jpg" // Tell webpack this JS file uses this image
 import edfest from "../images/gallery/edfest.jpg" // Tell webpack this JS file uses this image
+import theorytheory from "../images/gallery/theorytheory.jpg" // Tell webpack this JS file uses this image
 
 // import { annotate } from "./rough-notation"
 // import { RoughNotation, RoughNotationGroup } from "react-rough-notation"
@@ -329,8 +330,38 @@ const BlogIndex = ({ data, location }) => {
         </section>
 
         <section id="teachingvideos">
-          <h2>teaching videos</h2>
+          <h2>teaching videos (for SYMSYS1)</h2>
           <div className="table">
+            <Link
+              className="outline"
+              to={"https://www.youtube.com/watch?v=vT1IrszcE1E&t=268s"}
+              style={{ textDecoration: "none" }}
+              target="_blank"
+            >
+              <div className="table-contents">
+                <img
+                  src={edfest}
+                  alt={
+                    "A poster of Replit's Ed Fest 2022 with the text, 'Twitter Bots with Replit: An Interdisciplinary Approach to CS Education'"
+                  }
+                  style={{
+                    objectFit: "cover",
+                    width: "100%",
+                    maxHeight: "150px",
+                  }}
+                ></img>
+                <div className="table-text">
+                  <h3>Twitter Bots with Replit</h3>
+                  <p>2022</p>
+                  <p className="table-text">
+                    A 30-minute virtual workshop showcasing a beginner-friendly,
+                    interdisciplinary CS project. I was invited to present this
+                    as part of Replit's Ed Fest 2022 for computer science
+                    educators.
+                  </p>
+                </div>
+              </div>
+            </Link>
             <Link
               className="outline"
               to={"https://youtu.be/i2UlXG_RUEU"}
@@ -340,7 +371,9 @@ const BlogIndex = ({ data, location }) => {
               <div className="table-contents">
                 <img
                   src={scifi}
-                  alt={"test"}
+                  alt={
+                    "A powerpoint slide with brain cells with the text 'why take a science fiction perspective to symsys1?'"
+                  }
                   style={{
                     objectFit: "cover",
                     width: "100%",
@@ -360,14 +393,16 @@ const BlogIndex = ({ data, location }) => {
             </Link>
             <Link
               className="outline"
-              to={"https://www.youtube.com/watch?v=vT1IrszcE1E&t=268s"}
+              to={"https://youtu.be/Yr1XCVekmbM"}
               style={{ textDecoration: "none" }}
               target="_blank"
             >
               <div className="table-contents">
                 <img
-                  src={edfest}
-                  alt={"test"}
+                  src={theorytheory}
+                  alt={
+                    "A powerpoint slide with the text: What the theory theory tells us about school"
+                  }
                   style={{
                     objectFit: "cover",
                     width: "100%",
@@ -375,12 +410,14 @@ const BlogIndex = ({ data, location }) => {
                   }}
                 ></img>
                 <div className="table-text">
-                  <h3>Twitter Bots with Replit</h3>
-                  <p>2022</p>
+                  <h3>
+                    What Alison Gopnik's Theory Theory Tells Us About School
+                  </h3>
+                  <p>2020</p>
                   <p className="table-text">
-                    A 30-minute virtual workshop showcasing a beginner-friendly
-                    project from SYMSYS1 as part of Replit's Ed Fest 2022 for
-                    computer science educators.
+                    A very high-level exploration of play- and discovery-based
+                    learning in cognitive science research. Created for my
+                    students in SYMSYS1: Minds and Machines.
                   </p>
                 </div>
               </div>
