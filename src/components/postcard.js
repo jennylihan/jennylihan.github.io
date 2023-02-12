@@ -50,7 +50,7 @@ export default function Postcard() {
                 I'm having a blast exploring the corners of Charm City by bike
                 while listening to{" "}
                 <a
-                  href="https://www.google.com/search?q=out+of+the+blocks&sourceid=chrome&ie=UTF-8"
+                  href="https://ootb.thepeale.org/#:~:text=Created%20by%20Aaron%20Henkin%20and,stories%20hidden%20in%20plain%20sight."
                   target="_blank"
                 >
                   WYPR's Out of the Blocks
