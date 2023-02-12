@@ -7,6 +7,9 @@ import Layout from "../components/layout"
 import Gallery from "../components/gallery"
 import Seo from "../components/seo"
 import postcards from "../images/cards.jpg" // Tell webpack this JS file uses this image
+import scifi from "../images/gallery/scifi.jpg" // Tell webpack this JS file uses this image
+import edfest from "../images/gallery/edfest.jpg" // Tell webpack this JS file uses this image
+
 // import { annotate } from "./rough-notation"
 // import { RoughNotation, RoughNotationGroup } from "react-rough-notation"
 
@@ -66,7 +69,8 @@ const BlogIndex = ({ data, location }) => {
             {/* </RoughNotation> */}
           </h2>
           <p>
-            I'm equal parts ed + tech. Currently, I'm a web developer building tools for teachers at the{" "}
+            I'm equal parts ed + tech. Currently, I'm a web developer building
+            tools for teachers at the{" "}
             <a href="https://sites.uci.edu/daplab/">
               UCI Design and Partnership Lab
             </a>
@@ -215,7 +219,12 @@ const BlogIndex = ({ data, location }) => {
           <h6>Some teaching experiences that I'm proud of:</h6>
           <ul>
             <li>
-              [2022] Co-lectured CS106B in the summer with one of my best friends, and we had a great time experimenting with <a href="https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1228/">mastery-based and project-based approaches to learning</a>.
+              [2022] Co-lectured CS106B in the summer with one of my best
+              friends, and we had a great time experimenting with{" "}
+              <a href="https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1228/">
+                mastery-based and project-based approaches to learning
+              </a>
+              .
             </li>
             <li>
               [2020, 2021] Head TA-ed / was four-time TA for <b>SYMSYS1</b>, the
@@ -229,7 +238,8 @@ const BlogIndex = ({ data, location }) => {
               >
                 grammars
               </a>
-              . Very nifty. Definitely a formative experience in grad school for me.
+              . Very nifty. Definitely a formative experience in grad school for
+              me.
             </li>
             <li>
               [2019] Co-designed and co-taught{" "}
@@ -316,6 +326,66 @@ const BlogIndex = ({ data, location }) => {
               Breakthrough Silicon Valley.
             </li>
           </ul>
+        </section>
+
+        <section id="teachingvideos">
+          <h2>teaching videos</h2>
+          <div className="table">
+            <Link
+              className="outline"
+              to={"https://youtu.be/i2UlXG_RUEU"}
+              style={{ textDecoration: "none" }}
+              target="_blank"
+            >
+              <div className="table-contents">
+                <img
+                  src={scifi}
+                  alt={"test"}
+                  style={{
+                    objectFit: "cover",
+                    width: "100%",
+                    maxHeight: "150px",
+                  }}
+                ></img>
+                <div className="table-text">
+                  <h3>Science Fiction and Symbolic Systems</h3>
+                  <p>2021</p>
+                  <p className="table-text">
+                    What science fiction can teach us about minds and machines.
+                    A short video created for my students in SYMSYS1: Minds and
+                    Machines.
+                  </p>
+                </div>
+              </div>
+            </Link>
+            <Link
+              className="outline"
+              to={"https://www.youtube.com/watch?v=vT1IrszcE1E&t=268s"}
+              style={{ textDecoration: "none" }}
+              target="_blank"
+            >
+              <div className="table-contents">
+                <img
+                  src={edfest}
+                  alt={"test"}
+                  style={{
+                    objectFit: "cover",
+                    width: "100%",
+                    maxHeight: "150px",
+                  }}
+                ></img>
+                <div className="table-text">
+                  <h3>Twitter Bots with Replit</h3>
+                  <p>2022</p>
+                  <p className="table-text">
+                    A 30-minute virtual workshop showcasing a beginner-friendly
+                    project from SYMSYS1 as part of Replit's Ed Fest 2022 for
+                    computer science educators.
+                  </p>
+                </div>
+              </div>
+            </Link>
+          </div>
         </section>
 
         <section id="design">
