@@ -357,7 +357,13 @@ const BlogIndex = ({ data, location }) => {
                     A 30-minute virtual workshop showcasing a beginner-friendly,
                     interdisciplinary CS project. I was invited to present this
                     as part of Replit's Ed Fest 2022 for computer science
-                    educators.
+                    educators.{" "}
+                    <a
+                      href="https://jennylihan.notion.site/jennylihan/Twitter-Bots-with-Replit-26f307a09de84c5689dafc4c5f5bee23"
+                      target="_blank"
+                    >
+                      Materials here.
+                    </a>
                   </p>
                 </div>
               </div>
@@ -386,7 +392,13 @@ const BlogIndex = ({ data, location }) => {
                   <p className="table-text">
                     What science fiction can teach us about minds and machines.
                     A short video created for my students in SYMSYS1: Minds and
-                    Machines.
+                    Machines.{" "}
+                    <a
+                      href="https://docs.google.com/presentation/d/1KmdAHtNWwrE_KAZgshWhO9C0BsMoxEfmz3Ch72jUlGw/edit?usp=sharing"
+                      target="_blank"
+                    >
+                      Slides here.
+                    </a>
                   </p>
                 </div>
               </div>
@@ -415,7 +427,13 @@ const BlogIndex = ({ data, location }) => {
                   <p className="table-text">
                     A very high-level exploration of play- and discovery-based
                     learning in cognitive science research. Created for my
-                    students in SYMSYS1: Minds and Machines.
+                    students in SYMSYS1: Minds and Machines.{" "}
+                    <a
+                      href="https://docs.google.com/presentation/d/1m3J2rNZK2oU__2_dNCTE5L5voSldhpQnqJW7ccQqkwk/edit?usp=sharing"
+                      target="_blank"
+                    >
+                      Materials here
+                    </a>
                   </p>
                 </div>
               </div>
