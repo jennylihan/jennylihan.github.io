@@ -137,6 +137,14 @@ const BlogIndex = ({ data, location }) => {
           </p>
           <ul>
             <li>
+              Bigman, M., Gilon, Y., <b>Han, J.</b>, & Mitchell, J. (2022).
+              Insights for post-pandemic pedagogy across one CS department.
+              Arxiv.{" "}
+              <a href="https://arxiv.org/abs/2203.09050" rel="noreferrer">
+                [link]
+              </a>
+            </li>
+            <li>
               Dietz, G., Le, J. K., Tamer, N., <b>Han, J.</b>, Gweon, H.,
               Murnane, E. L., & Landay, J. A. (2021). StoryCoder: Teaching
               computational thinking concepts through storytelling in a
