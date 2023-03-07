@@ -36,7 +36,7 @@ export default function Postcard() {
         <div className={cardBack}>
           <div className={gridContainer}>
             <div className={left}>
-              <h1>Hello from Baltimore!</h1>
+              <h1>Hello from Maryland!</h1>
               <br />
               <p>
                 Hey! I've been building data visualization tools for math

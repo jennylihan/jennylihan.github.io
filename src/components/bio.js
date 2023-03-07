@@ -19,7 +19,7 @@ const Bio = () => {
             layout="fixed"
             formats={["auto", "webp", "png", "avif"]}
             src="../images/stamp2.png"
-            width={120}
+            width={80}
             quality={95}
             alt="about"
             // style={{ transform: "rotate(7deg)" }}
@@ -33,7 +33,7 @@ const Bio = () => {
             formats={["auto", "webp", "avif"]}
             src="../images/stamp1.png"
             placeholder="blurred"
-            width={120}
+            width={80}
             quality={95}
             alt="resume"
           />
@@ -49,7 +49,7 @@ const Bio = () => {
             formats={["auto", "webp", "avif"]}
             src="../images/me.png"
             placeholder="blurred"
-            width={120}
+            width={80}
             quality={95}
             alt="Profile picture"
           />
@@ -65,7 +65,7 @@ const Bio = () => {
             formats={["auto", "webp", "avif"]}
             src="../images/stamp4.png"
             placeholder="blurred"
-            width={120}
+            width={80}
             quality={95}
             alt="Profile picture"
           />
@@ -78,7 +78,7 @@ const Bio = () => {
             formats={["auto", "webp", "avif"]}
             placeholder="blurred"
             src="../images/stamp3.png"
-            width={120}
+            width={80}
             quality={95}
             alt="design"
           />
