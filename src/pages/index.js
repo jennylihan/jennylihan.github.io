@@ -358,8 +358,37 @@ const BlogIndex = ({ data, location }) => {
         </section>
 
         <section id="teachingvideos">
-          <h2>teaching videos (for SYMSYS1)</h2>
+          <h2>teaching videos</h2>
           <div className="table">
+            <Link
+              className="outline"
+              to={"https://vimeo.com/684013951"}
+              style={{ textDecoration: "none" }}
+              target="_blank"
+            >
+              <div className="table-contents">
+                <img
+                  src={edfest}
+                  alt={"Snap Academies"}
+                  style={{
+                    objectFit: "cover",
+                    width: "100%",
+                    maxHeight: "150px",
+                  }}
+                ></img>
+                <div className="table-text">
+                  <h3>Snap Academies Sizzle Reel</h3>
+                  <p>2021</p>
+                  <p className="table-text">
+                    A 6 minute sizzle reel highlighting the students and staff
+                    behind the virtual Snap Academies in 2021. I was
+                    co-instructor for the Snap Engineering Academy, which I also
+                    created as the lead curriculum designer and program
+                    designer.{" "}
+                  </p>
+                </div>
+              </div>
+            </Link>
             <Link
               className="outline"
               to={"https://www.youtube.com/watch?v=vT1IrszcE1E&t=268s"}
