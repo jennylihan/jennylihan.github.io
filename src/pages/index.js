@@ -112,8 +112,8 @@ const BlogIndex = ({ data, location }) => {
               Fulbright Study/Research
             </a>{" "}
             award in 2019. (I had planned to do research at Peking University on
-            remote learning platforms in rural China... and then COVID happened,
-            and the whole world switched to remote learning.){" "}
+            an obscure remote learning platform in rural China... and then COVID
+            happened, and the whole world switched to remote learning.){" "}
           </p>
           <p>
             As an undergrad at Stanford, I studied{" "}
