@@ -7,9 +7,9 @@ import Layout from "../components/layout"
 import Gallery from "../components/gallery"
 import Seo from "../components/seo"
 import postcards from "../images/cards.jpg" // Tell webpack this JS file uses this image
-import scifi from "../images/gallery/scifi.jpg" // Tell webpack this JS file uses this image
-import edfest from "../images/gallery/edfest.jpg" // Tell webpack this JS file uses this image
-import theorytheory from "../images/gallery/theorytheory.jpg" // Tell webpack this JS file uses this image
+import scifi from "../../static/gallery/scifi.jpg" // Tell webpack this JS file uses this image
+import edfest from "../../static/gallery/edfest.jpg" // Tell webpack this JS file uses this image
+import theorytheory from "../../static/gallery/theorytheory.jpg" // Tell webpack this JS file uses this image
 
 // import { annotate } from "./rough-notation"
 // import { RoughNotation, RoughNotationGroup } from "react-rough-notation"
@@ -111,7 +111,9 @@ const BlogIndex = ({ data, location }) => {
               {" "}
               Fulbright Study/Research
             </a>{" "}
-            award in 2019.
+            award in 2019. (I had planned to do research at Peking University on
+            remote learning platforms in rural China... and then COVID happened,
+            and the whole world switched to remote learning.){" "}
           </p>
           <p>
             As an undergrad at Stanford, I studied{" "}
@@ -123,7 +125,7 @@ const BlogIndex = ({ data, location }) => {
               Symbolic Systems
             </a>
             , a major combining linguistics, philosophy, psychology and computer
-            science. I chased the questions: How do we learn? and How can we
+            science. I pursued the questions: How do we learn? and How can we
             design more transformative tools and experiences for learning?
           </p>
         </section>
@@ -136,6 +138,24 @@ const BlogIndex = ({ data, location }) => {
             interaction.
           </p>
           <ul>
+            <li>
+              Angert, T.*, Suzara, M.*, <b>Han, J.*</b>, Pondoc, C., &
+              Subramonyam, H. (2023). Spellburst: A Node-based Interface for
+              Exploratory Creative Coding with Natural Language Prompts. UIST
+              2023.{" "}
+              <a href="https://arxiv.org/abs/2308.03921" rel="noreferrer">
+                [link]
+              </a>{" "}
+              *equal first authors
+            </li>
+            <li>
+              Bigman, M., Gilon, Y., <b>Han, J.</b>, & Mitchell, J. (2022).
+              Insights for post-pandemic pedagogy across one CS department.
+              Arxiv.{" "}
+              <a href="https://arxiv.org/abs/2203.09050" rel="noreferrer">
+                [link]
+              </a>
+            </li>
             <li>
               Bigman, M., Gilon, Y., <b>Han, J.</b>, & Mitchell, J. (2022).
               Insights for post-pandemic pedagogy across one CS department.
