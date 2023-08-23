@@ -148,14 +148,7 @@ const BlogIndex = ({ data, location }) => {
               </a>{" "}
               *equal first authors
             </li>
-            <li>
-              Bigman, M., Gilon, Y., <b>Han, J.</b>, & Mitchell, J. (2022).
-              Insights for post-pandemic pedagogy across one CS department.
-              Arxiv.{" "}
-              <a href="https://arxiv.org/abs/2203.09050" rel="noreferrer">
-                [link]
-              </a>
-            </li>
+
             <li>
               Bigman, M., Gilon, Y., <b>Han, J.</b>, & Mitchell, J. (2022).
               Insights for post-pandemic pedagogy across one CS department.
