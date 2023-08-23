@@ -128,6 +128,43 @@ const BlogIndex = ({ data, location }) => {
             science. I pursued the questions: How do we learn? and How can we
             design more transformative tools and experiences for learning?
           </p>
+          <p>
+            Recent news in 2023:
+            <ul>
+              <li>
+                got published with friends and collaborators in{" "}
+                <a
+                  href="https://twitter.com/tylerangert/status/1689311693195681798"
+                  target="_blank"
+                >
+                  UIST 2023
+                </a>{" "}
+                (about generative AI interfaces for creative coding) and{" "}
+                <a
+                  href="https://chrisproctor.net/research/wolf_2023_growing/wolf_2023_growing.pdf"
+                  target="_blank"
+                >
+                  ISLS 2023
+                </a>{" "}
+                (about identity authorship in CS classrooms)!
+              </li>
+              <li>
+                shipped a beginner-friendly set of tutorials for Niantic's WebAR
+                platform,{" "}
+                <a href="https://www.8thwall.com/" target="_blank">
+                  8th Wall
+                </a>
+                , as a learning experience design consultant
+              </li>
+              <li>
+                traveled to the Association for the Sciences of Limnology and
+                Oceanography to interview graduate students about{" "}
+                <a href="https://www.aslo.org/lorex/" target="_blank">
+                  their experiences conducting research abroad{" "}
+                </a>
+              </li>
+            </ul>
+          </p>
         </section>
 
         <section id="research">
