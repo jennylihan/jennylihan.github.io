@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+import Nav from "../components/nav"
 import Postcard from "../components/postcard"
 import Layout from "../components/layout"
 import Gallery from "../components/gallery"
@@ -53,7 +53,7 @@ const BlogIndex = ({ data, location }) => {
         <Postcard />
         {/* </div> */}
 
-        <Bio />
+        <Nav />
 
         <br />
 

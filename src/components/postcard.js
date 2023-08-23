@@ -14,12 +14,18 @@ import {
 } from "./postcard.module.css"
 import WelcomeSign from "./welcomesign"
 import { StaticImage } from "gatsby-plugin-image"
-
+import flipUpSound from "../../sounds/flip_up.mp3"
+import flipDownSound from "../../sounds/flip_down.mp3"
+import useSound from "use-sound"
 export default function Postcard() {
   const [isFlipped, setIsFlipped] = useState(false)
+  const [playUp] = useSound(flipUpSound)
+  const [playDown] = useSound(flipDownSound)
 
   function handleClick(e) {
     e.preventDefault()
+    if (isFlipped) playUp()
+    else playDown()
     setIsFlipped(!isFlipped)
   }
 
