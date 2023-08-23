@@ -113,7 +113,7 @@ const BlogIndex = ({ data, location }) => {
             </a>{" "}
             award in 2019. (I had planned to do research at Peking University on
             an obscure remote learning platform in rural China... and then COVID
-            happened, and the whole world switched to remote learning.){" "}
+            happened!){" "}
           </p>
           <p>
             As an undergrad at Stanford, I studied{" "}
