@@ -38,7 +38,7 @@ export default function Postcard() {
           <div
             className={image}
             style={{
-              backgroundImage: `url(${POSTCARD_DATA[0].image})`,
+              backgroundImage: `url(${POSTCARD_DATA[0].imgUrl})`,
             }}
           ></div>
           <WelcomeSign />

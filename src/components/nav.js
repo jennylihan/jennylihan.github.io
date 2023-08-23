@@ -8,7 +8,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import scrollTo from "gatsby-plugin-smoothscroll"
-
+import { Link } from "gatsby"
 const Bio = () => {
   return (
     <div className="bio">
@@ -17,13 +17,13 @@ const Bio = () => {
           about
         </button>
         <button>✦</button>
-        <button
+        <Link
           className="header-link-bar"
-          rel="noreferrer"
-          href="/JennyHan.pdf"
+          style={{ padding: "8px" }}
+          to="/JennyHan.pdf"
         >
           cv
-        </button>
+        </Link>
         <button>✦</button>
         <button
           className="header-link-bar"
