@@ -14,14 +14,14 @@ module.exports = {
       {
         title: `Niantic's 8cademy`,
         year: `2023 | Learning Experience Design`,
-        description: `Learning experience design and technical writing for Niantic's 8th Wall Web AR product. 200+ learners and counting.`,
+        description: `Learning experience design and technical writing for 8th Wall, Niantic's WebAR platform. 200+ learners and counting.`,
         siteUrl: `https://8cademy.notion.site/8cademy-2050e3bc6d3d4bbc879d05110b82331a`,
         imageUrl: `./gallery/8cademy.png`,
       },
       {
         title: `Snap Academies`,
         year: `2022 | Learning Experience Design`,
-        description: `Program design and curriculum design from the ground up for Snap Engineering Academy. Website also built by me.`,
+        description: `High-impact program design and curriculum strategy. 180+ graduates to date. Website also built by me.`,
         siteUrl: `https://www.snapacademies.com`,
         imageUrl: `./gallery/snapacademies.png`,
       },

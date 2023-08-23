@@ -368,7 +368,9 @@ const BlogIndex = ({ data, location }) => {
             >
               <div className="table-contents">
                 <img
-                  src={edfest}
+                  src={
+                    "https://uploads-ssl.webflow.com/5ff8fc486c14537c168fc87d/63e6c2aea9829573f02e58bc_837d83b1-ecbc-401f-9866-844e27d6a567.png"
+                  }
                   alt={"Snap Academies"}
                   style={{
                     objectFit: "cover",
