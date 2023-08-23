@@ -17,6 +17,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import flipUpSound from "../../sounds/flip_up.mp3"
 import flipDownSound from "../../sounds/flip_down.mp3"
 import useSound from "use-sound"
+import POSTCARD_DATA from "../../static/postcards.json"
+
 export default function Postcard() {
   const [isFlipped, setIsFlipped] = useState(false)
   const [playUp] = useSound(flipUpSound)
@@ -33,7 +35,12 @@ export default function Postcard() {
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       <div className={cardBox} onClick={handleClick}>
         <div className={cardFront}>
-          <div className={image}></div>
+          <div
+            className={image}
+            style={{
+              backgroundImage: `url(${POSTCARD_DATA[0].image})`,
+            }}
+          ></div>
           <WelcomeSign />
         </div>
       </div>
@@ -42,36 +49,16 @@ export default function Postcard() {
         <div className={cardBack}>
           <div className={gridContainer}>
             <div className={left}>
-              <h1>Hello from Maryland!</h1>
+              <h1>Hello from {POSTCARD_DATA[0].location}!</h1>
               <br />
-              <p>
-                Hey! I've been building data visualization tools for math
-                teachers as part of the{" "}
-                <a href="https://sites.uci.edu/daplab" target="_blank">
-                  Design & Partnership Lab
-                </a>{" "}
-                at UC Irvine (remotely).
-              </p>
-              <p>
-                I'm having a blast exploring the corners of Charm City by bike
-                while listening to{" "}
-                <a
-                  href="https://ootb.thepeale.org/#:~:text=Created%20by%20Aaron%20Henkin%20and,stories%20hidden%20in%20plain%20sight."
-                  target="_blank"
-                >
-                  WYPR's Out of the Blocks
-                </a>{" "}
-                and{" "}
-                <a
-                  href="https://open.spotify.com/episode/1Jc1NuNTKW44RVYBnFAC6g?si=c3bd41ad93214678"
-                  target="_blank"
-                >
-                  Tyler the Creator's IGOR
-                </a>
-                .
-              </p>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: JSON.parse(JSON.stringify(POSTCARD_DATA[0].html)),
+                }}
+              ></div>
+
               <p>Jenny</p>
-              <p className={fineprint}>Winter 2023</p>
+              <p className={fineprint}>{POSTCARD_DATA[0].date}</p>
             </div>
             <div className={right}>
               <div className={row}>

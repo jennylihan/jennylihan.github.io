@@ -325,7 +325,7 @@ a:focus {
 }
 
 .header-link-bar {
-  font-weight: var(--fontWeight-bold);
+  font-weight: var(--fontWeight-medium);
   text-decoration: none;
   font-size: var(--fontSize-3);
   margin: var(--spacing-2);

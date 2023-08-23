@@ -54,7 +54,7 @@
   border-radius: 30px;
   opacity: 70%;
   filter: brightness(80%);
-  background-image: url("../images/postcards/baltimore.jpg");
+  /* background-image: url("../images/postcards/baltimore.jpg"); */
   background-size: cover;
 }
 

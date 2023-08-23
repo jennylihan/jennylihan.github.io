@@ -12,32 +12,18 @@ module.exports = {
     },
     projectList: [
       {
-        title: `Niantic 8th Wall 8cademy`,
+        title: `Niantic's 8cademy`,
         year: `2023 | Learning Experience Design`,
-        description: `Learning experience design and technical writing for Niantic's 8th Wall VR product. 200+ learners and counting.`,
+        description: `Learning experience design and technical writing for Niantic's 8th Wall Web AR product. 200+ learners and counting.`,
         siteUrl: `https://8cademy.notion.site/8cademy-2050e3bc6d3d4bbc879d05110b82331a`,
         imageUrl: `./gallery/8cademy.png`,
       },
       {
         title: `Snap Academies`,
-        year: `2022 | Website Design (Webflow)`,
-        description: `Digital brand identity and website design for Snap Inc. Philanthropy.`,
+        year: `2022 | Learning Experience Design`,
+        description: `Program design and curriculum design from the ground up for Snap Engineering Academy. Website also built by me.`,
         siteUrl: `https://www.snapacademies.com`,
         imageUrl: `./gallery/snapacademies.png`,
-      },
-      {
-        title: `Traffic Collisions`,
-        year: `2022 | Web Article Design (Vev)`,
-        description: `A scrollytelling piece detailing recent fatal traffic collisions in the Bay Area.`,
-        siteUrl: `https://peninsulapress.com/2022/06/10/fatal-collisions-involving-juvenile-cyclists-highlight-road-safety-issues-in-the-bay-area/`,
-        imageUrl: `./gallery/collisions.jpg`,
-      },
-      {
-        title: `Grammars for All`,
-        year: `2021 | Web App (JS) + Curriculum`,
-        description: `A playground and a bunch of twitter bots to teach context-free grammars.`,
-        siteUrl: `https://github.com/jennylihan/symsys-cfg`,
-        imageUrl: `https://user-images.githubusercontent.com/26272095/137962447-b0131652-7d50-489a-b4a6-5661e362fec1.png`,
       },
       {
         title: `Replit`,
@@ -45,6 +31,13 @@ module.exports = {
         description: `Community moderation, workspace, and future of interactive code tutorials.`,
         siteUrl: `https://replit.com`,
         imageUrl: `https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/1200px-Repl.it_logo.svg.png`,
+      },
+      {
+        title: `Grammars for All`,
+        year: `2021 | Web App (JS) + Curriculum`,
+        description: `A playground and a bunch of twitter bots to teach context-free grammars.`,
+        siteUrl: `https://github.com/jennylihan/symsys-cfg`,
+        imageUrl: `https://user-images.githubusercontent.com/26272095/137962447-b0131652-7d50-489a-b4a6-5661e362fec1.png`,
       },
       {
         title: `E-bikes Deep Dive`,
