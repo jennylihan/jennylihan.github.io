@@ -79,7 +79,7 @@ const BlogIndex = ({ data, location }) => {
             Human-Computer Interaction with a focus on learning technologies.
             I'm working on ways to make computer science education more
             equitable and personally meaningful for all. My experiences center
-            around instructional design, web/app dev, and UX research.
+            around instructional design, web/app development, and UX research.
           </p>
           <p>
             Previously, I've been a product engineering intern at{" "}
@@ -94,15 +94,15 @@ const BlogIndex = ({ data, location }) => {
             >
               Next Shift Learning
             </a>
-            , and a head TA of the{" "}
+            , and a lecturer for{" "}
             <a
-              href="https://symsys.stanford.edu"
-              target="_blank"
+              href="https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1228/"
               rel="noreferrer"
+              target="_blank"
             >
-              SYMSYS1 teaching team
-            </a>
-            . I was the recipient of a{" "}
+              CS106B
+            </a>{" "}
+            at Stanford. I was the recipient of a{" "}
             <a
               href="http://web.stanford.edu/dept/vpsa/bechtel/fulbright19-20.pdf"
               target="_blank"
@@ -113,7 +113,7 @@ const BlogIndex = ({ data, location }) => {
             </a>{" "}
             award in 2019. (I had planned to do research at Peking University on
             an obscure remote learning platform in rural China... and then COVID
-            happened!){" "}
+            happened and we all switched to remote learning!){" "}
           </p>
           <p>
             As an undergrad at Stanford, I studied{" "}
@@ -132,7 +132,7 @@ const BlogIndex = ({ data, location }) => {
             Recent news in 2023:
             <ul>
               <li>
-                got published with friends and collaborators in{" "}
+                got published with friends and collaborators at{" "}
                 <a
                   href="https://twitter.com/tylerangert/status/1689311693195681798"
                   target="_blank"
@@ -157,8 +157,9 @@ const BlogIndex = ({ data, location }) => {
                 , as a learning experience design consultant
               </li>
               <li>
-                traveled to the Association for the Sciences of Limnology and
-                Oceanography to interview graduate students about{" "}
+                traveled to Mallorca for the annual meeting of the Association
+                for the Sciences of Limnology and Oceanography to interview
+                graduate students about{" "}
                 <a href="https://www.aslo.org/lorex/" target="_blank">
                   their experiences conducting research abroad{" "}
                 </a>
@@ -183,9 +184,21 @@ const BlogIndex = ({ data, location }) => {
               <a href="https://arxiv.org/abs/2308.03921" rel="noreferrer">
                 [link]
               </a>{" "}
-              *equal first authors
+              <b>*equal first authors</b>
             </li>
-
+            <li>
+              Wolf, J., <b>Han, J.</b>, Proctor, C., Brown, E., Pang, J., &
+              Blikstein, P. (2023). “Growing as a person”: Developing Identity
+              and Agency Across Formal CS Education and Everyday Computing
+              Contexts. In Building knowledge and sustaining our community, CSCL
+              2023.{" "}
+              <a
+                href="https://chrisproctor.net/research/wolf_2023_growing/wolf_2023_growing.pdf"
+                rel="noreferrer"
+              >
+                [link]
+              </a>{" "}
+            </li>
             <li>
               Bigman, M., Gilon, Y., <b>Han, J.</b>, & Mitchell, J. (2022).
               Insights for post-pandemic pedagogy across one CS department.
