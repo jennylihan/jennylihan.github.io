@@ -21,7 +21,7 @@
 
 .greetings {
   width: 85%;
-  fill: var(--color-primary);
+  /* fill: var(--color-primary); */
 }
 
 .cardBox:hover {

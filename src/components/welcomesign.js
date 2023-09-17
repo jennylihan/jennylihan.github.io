@@ -7,7 +7,7 @@
 
 import React from "react"
 
-import { greetings, welcomebox } from "./postcard.module.css"
+import { greetings, welcomebox, greetingsclick } from "./postcard.module.css"
 
 const Postcard = () => {
   return (
@@ -33,7 +33,7 @@ const Postcard = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-click"
-        className={greetings}
+        className={greetingsclick}
         width="100"
         height="100"
         viewBox="0 0 24 24"
@@ -44,7 +44,7 @@ const Postcard = () => {
         stroke-linejoin="round"
       >
         <path
-          className={greetings}
+          className={greetingsclick}
           stroke="none"
           d="M0 0h24v24H0z"
           fill="none"

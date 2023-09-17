@@ -500,6 +500,9 @@ section {
   .outline {
     width: 100%;
   }
+  .header-bar {
+    flex-direction: column;
+  }
 }
 
 /* @media only screen and (min-width: 768px) and (max-width: 959px) {

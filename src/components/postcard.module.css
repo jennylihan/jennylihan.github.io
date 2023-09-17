@@ -136,7 +136,12 @@
   width: 75%;
   opacity: 1;
   fill: "white";
-  /* fill: var(--color-primary); */
+  z-index: 30;
+}
+.greetingsclick {
+  width: 75%;
+  opacity: 1;
+  fill: "white";
   z-index: 30;
 }
 
@@ -193,17 +198,15 @@
 
 @media (max-width: 42rem) {
   .greetings {
-    width: 100%;
-    fill: var(--color-primary);
     margin-bottom: var(--spacing-4);
+  }
+  .greetingsclick {
+    display: none;
   }
   .left {
     display: none;
   }
   .right {
     display: none;
-  }
-  .greetings {
-    width: 50%;
   }
 }
