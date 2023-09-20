@@ -3,7 +3,7 @@
     "id": 2,
     "date": "Fall 2023",
     "location": "SoCal",
-    "html": "<p>I'm back in California, still building and codesigning tools for learning at the <a href=\"https://daplab.education.uci.edu/\" target=\"_blank\"> Design & Partnership Lab</a> at UC Irvine. :)</p><p>I'm trying to finish the wedding podcast I promised to make for one of my best friends who just got married! Procrastinating on that by listening to <a href=\"https://crooked.com/podcast-series/wind-of-change/\" target=\"_blank\">Wind of Change from Crooked Media</a>.</p>",
+    "html": "<p>I'm still building and codesigning tools for learning at the <a href=\"https://daplab.education.uci.edu/\" target=\"_blank\"> Design & Partnership Lab</a> at UC Irvine. :)</p><p>I'm trying to finish the wedding podcast I promised to make for one of my best friends who just got married! Procrastinating on that by listening to <a href=\"https://crooked.com/podcast-series/wind-of-change/\" target=\"_blank\">Wind of Change from Crooked Media</a>.</p>",
     "imgUrl": "./postcards/irvine.jpg"
   },
   {
@@ -12,5 +12,12 @@
     "location": "Maryland",
     "html": "<p>Hey! I've been building data visualization tools for math teachers as part of the <a href=\"https://sites.uci.edu/daplab\" target=\"_blank\"> Design & Partnership Lab.</a> at UC Irvine (remotely).</p><p>I'm having a blast exploring the corners of Charm City by bike while listening to <a href=\"https://ootb.thepeale.org/#:~:text=Created%20by%20Aaron%20Henkin%20and,stories%20hidden%20in%20plain%20sight.\" target=\"_blank\" > WYPR's Out of the Blocks</a> and <a href=\"https://open.spotify.com/episode/1Jc1NuNTKW44RVYBnFAC6g?si=c3bd41ad93214678\" target=\"_blank\">Tyler the Creator's IGOR</a>.</p>",
     "imgUrl": "./postcards/baltimore.jpg"
+  },
+  {
+    "id": 0,
+    "date": "Summer 2022",
+    "location": "Palo Alto",
+    "html": "<p>Hey! I just graduated from my master's last month and have been teaching <a href=\"https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1228/\" target=\"_blank\">CS106B at Stanford</a> with one of my best friends Kylie this summer. Nothing like in person lectures!</p><p>I'm listening to <a href=\"https://open.spotify.com/track/1IHWl5LamUGEuP4ozKQSXZ\" target=\"_blank\">Un Verano Sin Ti</a> and <a href=\"https://www.youtube.com/watch?v=xEQP4VVuyrY\" target=\"_blank\">the soundtrack to Severance</a> while eating lots of late night L & L spam musubi.</p>",
+    "imgUrl": "./postcards/paloalto.jpeg"
   }
 ]
