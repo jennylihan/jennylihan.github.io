@@ -9,7 +9,7 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import { Link } from "gatsby"
-const Bio = () => {
+const Bio = ({ setCurrIndex }) => {
   return (
     <div className="bio">
       <div className="header-bar">
@@ -41,6 +41,13 @@ const Bio = () => {
         <button>✦</button>
         <button className="header-link-bar" onClick={() => scrollTo("#design")}>
           design
+        </button>
+        <button>✦</button>
+        <button
+          className="header-link-bar"
+          onClick={() => setCurrIndex(prev => prev + 1)}
+        >
+          next postcard
         </button>
       </div>
     </div>

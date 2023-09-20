@@ -29,6 +29,7 @@ const BlogIndex = ({ data, location }) => {
   // }, [])
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
+  const [currIndex, setCurrIndex] = React.useState(0)
   // const sectionRef = React.useRef(null)
 
   if (posts.length === 0) {
@@ -50,10 +51,10 @@ const BlogIndex = ({ data, location }) => {
         <div style={{ minHeight: "20px" }}></div>
         {/* <div ref={sectionRef}> */}
 
-        <Postcard />
+        <Postcard currIndex={currIndex} />
         {/* </div> */}
 
-        <Nav />
+        <Nav setCurrIndex={setCurrIndex} />
 
         <br />
 
