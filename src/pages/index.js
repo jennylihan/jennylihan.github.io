@@ -185,6 +185,9 @@ const BlogIndex = ({ data, location }) => {
               <a href="https://arxiv.org/abs/2308.03921" rel="noreferrer">
                 [link]
               </a>{" "}
+              <a href="https://spellburstllm.github.io/" rel="noreferrer">
+                [website]
+              </a>{" "}
               <b>*equal first authors</b>
             </li>
             <li>
