@@ -209,4 +209,7 @@
   .right {
     display: none;
   }
+  .cardBox {
+    pointer-events: none;
+  }
 }
