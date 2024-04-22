@@ -88,22 +88,22 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
     `gatsby-plugin-smoothscroll`,
-    {
-      resolve: `gatsby-plugin-scroll-reveal`,
-      options: {
-        threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
-        once: true, // Defines if animation needs to be launched once
-        disable: true, // Flag for disabling animations
+    // {
+    //   resolve: `gatsby-plugin-scroll-reveal`,
+    //   options: {
+    //     threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
+    //     once: true, // Defines if animation needs to be launched once
+    //     disable: true, // Flag for disabling animations
 
-        // Advanced Options
-        selector: "[data-sal]", // Selector of the elements to be animated
-        animateClassName: "sal-animate", // Class name which triggers animation
-        disabledClassName: "sal-disabled", // Class name which defines the disabled state
-        rootMargin: "0% 50%", // Corresponds to root's bounding box margin
-        enterEventName: "sal:in", // Enter event name
-        exitEventName: "sal:out", // Exit event name
-      },
-    },
+    //     // Advanced Options
+    //     selector: "[data-sal]", // Selector of the elements to be animated
+    //     animateClassName: "sal-animate", // Class name which triggers animation
+    //     disabledClassName: "sal-disabled", // Class name which defines the disabled state
+    //     rootMargin: "0% 50%", // Corresponds to root's bounding box margin
+    //     enterEventName: "sal:in", // Enter event name
+    //     exitEventName: "sal:out", // Exit event name
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -128,19 +128,25 @@ module.exports = {
               maxWidth: 630,
             },
           },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
+          // {
+          //   resolve: `gatsby-remark-responsive-iframe`,
+          //   options: {
+          //     wrapperStyle: `margin-bottom: 1.0725rem`,
+          //   },
+          // },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
       },
     },
-    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        // The option defaults to true
+        checkSupportedExtensions: true,
+      },
+    },    
     `gatsby-plugin-sharp`,
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
