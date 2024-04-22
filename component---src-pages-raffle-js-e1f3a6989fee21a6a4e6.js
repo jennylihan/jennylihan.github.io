@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_blog=self.webpackChunkgatsby_starter_blog||[]).push([[945],{9897:function(t,e,a){a.r(e),a.d(e,{default:function(){return u}});var n=a(6540),r=a(8007);function u(){return n.useEffect((()=>{(0,r.navigate)("https://luckydraw.wolfie.dev")}),[]),"Loading.."}}}]);
+//# sourceMappingURL=component---src-pages-raffle-js-e1f3a6989fee21a6a4e6.js.map

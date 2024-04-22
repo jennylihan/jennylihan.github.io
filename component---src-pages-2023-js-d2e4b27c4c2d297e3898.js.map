@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-2023-js-d2e4b27c4c2d297e3898.js","mappings":"6GACAA,OAAOC,SAASC,QAAQ","sources":["webpack://gatsby-starter-blog/./src/pages/2023.js"],"sourcesContent":["// Simulate an HTTP redirect:\nwindow.location.replace(\"https://luckydraw.wolfie.dev/\");"],"names":["window","location","replace"],"sourceRoot":""}
