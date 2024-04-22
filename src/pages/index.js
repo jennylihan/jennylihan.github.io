@@ -71,19 +71,15 @@ const BlogIndex = ({ data, location }) => {
             {/* </RoughNotation> */}
           </h2>
           <p>
-            I'm equal parts ed + tech. Currently, I'm a web developer building
-            tools for teachers at the{" "}
-            <a href="https://sites.uci.edu/daplab/">
-              UCI Design and Partnership Lab
-            </a>
-            . I recently graduated from Stanford with a Master's in
-            Human-Computer Interaction with a focus on learning technologies.
-            I'm working on ways to make computer science education more
-            equitable and personally meaningful for all. My experiences center
-            around instructional design, web/app development, and UX research.
+            I'm equal parts ed + tech. Currently, I'm a prompt engineer at <a href="https://www.khanacademy.org/">Khan Academy</a> experimenting with AI-powered tools for teachers.
+            I care about making learning more personally meaningful for everyone. My experiences cluster
+            around learning experience design, web development, and HCI research.
           </p>
           <p>
-            Previously, I've been a product engineering intern at{" "}
+            Previously, I've been a "pre-doc" web developer at the{" "}
+            <a href="https://sites.uci.edu/daplab/">
+              UCI Design and Partnership Lab
+            </a>, a product engineering intern at{" "}
             <a href="https://replit.com" rel="noreferrer" target="_blank">
               replit
             </a>
@@ -113,8 +109,8 @@ const BlogIndex = ({ data, location }) => {
               Fulbright Study/Research
             </a>{" "}
             award in 2019. (I had planned to do research at Peking University on
-            an obscure remote learning platform in rural China... and then COVID
-            happened and we all switched to remote learning!){" "}
+            an obscure remote learning platform in rural China, before remote learning was big. Then COVID
+            happened.){" "}
           </p>
           <p>
             As an undergrad at Stanford, I studied{" "}
@@ -126,11 +122,12 @@ const BlogIndex = ({ data, location }) => {
               Symbolic Systems
             </a>
             , a major combining linguistics, philosophy, psychology and computer
-            science. I pursued the questions: How do we learn? and How can we
+            science.  I also graduated from Stanford with a Master's in
+            Human-Computer Interaction with a focus on learning technologies. I pursued the questions: How do we learn? and How can we
             design more transformative tools and experiences for learning?
           </p>
-          <p>
-            Recent news in 2023:
+          {/* <p>
+            Recent news in 2024:
             <ul>
               <li>
                 got published with friends and collaborators at{" "}
@@ -138,16 +135,9 @@ const BlogIndex = ({ data, location }) => {
                   href="https://twitter.com/tylerangert/status/1689311693195681798"
                   target="_blank"
                 >
-                  UIST 2023
+                  ISLS 2024
                 </a>{" "}
-                (about generative AI interfaces for creative coding) and{" "}
-                <a
-                  href="https://chrisproctor.net/research/wolf_2023_growing/wolf_2023_growing.pdf"
-                  target="_blank"
-                >
-                  ISLS 2023
-                </a>{" "}
-                (about identity authorship in CS classrooms)!
+                (about generative AI interfaces for creative coding)
               </li>
               <li>
                 shipped a beginner-friendly set of tutorials for Niantic's WebAR
@@ -166,7 +156,7 @@ const BlogIndex = ({ data, location }) => {
                 </a>
               </li>
             </ul>
-          </p>
+          </p> */}
         </section>
 
         <section id="research">

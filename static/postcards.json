@@ -1,16 +1,44 @@
 [
   {
-    "id": 2,
+    "id": 6,
+    "date": "Spring 2024",
+    "location": "SoCal (still)",
+    "html": "<p>I wrapped up my time at the <a href=\"https://www.daplab.education.uci.edu/post/daplab-at-the-ai-k12-deeper-learning-summit-spark-talks-workshops-and-codesign-sessions-with-stud\" target=\"_blank\">daplab</a>, and I'm now at <a href=\"https://khanacademy.org/\" target=\"_blank\">Khan Academy</a>, building AI tools for teachers!</p><p>I'm listening to lots of <a href=\"https://open.spotify.com/track/5xWvCOX5UAgOljuv2QAFtG?si=d2629cf308334101\" target=\"_blank\">Planet Giza</a>, <a href=\"https://open.spotify.com/track/6OjwIdLlkjCLuOThOwODEY?si=da3d15a4799a4597\" target=\"_blank\">Vampire Weekend</a>, <a href=\"https://open.spotify.com/track/0kDjZRgPU4Bt35ygJC83Af?si=0adf40945be249cb\" target=\"_blank\">Discovery</a>, and <a href=\"https://open.spotify.com/track/7rFqak8aULjGAiO0iuAH58?si=69107317945c4af9\" target=\"_blank\">Beyonce</a>. Went to Joshua Tree (pictured) in February and saw the grunion run along Cabrillo Beach (not pictured) in April for the first time. Both were breathtaking. </p>",
+    "imgUrl": "./postcards/joshuatree.png"
+  },
+  {
+    "id": 5,
+    "date": "Fall 2023",
+    "location": "San Francisco",
+    "html": "<p>Published work with friends and collaborators on (1) <a href=\"https://chrisproctor.net/research/wolf_2023_growing/wolf_2023_growing.pdf\" target=\"_blank\">identity authorship in CS classrooms</a> at the annual meeting of the International Society for Learning Sciences and on (2) <a href=\"https://spellburst-paper.replit.app/\" target=\"_blank\">LLMs for creative work and exploratory programming</a> at the ACM Symposium on User Interface Software and Technology (UIST).</p><p>The UIST project is the first research project that I initiated, from start to finish, and it was also <a href=\"https://blog.replit.com/spellburst\" target=\"_blank\">the first Replit collaboration</a> with an academic institution. Proud that these two projects from my master's program times finally got to see the light of day!</p>",
+    "imgUrl": "./postcards/uist.jpeg"
+  },
+  {
+    "id": 4,
     "date": "Fall 2023",
     "location": "SoCal",
-    "html": "<p>I'm still building and codesigning tools for learning at the <a href=\"https://daplab.education.uci.edu/\" target=\"_blank\"> Design & Partnership Lab</a> at UC Irvine. :)</p><p>I'm trying to finish the wedding podcast I promised to make for one of my best friends who just got married! Procrastinating on that by listening to <a href=\"https://crooked.com/podcast-series/wind-of-change/\" target=\"_blank\">Wind of Change from Crooked Media</a>.</p>",
-    "imgUrl": "./postcards/irvine.jpg"
+    "html": "<p>I'm still building and codesigning tools for learning at the <a href=\"https://daplab.education.uci.edu/\" target=\"_blank\"> Design & Partnership Lab</a> at UC Irvine. :)</p><p>I'm trying to finish the wedding podcast I promised to make for one of my best friends who just got married! Procrastinating on that by listening to <a href=\"https://crooked.com/podcast-series/wind-of-change/\" target=\"_blank\">Wind of Change from Crooked Media</a>. Saw the bioluminescent waves (pictured) in Newport Beach.</p>",
+    "imgUrl": "./postcards/irvine.jpeg"
+  },
+  {
+    "id": 3,
+    "date": "Summer 2023",
+    "location": "Mallorca",
+    "html": "<p>I had the privilege of subbing for my mentor as a qualitative researcher at the annual meeting of the Association for the Sciences of Limnology and Oceanography. I interviewed a cohort of graduate student researchers, and learned about their experiences with international research exchange!</p> <p>Had an ensaimada for the first time and inhaled it. Got to visit Copenhagen to visit a friend on the layover there too! Listening to <a href=\"https://open.spotify.com/track/3EwTIu5qka2l5ZekB0b6QC?si=e112648cb1c04bb2\" target=\"_blank\">Wet Leg</a>.</p>",
+    "imgUrl": "./postcards/mallorca.png"
+  },
+  {
+    "id": 2,
+    "date": "Summer 2023",
+    "location": "Victoria & Atlanta",
+    "html": "<p>In personal news, I spent some time traveling with friends by train (Amtrak Crescent), ferry (Vancouver <> Victoria), plane, and car. Grateful for time with friends at all sorts of pivotal moments in their lives.</p><p>Listening to <a href=\"https://open.spotify.com/track/6QTPacyXkZWG9FMwq6L1hJ?si=eed2f5025a774d40\" target=\"_blank\">Maggie Rogers</a> and <a href=\"https://open.spotify.com/track/61bwFjzXGG1x2aZsANdLyl?si=b7117e09c20b4240\" target=\"_blank\">100 gecs</a>.</p>",
+    "imgUrl": "./postcards/victoria.png"
   },
   {
     "id": 1,
-    "date": "Winter 2023",
-    "location": "Maryland",
-    "html": "<p>Hey! I've been building data visualization tools for math teachers as part of the <a href=\"https://sites.uci.edu/daplab\" target=\"_blank\"> Design & Partnership Lab.</a> at UC Irvine (remotely).</p><p>I'm having a blast exploring the corners of Charm City by bike while listening to <a href=\"https://ootb.thepeale.org/#:~:text=Created%20by%20Aaron%20Henkin%20and,stories%20hidden%20in%20plain%20sight.\" target=\"_blank\" > WYPR's Out of the Blocks</a> and <a href=\"https://open.spotify.com/episode/1Jc1NuNTKW44RVYBnFAC6g?si=c3bd41ad93214678\" target=\"_blank\">Tyler the Creator's IGOR</a>.</p>",
+    "date": "Fall 2022",
+    "location": "Baltimore",
+    "html": "<p>Hey! I've been building data visualization tools for math teachers as part of the <a href=\"https://sites.uci.edu/daplab\" target=\"_blank\"> Design & Partnership Lab</a> at UC Irvine (leaning into remote work; just moved here for the year. go ravens.).</p><p>I'm exploring the corners of Charm City by bike while listening to <a href=\"https://ootb.thepeale.org/#:~:text=Created%20by%20Aaron%20Henkin%20and,stories%20hidden%20in%20plain%20sight.\" target=\"_blank\" > WYPR's Out of the Blocks</a> and <a href=\"https://open.spotify.com/episode/1Jc1NuNTKW44RVYBnFAC6g?si=c3bd41ad93214678\" target=\"_blank\">Tyler the Creator's IGOR</a>.</p>",
     "imgUrl": "./postcards/baltimore.png"
   },
   {
