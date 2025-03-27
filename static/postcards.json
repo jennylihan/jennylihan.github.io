@@ -1,10 +1,17 @@
 [
   {
-    "id": 7,
+    "id": 8,
     "date": "Spring 2025",
-    "location": "the bay area",
+    "location": "the Bay Area",
     "html": "<p>It's been a year of remote work at Khan Academy! I'm learning a lot as a prompt engineer on the Teacher Experience team. Since last fall, I've been on a personal road show visiting friends in Boston, Baltimore, Portland, Honolulu, Frankfurt, Chicago, and New York City. Still trying to figure out where I want to live.</p><p>I'm listening to the Linda Lindas (pictured) and the new albums from <a href=\"https://open.spotify.com/track/0Cro5lQhsNqfcvgH6QI3nU?si=748740bc79f8478c\" target=\"_blank\">Lucy Dacus</a> and <a href=\"https://open.spotify.com/album/4qqdOkr3Ff3kN8GxoxvRES?si=YH7PQvZ-Qjy1H-IGKeqDtg\" target=\"_blank\">Japanese Breakfast</a>.</p>",
     "imgUrl": "./postcards/lindalindas.png"
+  },
+  {
+    "id": 7,
+    "date": "Winter 2025",
+    "location": "New York City",
+    "html": "<p>Oh! Les Beaux Jours, Maro Michalakakos (2012). Just sending this postcard home because I liked this one, and I liked spending the month in New York City. Thinking about <a href=\"https://open.spotify.com/track/3RXozqS8icK2YGcIggW7KM?si=92d4d6ab86ca427e\" target=\"_blank\">that HAIM song about Los Angeles</a> though.</p><p>- Jenny</p>",
+    "imgUrl": "./postcards/guggenheim.png"
   },
   {
     "id": 6,

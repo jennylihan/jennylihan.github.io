@@ -60,8 +60,6 @@ export default function Postcard({ currIndex }) {
                     ),
                   }}
                 ></div>
-
-                <p>Jenny</p>
                 <p className={fineprint}>{POSTCARD_DATA[index].date}</p>
               </div>
               <div className={right}>
