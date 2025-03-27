@@ -51,7 +51,7 @@ export default function Postcard({ currIndex }) {
           <div className={cardBack}>
             <div className={gridContainer}>
               <div className={left}>
-                <h1>Hello from {POSTCARD_DATA[index].location}!</h1>
+                <h1>Hello from {POSTCARD_DATA[index].location}.</h1>
                 <br />
                 <div
                   dangerouslySetInnerHTML={{
@@ -70,7 +70,7 @@ export default function Postcard({ currIndex }) {
                     className="stamp"
                     layout="fixed"
                     formats={["auto", "webp", "png", "avif"]}
-                    src="../images/jenny.png"
+                    src={"../images/jenny.png"}
                     width={120}
                     quality={95}
                     alt="about"

@@ -76,7 +76,7 @@ const BlogIndex = ({ data, location }) => {
             around learning experience design, web development, and HCI research.
           </p>
           <p>
-            Previously, I've been a "pre-doc" web developer at the{" "}
+            Previously, I've been a web developer at the{" "}
             <a href="https://sites.uci.edu/daplab/">
               UCI Design and Partnership Lab
             </a>, a product engineering intern at{" "}
@@ -162,11 +162,16 @@ const BlogIndex = ({ data, location }) => {
         <section id="research">
           <h2>research publications </h2>
           <p>
-            I research tools for teaching and learning computer science. I'm
-            also interested in online learning communities and child-computer
+            I research tools for AI. I also did work in computer science education research and child-computer
             interaction.
           </p>
           <ul>
+            <li>
+            Van Doren, S., Cai, J., <b>Han, J.</b>, Ma, S., Nguyen, M., & Ahn, J. (2025). Supporting Occupational Identity Development through AI-Assisted Self-Reflection and Mentor Interactions. ISLS 2024.{" "}
+            <a href="https://repository.isls.org/handle/1/11139" rel="noreferrer">
+              [link]
+            </a>{" "}
+            </li>
             <li>
               Angert, T.*, Suzara, M.*, <b>Han, J.*</b>, Pondoc, C., &
               Subramonyam, H. (2023). Spellburst: A Node-based Interface for
@@ -261,7 +266,7 @@ const BlogIndex = ({ data, location }) => {
             I've taught and designed curriculum for high school, community
             college, undergraduate, and graduate students. In the classroom, I
             strive for student-directed learning, personally meaningful
-            projects, and equity at all times.
+            projects, and belonging.
           </p>
           <h6>University teaching at a glance:</h6>
           <ul>
@@ -549,29 +554,15 @@ const BlogIndex = ({ data, location }) => {
               Growing up, I loved school; I once got sent home sick in
               kindergarten and cried about missing out. My teachers were my
               greatest role models growing up in Bay Area public schools, and I
-              feel strongly about contributing to public education in the
-              future.
+              feel strongly about contributing to public education in my work.
             </li>
             <li>
-              For 3 months, I studied abroad in Santiago, Chile, and learned all
-              about linguistic relativity and Gepe.
-            </li>
-            <li>
-              My senior year of college, I worked as community manager at{" "}
-              <a
-                href="http://instagram.com/instahammarskjold"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Hammarskjöld
-              </a>
-              , a 33-person housing cooperative from 2018 - 2019.
+              I've gone swimming in the driest (non-polar) desert in the world.
             </li>
             <li>
               I could talk your head off about the following podcasts: Reply
-              All, Throughline, The Experiment, California Love, Floodlines,
-              Radiolab (ft. Dolly Parton's America, Mixtape), Trojan Horse
-              Affair.{" "}
+              All, The Experiment, California Love, Floodlines,
+              Radiolab (Dolly Parton's America, Mixtape), Heavyweight.{" "}
             </li>
             <li>I collect postcards ~ </li>
           </ul>
