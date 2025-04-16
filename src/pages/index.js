@@ -162,7 +162,7 @@ const BlogIndex = ({ data, location }) => {
         <section id="research">
           <h2>research publications </h2>
           <p>
-            I research tools for learning. Key words: computer science education research, child-computer
+            I research tools for learning. Key words: computer science education, child-computer
             interaction, co-design, generative AI.
           </p>
           <ul>
